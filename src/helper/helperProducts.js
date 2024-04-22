@@ -3,4 +3,4 @@ const listadoProductos = {
     precio: 1200
 }
 
-module.export = listadoProductos;
+module.exports = listadoProductos;
