@@ -1,4 +1,4 @@
-const category = {
+const rubros = {
     "QUIMICOS Y DILUYENTES": {
         subRubros: [
             { name: 'QUIMICOS PARA FERRETERIAS' },
@@ -104,4 +104,4 @@ const category = {
     }
 };
 
-module.exports = category;
+module.exports = rubros;

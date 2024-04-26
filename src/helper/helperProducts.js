@@ -375,6 +375,225 @@ const listaBarnizMarinoNetcolor = [
     { price: 8678.57, codigo: 1930, name: "LACA MEGACRILICA BRILLANTE X 1 L", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'}
 ];
 
+const listaTintaParaBarnizNetcolor = [
+    { price: 1799.26, codigo: 1805, name: "TINTA PARA BARNIZ x 60cc. CEDRO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 1799.26, codigo: 1806, name: "TINTA PARA BARNIZ x 60cc. ALGARROBO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 1799.26, codigo: 1807, name: "TINTA PARA BARNIZ x 60cc. ROBLE OSCURO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 1799.26, codigo: 1808, name: "TINTA PARA BARNIZ x 60cc. ROBLE CLARO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 1799.26, codigo: 1809, name: "TINTA PARA BARNIZ x 60cc. PETIRIBI", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 1799.26, codigo: 1810, name: "TINTA PARA BARNIZ x 60cc. CAOBA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 1799.26, codigo: 1811, name: "TINTA PARA BARNIZ x 60cc. NOGAL", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 1799.26, codigo: 1812, name: "TINTA PARA BARNIZ x 60cc. VIRARO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2409.75, codigo: 1840, name: "MASILLA PARA MADERA X 200 G. CEDRO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2409.75, codigo: 1842, name: "MASILLA PARA MADERA X 200 G. NATURAL", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2409.75, codigo: 1844, name: "MASILLA PARA MADERA X 200 G. NOGAL", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2409.75, codigo: 1848, name: "MASILLA PARA MADERA X 200 G. ROB. CLARO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2409.75, codigo: 1850, name: "MASILLA PARA MADERA X 200 G. ROB. OSCURO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2409.75, codigo: 1852, name: "MASILLA PARA MADERA X 200 G. CAOBA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'}
+];
+
+const listaPinturasEnAerosol = [
+    { price: 2449.60, codigo: 2010, name: "PINT. AEROSOL x 240cc. AMARILLO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2011, name: "PINT. AEROSOL x 240cc. ANTIOXIDO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2012, name: "PINT. AEROSOL x 240cc. AZUL MARINO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2013, name: "PINT. AEROSOL x 240cc. BERMELLON", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2014, name: "PINT. AEROSOL x 240cc. BLANCO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2015, name: "PINT. AEROSOL x 240cc. BLANCO MATE", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2016, name: "PINT. AEROSOL x 240cc. CELESTE", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 3241.60, codigo: 2017, name: "PINT. AEROSOL x 240cc. GRAFITO LLANTAS", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2018, name: "PINT. AEROSOL x 240cc. GRIS OSCURO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2019, name: "PINT. AEROSOL x 240cc. NEGRO MATE", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2020, name: "PINT. AEROSOL x 240cc. NEGRO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2021, name: "PINT. AEROSOL x 240cc. NARANJA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2022, name: "PINT. AEROSOL x 240cc. VIOLETA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2023, name: "PINT. AEROSOL X 240cc. AZUL TRAFUL", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2024, name: "PINT. AEROSOL x 240c.c. NEGRO SATINADO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    ///
+    { price: 2449.60, codigo: 2025, name: "PINT. AEROSOL x 240cc. TABACO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2026, name: "PINT. AEROSOL x 240c.c. BLANCO SATINADO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2027, name: "PINT. AEROSOL x 240cc. VERDE INGLES", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2910.40, codigo: 2028, name: "PINT. AERO x 240 cc. FIJ. PROTE. TRANS. (laca)", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2449.60, codigo: 2029, name: "PINT. AEROSOL x 240cc. BARNIZ TRANSP.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 3406.40, codigo: 2030, name: "PINT. AEROSOL X 240 cc. CROMADO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 3764.80, codigo: 2033, name: "PINT. AEROSOL x 240cc. METALIZADO ORO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 3240.00, codigo: 2034, name: "PINT. AEROSOL x 240cc. METALIZADO PLATA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 3547.20, codigo: 2035, name: "PINT. AEROSOL x 240cc. ALTA TEMP. ALUMINIO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 3888.00, codigo: 2036, name: "PINT. AEROSOL x 240cc. ALTA TEMP. NEGRO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 6956.80, codigo: 2039, name: "PINT. AEROSOL EPOXI X 440", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 4243.20, codigo: 2043, name: "PINT. AEROSOL FLUOR. x240cc. AMARILLO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 4243.20, codigo: 2044, name: "PINT. AEROSOL FLUOR. x240cc. NARANJA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 4243.20, codigo: 2046, name: "PINT. AEROSOL FLUOR. x240cc. ROJO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 4243.20, codigo: 2047, name: "PINT. AEROSOL FLUOR. x240cc. VERDE", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    ///
+    { price: 4243.20, codigo: 2048, name: "PINT.AEROSOL FLUORX 240cc. ROSA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 5652.80, codigo: 2049, name: "PINT. AEROSOL EFECTO ESMERILADO X 440", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 5664.00, codigo: 2051, name: "ESPUMA DE POLIURETANO EXPANDIDO 293 gs. 300 ml", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 6942.48, codigo: 4500, name: "PINT. AEROSOL X 440 AMARILLO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 6942.48, codigo: 4560, name: "PINT. AEROSOL X 440 BLANCO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 6942.48, codigo: 4562, name: "PINT. AEROSOL X 440 BLANCO MATE", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 6942.48, codigo: 4564, name: "PINT. AEROSOL X 440 BLANCO SATINADO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 6942.48, codigo: 4576, name: "PINT. AEROSOL X 440 NEGRO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 6942.48, codigo: 4578, name: "PINT. AEROSOL X 440 NEGRO MATE", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 6942.48, codigo: 4580, name: "PINT. AEROSOL X 440 NEGRO SATINADO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 6942.48, codigo: 4596, name: "PINT. AEROSOL X 440 ROJO FURIA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 6942.48, codigo: 4600, name: "PINT. AEROSOL X 440 BARNIZ TRANSP. BRILLANTE", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'}
+];
+
+const listaPinturaAsfalticaYEpoxi = [
+    { price: 2907.00, codigo: 2055, name: "PINTURA EPOXI DOS COMPONENTES X 80 C. C.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 7200.00, codigo: 2056, name: "PINTURA EPOXI DOS COMPONENTES 250 C. C.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 3720.00, codigo: 2060, name: "PINTURA ASFALTICA x 1l.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 10771.20, codigo: 2061, name: "PINTURA ASFALTICA x 4 lts.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 37042.20, codigo: 2062, name: "PINTURA ASFALTICA x 18 lts.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'}
+];
+
+const listaCalDeBlanqueo = [
+    { price: 1606.50, codigo: 2070, name: "CAL DE BLANQUEO x 4 kg.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 612.00, codigo: 2071, name: "LATIZADOR PARA CAL x 250 cc", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'}
+];
+
+const listaPinturaEnPolvo = [
+    { price: 1759.50, codigo: 2075, name: "PINTURA AL AGUA X 4 kg. BLANCA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'}
+];
+
+const listaLatexFrentesNetcolor = [
+    { price: 5600.75, codigo: 2090, name: "LATEX FRENTES IMPER. x 1 lt. BLANCO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 20661.62, codigo: 2091, name: "LATEX FRENTES IMPER. x 4 lts. BLANCO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 45541.93, codigo: 2092, name: "LATEX FRENTES IMPER. x 10 lts. BLANCO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 151503.28, codigo: 2093, name: "LATEX FRENTES x 20 lts. BLANCO SHER", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 5168.13, codigo: 2100, name: "LATEX FRENTES IMPER. x 1 lt. ROJO TEJA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 18056.66, codigo: 2101, name: "LATEX FRENTES IMPER. x 4 lts. ROJO TEJA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 39041.35, codigo: 2102, name: "LATEX FRENTES IMPER. x 10 lts. ROJO TEJA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2266.00, codigo: 2103, name: "LATEX FRENTES IMPER. x 250 cc. ROJO TEJA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 5168.13, codigo: 2104, name: "LATEX FRENTES x 1 l. BORGOÑA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 18882.78, codigo: 2105, name: "LATEX FRENTES x 4 lts. BORGOÑA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 40827.55, codigo: 2106, name: "LATEX FRENTES x 10 lts. BORGOÑA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 76544.66, codigo: 2107, name: "LATEX FRENTES x 20 lts. BORGOÑA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    ///
+    { price: 5856.99, codigo: 2108, name: "LATEX FRENTES IMPER. x 1 l. GRIS CEMENTO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 21606.93, codigo: 2109, name: "LATEX FRENTES IMPER. x 4 lts. GRIS CEMENTO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 47625.55, codigo: 2110, name: "LATEX FRENTES IMPER. x 10lts. GRIS CEMENTO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 3113.07, codigo: 2111, name: "LATEX FRENTES IMER. x 250 CC. GRIS CEMENTO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 8798.67, codigo: 2112, name: "LATEX FRENTES IMPER. x 1 l. VERDE MANZANA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 33311.02, codigo: 2113, name: "LATEX FRENTES IMPER. x 4 lts. VERDE MANZANA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 76655.07, codigo: 2114, name: "LATEX FRENTES IMPER. x 10 lts. VERDE MANZANA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 3207.01, codigo: 2115, name: "LATEX FRENTES IMPER. x 250l CC. VERDE MANZANA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 5856.99, codigo: 2116, name: "LATEX FRENTES x 1 l. VERDE SAFARI", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 21606.93, codigo: 2117, name: "LATEX FRENTES x 4 lts. VERDE SAFARI", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 47625.55, codigo: 2118, name: "LATEX FRENTES x 10 lts. VERDE SAFARI", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 3113.07, codigo: 2119, name: "LATEX FRENTES x 250 CC. VERDE SAFARI", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    ///
+    { price: 3230.08, codigo: 2120, name: "LATEX FRENTES x 1 l. NEGRO EBANO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 11801.74, codigo: 2121, name: "LATEX FRENTES x 4 lts. NEGRO EBANO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 25517.22, codigo: 2122, name: "LATEX FRENTES x 10 lts. NEGRO EBANO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 47840.41, codigo: 2123, name: "LATEX FRENTES x 20 lts. NEGRO EBANO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 5168.13, codigo: 2124, name: "LATEX FRENTES IMPER. x 1 l. OCRE", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 18882.78, codigo: 2125, name: "LATEX FRENTES  IMPER. x 4 lts. OCRE", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 40829.20, codigo: 2126, name: "LATEX FRENTES IMPER x 10 lts. OCRE", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2266.00, codigo: 2127, name: "LATEX FRENTES IMPER. x 250 cc. OCRE", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 5856.99, codigo: 2128, name: "LATEX FRENTES IMPER. x 1l. AZUL TRAFUL", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 21606.93, codigo: 2129, name: "LATEX FRENTES IMPER. x 4 lts. AZUL TRAFUL", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 47625.55, codigo: 2130, name: "LATEX FRENTES IMPER. x 10 lts. AZUL TRAFUL", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2429.15, codigo: 2131, name: "LATEX FRENTES IMPER. x 250 cc. AZUL TRAFUL", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    ///
+    { price: 5168.13, codigo: 2132, name: "LATEX FRENTES IMPER x 1 l. MARRON AFRICANO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 18882.78, codigo: 2133, name: "LATEX FRENTES IMPER. x 4 lts. MARRON AFRICANO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 40827.55, codigo: 2134, name: "LATEX FRENTES IMPER. x 10 lts. MARRON AFRICANO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 2266.00, codigo: 2135, name: "LATEX FRENTES IMPER. x 250 cc. MARRON AFRICANO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 8798.67, codigo: 2140, name: "LATEX FRENTES IMPER x 1l. AMARILLO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 33311.02, codigo: 2141, name: "LATEX FRENTES IMPER. x 4 lts. AMARILLO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 76655.07, codigo: 2142, name: "LATEX FRENTES IMPER. x 10 lts. AMARILLO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 3207.01, codigo: 2143, name: "LATEX FRENTES IMPER. x 250 cc. AMARILLO", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 13856.38, codigo: 2144, name: "LATEX FRENTES IMPER. x 1 l. MAGENTA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 53314.45, codigo: 2145, name: "LATEX FRENTES IMPER. x 4 lts. MAGENTA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 127874.91, codigo: 2146, name: "LATEX FRENTES IMPER. x 10 lts. MAGENTA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 3207.01, codigo: 2147, name: "LATEX FRENTES IMPER. x 250 cc. MAGENTA", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'}
+];
+
+const listaFrentesFlexNetcolor = [
+    { price: 7288.55, codigo: 2150, name: "IMPERMEABILIZANTE DE FRENTE x1,25 kg.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 27032.27, codigo: 2151, name: "IMPERMEABILIZANTE DE FRENTE x 5kg.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 63133.05, codigo: 2152, name: "IMPERMEABILIZANTE DE FRENTE x 12,5kg.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 120410.94, codigo: 2153, name: "IMPERMEABILIZANTE DE FRENTE x 25kg.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'}
+];
+
+const listaTextudecorVenierTipoRevear = [
+    { price: 22880.00, codigo: 2154, name: "TEXTUDECOR VENIER BLANCO X 7 kg.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 80800.00, codigo: 2155, name: "TEXTUDECOR VENIER BLANCO X 30 kg.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 63130.36, codigo: 2156, name: "IMPERM. DE MUROS ELASTOMERICO x 12,5 kg.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'},
+    { price: 121694.23, codigo: 2157, name: "IMPERM. DE MUROS ELASTOMERICO x 25 kg.", imagen: 'url', descripcion: 'Descripción del producto', category: 'Categoría del producto'}
+];
+
+const listaTechosFlexNetcolor = [
+    {
+        price: 9583.66,
+        codigo: 2158,
+        name: "MEMBRANA ELASTICA BLANCO 1 kg.",
+        imagen: "url",
+        descripcion: "Membrana elástica de color blanco en presentación de 1 kg.",
+        category: 'Categoría del producto'
+    },
+    {
+        price: 31879.68,
+        codigo: 2159,
+        name: "MEMBRANA ELASTICA BLANCO 5 kg.",
+        imagen: "url",
+        descripcion: "Membrana elástica de color blanco en presentación de 5 kg.",
+        category: 'Categoría del producto'
+      },
+      {
+        price: 68363.67,
+        codigo: 2160,
+        name: "MEMBRANA ELASTICA BLANCO 10 kg.",
+        imagen: "url",
+        descripcion: "Membrana elástica de color blanco en presentación de 10 kg.",
+        category: 'Categoría del producto'
+      },
+      {
+        price: 112844.19,
+        codigo: 2161,
+        name: "MEMBRANA ELASTICA BLANCO 20 kg.",
+        imagen: "url",
+        descripcion: "Membrana elástica de color blanco en presentación de 20 kg.",
+        category: 'Categoría del producto'
+      }
+];
+
+const listaMembranaEnPastaMiColor = [
+    {
+        price: 5673.96,
+        codigo: 2180,
+        name: "MEMBRANA EN PASTA MI COLOR X 1 kg.",
+        imagen: "url",
+        descripcion: "Membrana en pasta de la línea Mi Color en presentación de 1 kg.",
+        category: 'Descripción del producto'
+      },
+      {
+        price: 20578.89,
+        codigo: 2181,
+        name: "MEMBRANA EN PASTA MI COLOR X 4 kg.",
+        imagen: "url",
+        descripcion: "Membrana en pasta de la línea Mi Color en presentación de 4 kg.",
+        category: 'Descripción del producto'
+      },
+      {
+        price: 45778.04,
+        codigo: 2182,
+        name: "MEMBRANA EN PASTA MI COLOR X 10 kg.",
+        imagen: "url",
+        descripcion: "Membrana en pasta de la línea Mi Color en presentación de 10 kg.",
+        category: 'Descripción del producto'
+      },
+      {
+        price: 87682.97,
+        codigo: 2183,
+        name: "MEMBRANA EN PASTA MI COLOR X 20 kg.",
+        imagen: "url",
+        descripcion: "Membrana en pasta de la línea Mi Color en presentación de 20 kg.",
+        category: 'Descripción del producto'
+      }
+];
+
 const listaDeProductos = [
     
 ]
