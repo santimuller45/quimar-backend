@@ -1,4 +1,4 @@
-const subRubro = 'Ferrites';
+const subRubroArtContr02 = 'Ferrites';
 const imageURL = 'URL';
 
 const listaFerrites = [
@@ -8,7 +8,7 @@ const listaFerrites = [
         price: 3081.60,
         imagen: imageURL,
         descripcion: "Los ferrites rojos son materiales magnéticos compuestos principalmente por óxido de hierro y otros elementos. Se utilizan en aplicaciones como núcleos de transformadores y componentes electrónicos.",
-        category: subRubro
+        category: subRubroArtContr02
     },
     {
         codigo: 2902,
@@ -16,7 +16,7 @@ const listaFerrites = [
         price: 1607.65,
         imagen: imageURL,
         descripcion: "Los ferrites amarillos son materiales magnéticos compuestos principalmente por óxido de hierro y otros elementos. Se utilizan en aplicaciones como núcleos de transformadores y componentes electrónicos.",
-        category: subRubro
+        category: subRubroArtContr02
     },
     {
         codigo: 2903,
@@ -24,7 +24,7 @@ const listaFerrites = [
         price: 3081.60,
         imagen: imageURL,
         descripcion: "Los ferrites amarillos son materiales magnéticos compuestos principalmente por óxido de hierro y otros elementos. Se utilizan en aplicaciones como núcleos de transformadores y componentes electrónicos.",
-        category: subRubro
+        category: subRubroArtContr02
     },
     {
         codigo: 2904,
@@ -32,7 +32,7 @@ const listaFerrites = [
         price: 1603.59,
         imagen: imageURL,
         descripcion: "Los ferrites verdes son materiales magnéticos compuestos principalmente por óxido de hierro y otros elementos. Se utilizan en aplicaciones como núcleos de transformadores y componentes electrónicos.",
-        category: subRubro
+        category: subRubroArtContr02
     },
     {
         codigo: 2905,
@@ -40,7 +40,7 @@ const listaFerrites = [
         price: 6400.00,
         imagen: imageURL,
         descripcion: "Los ferrites verdes son materiales magnéticos compuestos principalmente por óxido de hierro y otros elementos. Se utilizan en aplicaciones como núcleos de transformadores y componentes electrónicos.",
-        category: subRubro
+        category: subRubroArtContr02
     },
     {
         codigo: 2906,
@@ -48,7 +48,7 @@ const listaFerrites = [
         price: 1603.59,
         imagen: imageURL,
         descripcion: "Los ferrites azules son materiales magnéticos compuestos principalmente por óxido de hierro y otros elementos. Se utilizan en aplicaciones como núcleos de transformadores y componentes electrónicos.",
-        category: subRubro
+        category: subRubroArtContr02
     },
     {
         codigo: 2907,
@@ -56,7 +56,7 @@ const listaFerrites = [
         price: 6400.00,
         imagen: imageURL,
         descripcion: "Los ferrites azules son materiales magnéticos compuestos principalmente por óxido de hierro y otros elementos. Se utilizan en aplicaciones como núcleos de transformadores y componentes electrónicos.",
-        category: subRubro
+        category: subRubroArtContr02
     },
     {
         codigo: 2908,
@@ -64,7 +64,7 @@ const listaFerrites = [
         price: 1603.59,
         imagen: imageURL,
         descripcion: "Los ferrites negros son materiales magnéticos compuestos principalmente por óxido de hierro y otros elementos. Se utilizan en aplicaciones como núcleos de transformadores y componentes electrónicos.",
-        category: subRubro
+        category: subRubroArtContr02
     },
     {
         codigo: 2909,
@@ -72,8 +72,8 @@ const listaFerrites = [
         price: 2923.20,
         imagen: imageURL,
         descripcion: "Los ferrites negros son materiales magnéticos compuestos principalmente por óxido de hierro y otros elementos. Se utilizan en aplicaciones como núcleos de transformadores y componentes electrónicos.",
-        category: subRubro
+        category: subRubroArtContr02
     }
 ];
 
-module.exports = listaFerrites;
+module.exports = { listaFerrites, subRubroArtContr02 };

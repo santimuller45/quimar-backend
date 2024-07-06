@@ -1,4 +1,4 @@
-const subRubro = 'Extractores Eolicos de Aluminio';
+const subRubroZing06 = 'Extractores Eolicos de Aluminio';
 const imageURL = 'URL';
 
 const listaExtractoresEolicosDeAlum = [
@@ -8,7 +8,7 @@ const listaExtractoresEolicosDeAlum = [
         imagen: imageURL,
         price: 64657.80,
         descripcion: "Extractor eólico de aluminio de 4 pulgadas, ideal para ventilación de ambientes industriales.",
-        category: subRubro
+        category: subRubroZing06
     },
     {
         codigo: 4122,
@@ -16,7 +16,7 @@ const listaExtractoresEolicosDeAlum = [
         imagen: imageURL,
         price: 71585.43,
         descripcion: "Extractor eólico de aluminio de 6 pulgadas, diseñado para proporcionar una ventilación eficiente en espacios grandes.",
-        category: subRubro
+        category: subRubroZing06
     },
     {
         codigo: 4124,
@@ -24,7 +24,7 @@ const listaExtractoresEolicosDeAlum = [
         imagen: imageURL,
         price: 99911.65,
         descripcion: "Extractor eólico de aluminio de 8 pulgadas, resistente y duradero, adecuado para entornos industriales exigentes.",
-        category: subRubro
+        category: subRubroZing06
     },
     {
         codigo: 4126,
@@ -32,7 +32,7 @@ const listaExtractoresEolicosDeAlum = [
         imagen: imageURL,
         price: 116676.48,
         descripcion: "Extractor eólico de aluminio de 10 pulgadas, diseñado para ofrecer una ventilación óptima en almacenes y fábricas.",
-        category: subRubro
+        category: subRubroZing06
     },
     {
         codigo: 4128,
@@ -40,8 +40,8 @@ const listaExtractoresEolicosDeAlum = [
         imagen: imageURL,
         price: 130850.63,
         descripcion: "Extractor eólico de aluminio de 12 pulgadas, ideal para grandes espacios que requieren una ventilación eficiente y continua.",
-        category: subRubro
+        category: subRubroZing06
     }
 ];
 
-module.exports = listaExtractoresEolicosDeAlum;
+module.exports = { listaExtractoresEolicosDeAlum, subRubroZing06 };

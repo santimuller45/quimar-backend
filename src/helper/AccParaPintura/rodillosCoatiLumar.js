@@ -1,4 +1,4 @@
-const subRubro = 'Rodillos Coati/Lumar';
+const subRubroAccPintura06 = 'Rodillos Coati/Lumar';
 const imageURL = 'URL';
 
 const listaRodillosElCoatiLumar = [
@@ -8,7 +8,7 @@ const listaRodillosElCoatiLumar = [
         name: "RODILLO LANA SINTETICA X 22 CM.",
         imagen: imageURL,
         descripcion: "Rodillo de lana sintética, tamaño de 22 cm.",
-        category: subRubro
+        category: subRubroAccPintura06
     },
     {
         price: 6080.65,
@@ -16,7 +16,7 @@ const listaRodillosElCoatiLumar = [
         name: "RODILLO CUERO LANA PATAGONICA X 22CM.",
         imagen: imageURL,
         descripcion: "Rodillo de cuero con lana patagónica, tamaño de 22 cm.",
-        category: subRubro
+        category: subRubroAccPintura06
     },
     {
         price: 3712.50,
@@ -24,7 +24,7 @@ const listaRodillosElCoatiLumar = [
         name: "RODILLO ANTIGOTA X 17CM. 940/B",
         imagen: imageURL,
         descripcion: "Rodillo antigota, tamaño de 17 cm, modelo 940/B.",
-        category: subRubro
+        category: subRubroAccPintura06
     },
     {
         price: 4379.20,
@@ -32,8 +32,8 @@ const listaRodillosElCoatiLumar = [
         name: "RODILLO ANTIGOTA X 22 CM. 940/C",
         imagen: imageURL,
         descripcion: "Rodillo antigota, tamaño de 22 cm, modelo 940/C.",
-        category: subRubro
+        category: subRubroAccPintura06
     }
 ];
 
-module.exports = listaRodillosElCoatiLumar;
+module.exports = { listaRodillosElCoatiLumar, subRubroAccPintura06 };

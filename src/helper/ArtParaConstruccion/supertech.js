@@ -1,4 +1,4 @@
-const subRubro = 'Supertech';
+const subRubroArtContr05 = 'Supertech';
 const imageURL = 'URL';
 
 const listaSupertech = [
@@ -8,7 +8,7 @@ const listaSupertech = [
         price: 19200.00,
         imagen: imageURL,
         descripcion: "El fieltro Nº 15 es un material de alta calidad utilizado como capa aisladora en construcciones. Proporciona aislamiento térmico y acústico, además de ser resistente a la humedad y duradero.",
-        category: subRubro
+        category: subRubroArtContr05
     },
     {
         codigo: 2831,
@@ -16,7 +16,7 @@ const listaSupertech = [
         price: 11200.00,
         imagen: imageURL,
         descripcion: "El fieltro Nº 15 es un material de alta calidad utilizado como capa aisladora en construcciones. Proporciona aislamiento térmico y acústico, además de ser resistente a la humedad y duradero.",
-        category: subRubro
+        category: subRubroArtContr05
     },
     {
         codigo: 2850,
@@ -24,7 +24,7 @@ const listaSupertech = [
         price: 4590.00,
         imagen: imageURL,
         descripcion: "El fieltro para capa aisladora es un material esencial en la construcción para proporcionar aislamiento térmico y protección contra la humedad. Su alta calidad garantiza un rendimiento duradero.",
-        category: subRubro
+        category: subRubroArtContr05
     },
     {
         codigo: 2859,
@@ -32,7 +32,7 @@ const listaSupertech = [
         price: 23574.40,
         imagen: imageURL,
         descripcion: "La membrana de aluminio autoadhesiva es ideal para impermeabilizar y aislar superficies en construcciones. Su adhesivo de alta calidad garantiza una instalación fácil y duradera.",
-        category: subRubro
+        category: subRubroArtContr05
     },
     {
         codigo: 2860,
@@ -40,7 +40,7 @@ const listaSupertech = [
         price: 13617.00,
         imagen: imageURL,
         descripcion: "La membrana de aluminio autoadhesiva es ideal para impermeabilizar y aislar superficies en construcciones. Su adhesivo de alta calidad garantiza una instalación fácil y duradera.",
-        category: subRubro
+        category: subRubroArtContr05
     },
     {
         codigo: 2861,
@@ -48,7 +48,7 @@ const listaSupertech = [
         price: 9180.00,
         imagen: imageURL,
         descripcion: "La membrana de aluminio autoadhesiva es ideal para impermeabilizar y aislar superficies en construcciones. Su adhesivo de alta calidad garantiza una instalación fácil y duradera.",
-        category: subRubro
+        category: subRubroArtContr05
     },
     {
         codigo: 2870,
@@ -56,7 +56,7 @@ const listaSupertech = [
         price: 1411.20,
         imagen: imageURL,
         descripcion: "La venda elástica es un material versátil utilizado en diversas aplicaciones, desde el vendaje de heridas hasta la sujeción de objetos. Su elasticidad y resistencia garantizan un rendimiento confiable.",
-        category: subRubro
+        category: subRubroArtContr05
     },
     {
         codigo: 2872,
@@ -64,8 +64,8 @@ const listaSupertech = [
         price: 2620.80,
         imagen: imageURL,
         descripcion: "La venda elástica es un material versátil utilizado en diversas aplicaciones, desde el vendaje de heridas hasta la sujeción de objetos. Su elasticidad y resistencia garantizan un rendimiento confiable.",
-        category: subRubro
+        category: subRubroArtContr05
     }
 ];
 
-module.exports = listaSupertech;
+module.exports = { listaSupertech, subRubroArtContr05 };

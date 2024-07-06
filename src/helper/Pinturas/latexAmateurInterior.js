@@ -1,4 +1,4 @@
-const subRubro = 'Latex Amateur Interior';
+const subRubroPinturas13 = 'Latex Amateur Interior';
 const imageURL = 'URL';
 
 const listaLatexAmateurInterior = [
@@ -8,7 +8,7 @@ const listaLatexAmateurInterior = [
         name: "LATEX AMATEUR INTERIOR ANTIHONG. x 4lts.",
         imagen: imageURL,
         descripcion: "Látex para uso interior con protección antihongo en presentación de 4 litros.",
-        category: subRubro
+        category: subRubroPinturas13
       },
       {
         price: 20473.10,
@@ -16,7 +16,7 @@ const listaLatexAmateurInterior = [
         name: "LATEX AMATEUR INTERIOR ANTIHONG. x 10lts.",
         imagen: imageURL,
         descripcion: "Látex para uso interior con protección antihongo en presentación de 10 litros.",
-        category: subRubro
+        category: subRubroPinturas13
       },
       {
         price: 39113.63,
@@ -24,8 +24,8 @@ const listaLatexAmateurInterior = [
         name: "LATEX AMATEUR INTERIOR ANTIHONG. x 20 lts.",
         imagen: imageURL,
         descripcion: "Látex para uso interior con protección antihongo en presentación de 20 litros.",
-        category: subRubro
+        category: subRubroPinturas13
       }
 ];
 
-module.exports = listaLatexAmateurInterior;
+module.exports = { listaLatexAmateurInterior, subRubroPinturas13 };

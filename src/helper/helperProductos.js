@@ -1,8 +1,8 @@
 const { Productos } = require('../db.js');
 
-const lista1 = require('./AccParaPintura/bandejasPintorYAcc.js');
+const {listaBandejasDePintorYAcc} = require('./AccParaPintura/bandejasPintorYAcc.js');
 
-const createLista1 = async () => await Productos.bulkCreate(lista1);
+const createLista1 = async () => await Productos.bulkCreate(listaBandejasDePintorYAcc);
     
 
 module.exports = { createLista1 };

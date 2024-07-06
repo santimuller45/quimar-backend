@@ -1,4 +1,4 @@
-const subRubro = 'Aceites';
+const subRubroQuimDilu01 = 'Aceites';
 const imageURL = 'URL';
 
 const listaAceiteDeLinoYAceiteLubricante = [
@@ -8,7 +8,7 @@ const listaAceiteDeLinoYAceiteLubricante = [
         name: 'ACEITE DE LINO X 900 cc', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroQuimDilu01 
     },
     { 
         price: 15218.04, 
@@ -16,7 +16,7 @@ const listaAceiteDeLinoYAceiteLubricante = [
         name: 'ACEITE DE LINO X 5 lts', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroQuimDilu01 
     },
     { 
         price: 483021.00, 
@@ -24,8 +24,8 @@ const listaAceiteDeLinoYAceiteLubricante = [
         name: 'ACEITE DE LINO X 200 lts', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroQuimDilu01 
     }
 ];
 
-module.exports = listaAceiteDeLinoYAceiteLubricante;
+module.exports = { listaAceiteDeLinoYAceiteLubricante, subRubroQuimDilu01 };

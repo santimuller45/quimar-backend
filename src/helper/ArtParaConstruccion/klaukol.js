@@ -1,4 +1,4 @@
-const subRubro = 'Klaukol';
+const subRubroArtContr03 = 'Klaukol';
 const imageURL = 'URL';
 
 const listaKlaukol = [
@@ -8,7 +8,7 @@ const listaKlaukol = [
         price: 6726.00,
         imagen: imageURL,
         descripcion: "El pegamento perfecto Klaukol es ideal para adherir cerámicos y porcelanatos en áreas húmedas y exteriores. Su formulación impermeable garantiza una fijación duradera y resistente.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2703,
@@ -16,7 +16,7 @@ const listaKlaukol = [
         price: 2250.00,
         imagen: imageURL,
         descripcion: "El mix interior Klaukol es ideal para preparar pastina para juntas en áreas interiores. Su formulación de alta calidad garantiza una aplicación fácil y resultados duraderos.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2704,
@@ -24,7 +24,7 @@ const listaKlaukol = [
         price: 3750.00,
         imagen: imageURL,
         descripcion: "El mix interior Klaukol es ideal para preparar pastina para juntas en áreas interiores. Su formulación de alta calidad garantiza una aplicación fácil y resultados duraderos.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2705,
@@ -32,7 +32,7 @@ const listaKlaukol = [
         price: 2250.00,
         imagen: imageURL,
         descripcion: "El mix exterior Klaukol es ideal para preparar pastina para juntas en áreas exteriores. Su formulación resistente a la intemperie garantiza una aplicación fácil y resultados duraderos.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2706,
@@ -40,7 +40,7 @@ const listaKlaukol = [
         price: 3750.00,
         imagen: imageURL,
         descripcion: "El mix exterior Klaukol es ideal para preparar pastina para juntas en áreas exteriores. Su formulación resistente a la intemperie garantiza una aplicación fácil y resultados duraderos.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2708,
@@ -48,7 +48,7 @@ const listaKlaukol = [
         price: 2499.00,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color ámbar es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2709,
@@ -56,7 +56,7 @@ const listaKlaukol = [
         price: 2499.00,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color blenda es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2711,
@@ -64,7 +64,7 @@ const listaKlaukol = [
         price: 2449.02,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color bruma es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2712,
@@ -72,7 +72,7 @@ const listaKlaukol = [
         price: 2449.02,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color cobre es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2713,
@@ -80,7 +80,7 @@ const listaKlaukol = [
         price: 2449.02,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color coral es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2714,
@@ -88,7 +88,7 @@ const listaKlaukol = [
         price: 2449.02,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color cromo es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2715,
@@ -96,7 +96,7 @@ const listaKlaukol = [
         price: 2449.02,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color estaño es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2716,
@@ -104,7 +104,7 @@ const listaKlaukol = [
         price: 2449.02,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color hulla es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2717,
@@ -112,7 +112,7 @@ const listaKlaukol = [
         price: 2449.02,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color caoba es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2718,
@@ -120,7 +120,7 @@ const listaKlaukol = [
         price: 2449.02,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color boreal es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2719,
@@ -128,7 +128,7 @@ const listaKlaukol = [
         price: 2449.02,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color mercurio es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2720,
@@ -136,7 +136,7 @@ const listaKlaukol = [
         price: 2449.02,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color olivina es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2721,
@@ -144,7 +144,7 @@ const listaKlaukol = [
         price: 2449.02,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color ópalo es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2722,
@@ -152,7 +152,7 @@ const listaKlaukol = [
         price: 2449.02,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color sílex es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2723,
@@ -160,7 +160,7 @@ const listaKlaukol = [
         price: 2499.00,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color talco es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     },
     {
         codigo: 2724,
@@ -168,8 +168,8 @@ const listaKlaukol = [
         price: 2449.02,
         imagen: imageURL,
         descripcion: "La pastina Klaukol en color teja es ideal para revestimientos cerámicos y porcelanatos en áreas interiores y exteriores. Su formulación de alta calidad garantiza una junta resistente y duradera.",
-        category: subRubro
+        category: subRubroArtContr03
     }
 ];
 
-module.exports = listaKlaukol;
+module.exports = { listaKlaukol, subRubroArtContr03 };

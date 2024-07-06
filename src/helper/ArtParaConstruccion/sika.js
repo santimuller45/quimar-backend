@@ -1,4 +1,4 @@
-const subRubro = 'Sika';
+const subRubroArtContr04 = 'Sika';
 const imageURL = 'URL';
 
 const listaSika = [
@@ -8,7 +8,7 @@ const listaSika = [
         price: 1683.00,
         imagen: imageURL,
         descripcion: "El Sikatop Seal-107 es un sellador líquido de alta tecnología, elástico, de un solo componente, basado en polímeros modificados con silano-siloxano. Está formulado para penetrar, sellar y proteger una variedad de superficies minerales porosas.",
-        category: subRubro
+        category: subRubroArtContr04
     },
     {
         codigo: 2801,
@@ -16,7 +16,7 @@ const listaSika = [
         price: 5049.00,
         imagen: imageURL,
         descripcion: "El Sikatop Seal-107 es un sellador líquido de alta tecnología, elástico, de un solo componente, basado en polímeros modificados con silano-siloxano. Está formulado para penetrar, sellar y proteger una variedad de superficies minerales porosas.",
-        category: subRubro
+        category: subRubroArtContr04
     },
     {
         codigo: 2802,
@@ -24,7 +24,7 @@ const listaSika = [
         price: 49743.36,
         imagen: imageURL,
         descripcion: "El Sika Anticonge S/Cloruro Friolite es un aditivo líquido, monocomponente, a base de ácidos orgánicos que inhiben la corrosión en armaduras de acero.",
-        category: subRubro
+        category: subRubroArtContr04
     },
     {
         codigo: 2803,
@@ -32,7 +32,7 @@ const listaSika = [
         price: 22950.00,
         imagen: imageURL,
         descripcion: "El Sika Anticonge de Hormigón Antifrost es un aditivo líquido, monocomponente, a base de ácidos orgánicos que inhiben la corrosión en armaduras de acero.",
-        category: subRubro
+        category: subRubroArtContr04
     },
     {
         codigo: 2804,
@@ -40,7 +40,7 @@ const listaSika = [
         price: 6462.72,
         imagen: imageURL,
         descripcion: "El Sika Ligante de Hormigón es un aditivo líquido, monocomponente, a base de ácidos orgánicos que inhiben la corrosión en armaduras de acero.",
-        category: subRubro
+        category: subRubroArtContr04
     },
     {
         codigo: 2805,
@@ -48,7 +48,7 @@ const listaSika = [
         price: 23482.44,
         imagen: imageURL,
         descripcion: "El Sika Ligante de Hormigón es un aditivo líquido, monocomponente, a base de ácidos orgánicos que inhiben la corrosión en armaduras de acero.",
-        category: subRubro
+        category: subRubroArtContr04
     },
     {
         codigo: 2812,
@@ -56,8 +56,8 @@ const listaSika = [
         price: 12216.60,
         imagen: imageURL,
         descripcion: "La macronita es un producto de alta calidad para impermeabilizar superficies de concreto, mortero, ladrillo, etc. Es resistente al agua y a la intemperie, asegurando una larga vida útil.",
-        category: subRubro
+        category: subRubroArtContr04
     }
 ];
 
-module.exports = listaSika;
+module.exports = { listaSika, subRubroArtContr04 };

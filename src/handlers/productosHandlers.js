@@ -1,5 +1,5 @@
 // const { getAllMenuController, getFoodByNameController, getFoodByIDController, postFoodController, putFoodController } = require('../controllers/foodControllers.js');
-const { getAllProductsController, getProductByNameController, getProductByIDController } = require('../controllers/productosController.js')
+const { getAllProductsController, getProductByNameController, getProductByIDController } = require('../controllers/productosController.js');
 
 const handlerGetProducts = async (req, res) => {
     const { name } = req.query;
@@ -14,16 +14,16 @@ const handlerGetProducts = async (req, res) => {
     };  
 };
   
-  const handlerGetProductByID = async (req, res) => {
-    const { productID } = req.params;
-    try {
-      const product = await getProductByIDController(productID);
-      if (product === null) throw Error('Producto no encontrado');
-      res.status(200).json(product);
-    } catch (error) {
-      res.status(400).send(error.message);
-    };  
-  };
+const handlerGetProductByID = async (req, res) => {
+  const { productID } = req.params;
+  try {
+    const product = await getProductByIDController(productID);
+    if (product === null) throw Error('Producto no encontrado');
+    res.status(200).json(product);
+  } catch (error) {
+    res.status(400).send(error.message);
+  };  
+};
 
 //   const handlerPostFood = async (req, res) => {
 //     const food = req.body;

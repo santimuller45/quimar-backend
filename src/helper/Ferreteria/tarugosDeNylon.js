@@ -1,4 +1,4 @@
-const subRubro = 'Tarugos de Nylon';
+const subRubroFerr04 = 'Tarugos de Nylon';
 const imageURL = 'URL';
 
 const listaTarugosDeNylon = [
@@ -8,7 +8,7 @@ const listaTarugosDeNylon = [
         price: 5233.60,
         imagen: imageURL,
         descripcion: "Los tarugos de nylon N° 5 son ideales para fijar objetos en superficies de concreto, ladrillo y mampostería. Su diseño resistente y duradero los hace perfectos para aplicaciones de construcción y carpintería.",
-        category: subRubro
+        category: subRubroFerr04
     },
     {
         codigo: 2460,
@@ -16,7 +16,7 @@ const listaTarugosDeNylon = [
         price: 8769.75,
         imagen: imageURL,
         descripcion: "Los tarugos de nylon Nº 6 son ideales para fijar objetos en superficies de concreto, ladrillo y mampostería. Su diseño resistente y duradero los hace perfectos para aplicaciones de construcción y carpintería.",
-        category: subRubro
+        category: subRubroFerr04
     },
     {
         codigo: 2461,
@@ -24,7 +24,7 @@ const listaTarugosDeNylon = [
         price: 19486.50,
         imagen: imageURL,
         descripcion: "Los tarugos de nylon Nº 8 son ideales para fijar objetos en superficies de concreto, ladrillo y mampostería. Su diseño resistente y duradero los hace perfectos para aplicaciones de construcción y carpintería.",
-        category: subRubro
+        category: subRubroFerr04
     },
     {
         codigo: 2462,
@@ -32,7 +32,7 @@ const listaTarugosDeNylon = [
         price: 18282.77,
         imagen: imageURL,
         descripcion: "Los tarugos para huecos universales N°8 son ideales para fijar objetos en superficies de concreto, ladrillo y mampostería. Su diseño versátil y resistente los hace perfectos para diversas aplicaciones en la construcción y carpintería.",
-        category: subRubro
+        category: subRubroFerr04
     },
     {
         codigo: 2466,
@@ -40,7 +40,7 @@ const listaTarugosDeNylon = [
         price: 20290.86,
         imagen: imageURL,
         descripcion: "Los tarugos de nylon con tope N° 6 son ideales para fijar objetos en superficies de concreto, ladrillo y mampostería. Su diseño con tope proporciona una sujeción segura y duradera.",
-        category: subRubro
+        category: subRubroFerr04
     },
     {
         codigo: 2468,
@@ -48,7 +48,7 @@ const listaTarugosDeNylon = [
         price: 20349.00,
         imagen: imageURL,
         descripcion: "Los tarugos de nylon con tope N° 8 son ideales para fijar objetos en superficies de concreto, ladrillo y mampostería. Su diseño con tope proporciona una sujeción segura y duradera.",
-        category: subRubro
+        category: subRubroFerr04
     },
     {
         codigo: 2469,
@@ -56,7 +56,7 @@ const listaTarugosDeNylon = [
         price: 16832.00,
         imagen: imageURL,
         descripcion: "Los tarugos de nylon N° 10 son ideales para fijar objetos en superficies de concreto, ladrillo y mampostería. Su diseño sin tope facilita su instalación en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr04
     },
     {
         codigo: 2472,
@@ -64,8 +64,8 @@ const listaTarugosDeNylon = [
         price: 18150.00,
         imagen: imageURL,
         descripcion: "Los tarugos de nylon autoperforantes para yeso son ideales para la fijación rápida y segura en paneles de yeso y otros materiales blandos. Su diseño facilita la instalación sin necesidad de pre-perforación.",
-        category: subRubro
+        category: subRubroFerr04
     }
 ];
 
-module.exports = listaTarugosDeNylon;
+module.exports = { listaTarugosDeNylon, subRubroFerr04 };

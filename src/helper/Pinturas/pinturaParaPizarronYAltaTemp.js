@@ -1,4 +1,4 @@
-const subRubro = 'Pintura para pizarron y alta temp.';
+const subRubroPinturas20 = 'Pintura para pizarron y alta temp.';
 const imageURL = 'URL';
 
 const listaPinturaParaPizarronYAltaTemp = [
@@ -8,7 +8,7 @@ const listaPinturaParaPizarronYAltaTemp = [
         name: "ESMALTE PIZARRON VERDE X 1/4 lt.",
         imagen: imageURL,
         descripcion: "Esmalte para pizarrón en color verde en presentación de 1/4 litro.",
-        category: subRubro
+        category: subRubroPinturas20
       },
       {
         price: 4220.80,
@@ -16,7 +16,7 @@ const listaPinturaParaPizarronYAltaTemp = [
         name: "ESMALTE PIZARRON VERDE X 1/2 lt.",
         imagen: imageURL,
         descripcion: "Esmalte para pizarrón en color verde en presentación de 1/2 litro.",
-        category: subRubro
+        category: subRubroPinturas20
       },
       {
         price: 6656.00,
@@ -24,7 +24,7 @@ const listaPinturaParaPizarronYAltaTemp = [
         name: "ESMALTE PIZARRON VERDE X 1 lt.",
         imagen: imageURL,
         descripcion: "Esmalte para pizarrón en color verde en presentación de 1 litro.",
-        category: subRubro
+        category: subRubroPinturas20
       },
       {
         price: 2828.80,
@@ -32,7 +32,7 @@ const listaPinturaParaPizarronYAltaTemp = [
         name: "ESMALTE PIZARRON NEGRO X 1/4 lt.",
         imagen: imageURL,
         descripcion: "Esmalte para pizarrón en color negro en presentación de 1/4 litro.",
-        category: subRubro
+        category: subRubroPinturas20
       },
       {
         price: 4220.80,
@@ -40,7 +40,7 @@ const listaPinturaParaPizarronYAltaTemp = [
         name: "ESMALTE PIZARRON NEGRO X 1/2 lt.",
         imagen: imageURL,
         descripcion: "Esmalte para pizarrón en color negro en presentación de 1/2 litro.",
-        category: subRubro
+        category: subRubroPinturas20
       },
       {
         price: 6656.00,
@@ -48,7 +48,7 @@ const listaPinturaParaPizarronYAltaTemp = [
         name: "ESMALTE PIZARRON NEGRO X 1 lt.",
         imagen: imageURL,
         descripcion: "Esmalte para pizarrón en color negro en presentación de 1 litro.",
-        category: subRubro
+        category: subRubroPinturas20
       },
       {
         price: 3566.40,
@@ -56,7 +56,7 @@ const listaPinturaParaPizarronYAltaTemp = [
         name: "ALTA TEMPERATURA ALUMINIO X 1/4 lt.",
         imagen: imageURL,
         descripcion: "Pintura de alta temperatura en color aluminio en presentación de 1/4 litro.",
-        category: subRubro
+        category: subRubroPinturas20
       },
       {
         price: 5512.00,
@@ -64,7 +64,7 @@ const listaPinturaParaPizarronYAltaTemp = [
         name: "ALTA TEMPERATURA ALUMINIO X 1/2 lt.",
         imagen: imageURL,
         descripcion: "Pintura de alta temperatura en color aluminio en presentación de 1/2 litro.",
-        category: subRubro
+        category: subRubroPinturas20
       },
       {
         price: 8958.40,
@@ -72,7 +72,7 @@ const listaPinturaParaPizarronYAltaTemp = [
         name: "ALTA TEMPERATURA ALUMINIO X 1 lt.",
         imagen: imageURL,
         descripcion: "Pintura de alta temperatura en color aluminio en presentación de 1 litro.",
-        category: subRubro
+        category: subRubroPinturas20
       },
       {
         price: 31793.60,
@@ -80,7 +80,7 @@ const listaPinturaParaPizarronYAltaTemp = [
         name: "ALTA TEMPERATURA ALUMINIO X 4 lts.",
         imagen: imageURL,
         descripcion: "Pintura de alta temperatura en color aluminio en presentación de 4 litros.",
-        category: subRubro
+        category: subRubroPinturas20
       },
       {
         price: 3566.40,
@@ -88,7 +88,7 @@ const listaPinturaParaPizarronYAltaTemp = [
         name: "ALTA TEMPERATURA NEGRO X 1/4 lt.",
         imagen: imageURL,
         descripcion: "Pintura de alta temperatura en color negro en presentación de 1/4 litro.",
-        category: subRubro
+        category: subRubroPinturas20
       },
       {
         price: 5512.00,
@@ -96,7 +96,7 @@ const listaPinturaParaPizarronYAltaTemp = [
         name: "ALTA TEMPERATURA NEGRO X 1/2 lt.",
         imagen: imageURL,
         descripcion: "Pintura de alta temperatura en color negro en presentación de 1/2 litro.",
-        category: subRubro
+        category: subRubroPinturas20
       },
       {
         price: 8958.40,
@@ -104,7 +104,7 @@ const listaPinturaParaPizarronYAltaTemp = [
         name: "ALTA TEMPERATURA NEGRO X 1 lt.",
         imagen: imageURL,
         descripcion: "Pintura de alta temperatura en color negro en presentación de 1 litro.",
-        category: subRubro
+        category: subRubroPinturas20
       },
       {
         price: 31793.60,
@@ -112,8 +112,8 @@ const listaPinturaParaPizarronYAltaTemp = [
         name: "ALTA TEMPERATURA NEGRO X 4 lts.",
         imagen: imageURL,
         descripcion: "Pintura de alta temperatura en color negro en presentación de 4 litros.",
-        category: subRubro
+        category: subRubroPinturas20
       }
 ];
 
-module.exports = listaPinturaParaPizarronYAltaTemp;
+module.exports = { listaPinturaParaPizarronYAltaTemp, subRubroPinturas20 };

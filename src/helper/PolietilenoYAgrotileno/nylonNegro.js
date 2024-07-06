@@ -1,4 +1,4 @@
-const subRubro = 'Nylon Negro';
+const subRubroPoliAgro02 = 'Nylon Negro';
 const imageURL = 'URL';
 
 const listaNylonNegro = [
@@ -8,7 +8,7 @@ const listaNylonNegro = [
         price: 178240.00,
         imagen: imageURL,
         descripcion: "El nylon negro es ampliamente utilizado en aplicaciones agrícolas y de construcción. Su resistencia y durabilidad lo hacen ideal para diversas aplicaciones.",
-        category: subRubro
+        category: subRubroPoliAgro02
     },
     {
         codigo: 2405,
@@ -16,8 +16,8 @@ const listaNylonNegro = [
         price: 178240.00,
         imagen: imageURL,
         descripcion: "El nylon negro es ampliamente utilizado en aplicaciones agrícolas y de construcción. Su resistencia y durabilidad lo hacen ideal para diversas aplicaciones.",
-        category: subRubro
+        category: subRubroPoliAgro02
     }
 ];
 
-module.exports = listaNylonNegro;
+module.exports = { listaNylonNegro, subRubroPoliAgro02 };

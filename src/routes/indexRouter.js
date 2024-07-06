@@ -5,7 +5,7 @@ const { Router } = require('express');
 //----------------------
 
 const productRouter = require('./productosRouter.js');
-// const usersRouter = require("./usersRouter.js");
+const rubroRouter = require("./rubroRouter.js");
 
 //----------------------
 
@@ -17,6 +17,7 @@ const router = Router();
 //---------------------------------------
 
 router.use("/productos", productRouter);
+router.use('/rubro', rubroRouter);
 // router.use("/users", usersRouter);
 
 //--------------------------------------

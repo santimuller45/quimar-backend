@@ -1,4 +1,4 @@
-const subRubro = 'Nylon Cristal';
+const subRubroPoliAgro01 = 'Nylon Cristal';
 const imageURL = 'URL';
 
 const listaNylonCristal = [
@@ -8,7 +8,7 @@ const listaNylonCristal = [
         price: 115881.07,
         imagen: imageURL,
         descripcion: "El nylon cristal es ideal para aplicaciones que requieren transparencia y resistencia. Perfecto para usos agrícolas, de embalaje y construcción.",
-        category: subRubro
+        category: subRubroPoliAgro01
     },
     {
         codigo: 2414,
@@ -16,7 +16,7 @@ const listaNylonCristal = [
         price: 159376.70,
         imagen: imageURL,
         descripcion: "El nylon cristal es ideal para aplicaciones que requieren transparencia y resistencia. Perfecto para usos agrícolas, de embalaje y construcción.",
-        category: subRubro
+        category: subRubroPoliAgro01
     },
     {
         codigo: 2415,
@@ -24,7 +24,7 @@ const listaNylonCristal = [
         price: 207700.00,
         imagen: imageURL,
         descripcion: "El nylon cristal es ideal para aplicaciones que requieren transparencia y resistencia. Perfecto para usos agrícolas, de embalaje y construcción.",
-        category: subRubro
+        category: subRubroPoliAgro01
     },
     {
         codigo: 2416,
@@ -32,7 +32,7 @@ const listaNylonCristal = [
         price: 398237.58,
         imagen: imageURL,
         descripcion: "El nylon cristal para invernadero es resistente y duradero, ideal para crear un entorno protegido para el cultivo de plantas. Su transparencia permite el paso de la luz solar necesaria para el crecimiento de las plantas.",
-        category: subRubro
+        category: subRubroPoliAgro01
     },
     {
         codigo: 2417,
@@ -40,8 +40,8 @@ const listaNylonCristal = [
         price: 346003.95,
         imagen: imageURL,
         descripcion: "El nylon cristal para invernadero es resistente y duradero, ideal para crear un entorno protegido para el cultivo de plantas. Su transparencia permite el paso de la luz solar necesaria para el crecimiento de las plantas.",
-        category: subRubro
+        category: subRubroPoliAgro01
     }
 ];
 
-module.exports = listaNylonCristal;
+module.exports = { listaNylonCristal, subRubroPoliAgro01 };

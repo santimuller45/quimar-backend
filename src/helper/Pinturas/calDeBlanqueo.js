@@ -1,4 +1,4 @@
-const subRubro = 'Cal de blanqueo';
+const subRubroPinturas03 = 'Cal de blanqueo';
 const imageURL = 'URL';
 
 const listaCalDeBlanqueo = [
@@ -8,7 +8,7 @@ const listaCalDeBlanqueo = [
         name: "CAL DE BLANQUEO x 4 kg.", 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro
+        category: subRubroPinturas03
     },
     {
         price: 612.00, 
@@ -16,8 +16,8 @@ const listaCalDeBlanqueo = [
         name: "LATIZADOR PARA CAL x 250 cc", 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro
+        category: subRubroPinturas03
     }
 ];
 
-module.exports = listaCalDeBlanqueo;
+module.exports = { listaCalDeBlanqueo, subRubroPinturas03 };

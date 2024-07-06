@@ -1,4 +1,4 @@
-const subRubro = 'Grampas Omega';
+const subRubroZing07 = 'Grampas Omega';
 const imageURL = 'URL';
 
 const listaGrampasOmega = [
@@ -8,7 +8,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 198.90,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4302,
@@ -16,7 +16,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 214.20,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4304,
@@ -24,7 +24,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 244.80,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4306,
@@ -32,7 +32,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 367.20,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4308,
@@ -40,7 +40,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 428.40,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4310,
@@ -48,7 +48,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 520.20,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4312,
@@ -56,7 +56,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 550.80,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4314,
@@ -64,7 +64,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 887.40,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4316,
@@ -72,7 +72,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 948.60,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4318,
@@ -80,7 +80,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 1239.30,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4320,
@@ -88,7 +88,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 1774.80,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4322,
@@ -96,7 +96,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 1000.65,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4400,
@@ -104,7 +104,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 18333.15,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4402,
@@ -112,7 +112,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 23760.00,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4404,
@@ -120,7 +120,7 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 22080.00,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     },
     {
         codigo: 4406,
@@ -128,8 +128,8 @@ const listaGrampasOmega = [
         imagen: imageURL,
         price: 32960.00,
         descripcion: "Descripción",
-        category: subRubro
+        category: subRubroZing07
     }
 ];
 
-module.exports = listaGrampasOmega;
+module.exports = { listaGrampasOmega, subRubroZing07 };

@@ -1,4 +1,4 @@
-const subRubro = 'Bandejas Pintor y Acc.';
+const subRubroAccPintura01 = 'Bandejas Pintor y Acc.';
 const imageURL = 'URL';
 
 const listaBandejasDePintorYAcc = [
@@ -8,7 +8,7 @@ const listaBandejasDePintorYAcc = [
         name: "CINTA PARA PLACA DE YESO DE PAPEL (50 X 75)",
         imagen: imageURL,
         descripcion: "Cinta para placas de yeso de papel, tamaño 50 x 75.",
-        category: subRubro
+        category: subRubroAccPintura01
     },
     {
         codigo: 2361,
@@ -16,7 +16,7 @@ const listaBandejasDePintorYAcc = [
         name: "CINTA DE PAPEL PARA PLACA DE YESO TRAMADA (50 X 90)",
         imagen: imageURL,
         descripcion: "Cinta de papel para placas de yeso tramada, tamaño 50 x 90.",
-        category: subRubro
+        category: subRubroAccPintura01
     },
     {
         codigo: 2366,
@@ -24,7 +24,7 @@ const listaBandejasDePintorYAcc = [
         name: "CINTA DE PAPEL 18 X 50",
         imagen: imageURL,
         descripcion: "Cinta de papel, tamaño 18 x 50.",
-        category: subRubro
+        category: subRubroAccPintura01
     },
     {
         codigo: 2367,
@@ -32,7 +32,7 @@ const listaBandejasDePintorYAcc = [
         name: "CINTA DE PAPEL 24 X 50",
         imagen: imageURL,
         descripcion: "Cinta de papel, tamaño 24 x 50.",
-        category: subRubro
+        category: subRubroAccPintura01
     },
     {
         codigo: 2368,
@@ -40,7 +40,7 @@ const listaBandejasDePintorYAcc = [
         name: "CINTA DE PAPEL 36 X 40",
         imagen: imageURL,
         descripcion: "Cinta de papel, tamaño 36 x 40.",
-        category: subRubro
+        category: subRubroAccPintura01
     },
     {
         codigo: 2369,
@@ -48,7 +48,7 @@ const listaBandejasDePintorYAcc = [
         name: "VIRUTA DE ACERO X 330 G. MEDIANA",
         imagen: imageURL,
         descripcion: "Viruta de acero, tamaño mediano (330 g).",
-        category: subRubro
+        category: subRubroAccPintura01
     },
     {
         codigo: 2370,
@@ -56,7 +56,7 @@ const listaBandejasDePintorYAcc = [
         name: "BANDEJA PINTOR DE COLGAR",
         imagen: imageURL,
         descripcion: "Bandeja pintor de colgar, para facilitar el trabajo.",
-        category: subRubro
+        category: subRubroAccPintura01
     },
     {
         codigo: 2371,
@@ -64,7 +64,7 @@ const listaBandejasDePintorYAcc = [
         name: "BANDEJA PINTOR MINI",
         imagen: imageURL,
         descripcion: "Bandeja pintor de tamaño mini, ideal para trabajos pequeños.",
-        category: subRubro
+        category: subRubroAccPintura01
     },
     {
         codigo: 2372,
@@ -72,7 +72,7 @@ const listaBandejasDePintorYAcc = [
         name: "LAMINA PLASTICA DE MASILLAR 12 CM.",
         imagen: imageURL,
         descripcion: "Lámina plástica de masillar, ancho de 12 cm.",
-        category: subRubro
+        category: subRubroAccPintura01
     },
     {
         codigo: 2373,
@@ -80,7 +80,7 @@ const listaBandejasDePintorYAcc = [
         name: "ESPATULA PLASTICA 75 mm C/MANGO",
         imagen: imageURL,
         descripcion: "Espátula plástica con mango, ancho de 75 mm.",
-        category: subRubro
+        category: subRubroAccPintura01
     },
     {
         codigo: 2375,
@@ -88,7 +88,7 @@ const listaBandejasDePintorYAcc = [
         name: "ESPATULA PLASTICA MULTIUSO",
         imagen: imageURL,
         descripcion: "Espátula plástica multiuso, ideal para diversas aplicaciones.",
-        category: subRubro
+        category: subRubroAccPintura01
     },
     {
         codigo: 2376,
@@ -96,7 +96,7 @@ const listaBandejasDePintorYAcc = [
         name: "ESPATULA YESERO 15 X 23 PLASTICA",
         imagen: imageURL,
         descripcion: "Espátula yesero de plástico, tamaño 15 x 23.",
-        category: subRubro
+        category: subRubroAccPintura01
     },
     {
         codigo: 2377,
@@ -104,7 +104,7 @@ const listaBandejasDePintorYAcc = [
         name: "LLANA DENTADA 12X12 DE ACERO",
         imagen: imageURL,
         descripcion: "Llana dentada de acero, tamaño 12 x 12.",
-        category: subRubro
+        category: subRubroAccPintura01
     },
     {
         codigo: 2378,
@@ -112,8 +112,8 @@ const listaBandejasDePintorYAcc = [
         name: "LLANA PLASTICA CON ASA 14 X 30",
         imagen: imageURL,
         descripcion: "Llana plástica con asa, tamaño 14 x 30.",
-        category: subRubro
+        category: subRubroAccPintura01
     }
 ];
 
-module.exports = listaBandejasDePintorYAcc;
+module.exports = { listaBandejasDePintorYAcc , subRubroAccPintura01 };

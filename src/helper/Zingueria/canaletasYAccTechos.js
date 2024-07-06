@@ -1,4 +1,4 @@
-const subRubro = 'Canaletas y Acc. para techos';
+const subRubroZing02 = 'Canaletas y Acc. para techos';
 const imageURL = 'URL';
 
 const listaCanaletasYAccParaTechos = [
@@ -7,7 +7,7 @@ const listaCanaletasYAccParaTechos = [
         name: "CANALETA 1/2 CAÑA POR METRO DE 15 CM.",
         imagen: imageURL,
         price: 5648.76,
-        category: subRubro,
+        category: subRubroZing02,
         description: "Canalón de 15 cm de ancho, diseñado para drenar agua de techos y estructuras."
     },
     {
@@ -15,7 +15,7 @@ const listaCanaletasYAccParaTechos = [
         name: "CABECERA 1/2 CAÑA DE 15 CM.",
         imagen: imageURL,
         price: 7650.00,
-        category: subRubro,
+        category: subRubroZing02,
         description: "Pieza de canalón que se instala en el extremo del techo para capturar el agua."
     },
     {
@@ -23,7 +23,7 @@ const listaCanaletasYAccParaTechos = [
         name: "BOQUETA 1/2 CAÑA DE 15 CM.",
         imagen: imageURL,
         price: 8721.00,
-        category: subRubro,
+        category: subRubroZing02,
         description: "Componente del sistema de canalones que dirige el flujo de agua hacia abajo."
     },
     {
@@ -31,7 +31,7 @@ const listaCanaletasYAccParaTechos = [
         name: "INTERMEDIA 1/2 CAÑA 15CM.",
         imagen: imageURL,
         price: 8721.00,
-        category: subRubro,
+        category: subRubroZing02,
         description: "Sección de canalón colocada entre la cabecera y la boqueta para extender la longitud."
     },
     {
@@ -39,7 +39,7 @@ const listaCanaletasYAccParaTechos = [
         name: "SOPORTE PARA 1/2 CAÑA 15 CM.",
         imagen: imageURL,
         price: 2169.33,
-        category: subRubro,
+        category: subRubroZing02,
         description: "Accesorio que asegura la estabilidad y el montaje adecuado del canalón en la estructura."
     },
     {
@@ -47,7 +47,7 @@ const listaCanaletasYAccParaTechos = [
         name: "ESQUINERO 1/2 CAÑA 15 CM.",
         imagen: imageURL,
         price: 21267.00,
-        category: subRubro,
+        category: subRubroZing02,
         description: "Pieza especial para canalones utilizada en esquinas para permitir un flujo continuo de agua."
     },
     {
@@ -55,9 +55,9 @@ const listaCanaletasYAccParaTechos = [
         name: "RINCONERO 1/2 CAÑA 15 CM. EN ANGULO 90°",
         imagen: imageURL,
         price: 21267.00,
-        category: subRubro,
+        category: subRubroZing02,
         description: "Esquina de canalón que se coloca en ángulos de 90 grados para cambiar la dirección del flujo de agua."
     }
 ];
 
-module.exports = listaCanaletasYAccParaTechos;
+module.exports = { listaCanaletasYAccParaTechos, subRubroZing02 };

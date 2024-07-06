@@ -1,4 +1,4 @@
-const subRubro = 'Caños y Acc. Galvanizados P/Ventilacion';
+const subRubroZing03 = 'Caños y Acc. Galvanizados P/Ventilacion';
 const imageURL = 'URL';
 
 const listaCañosYAccGalvanizadosPVent = [
@@ -8,7 +8,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 4437.00,
         imagen: imageURL,
         descripcion: "Caño galvanizado de 3 pulgadas de diámetro y 1 metro de longitud, ideal para sistemas de ventilación y conductos de aire. Fabricado con material resistente y duradero.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4001,
@@ -16,7 +16,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 5515.65,
         imagen: imageURL,
         descripcion: "Caño galvanizado de 4 pulgadas de diámetro y 1 metro de longitud, ideal para sistemas de ventilación y conductos de aire. Fabricado con material resistente y duradero.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4002,
@@ -24,7 +24,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 6732.00,
         imagen: imageURL,
         descripcion: "Caño galvanizado de 5 pulgadas de diámetro y 1 metro de longitud, ideal para sistemas de ventilación y conductos de aire. Fabricado con material resistente y duradero.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4003,
@@ -32,7 +32,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 8194.68,
         imagen: imageURL,
         descripcion: "Caño galvanizado de 6 pulgadas de diámetro y 1 metro de longitud, ideal para sistemas de ventilación y conductos de aire. Fabricado con material resistente y duradero.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4004,
@@ -40,7 +40,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 2343.96,
         imagen: imageURL,
         descripcion: "Curva corrugada galvanizada a 45 grados, diseñada para sistemas de ventilación y conductos de aire de 3 pulgadas de diámetro. Proporciona un flujo de aire eficiente y uniforme.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4005,
@@ -48,7 +48,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 2796.84,
         imagen: imageURL,
         descripcion: "Curva corrugada galvanizada a 45 grados, diseñada para sistemas de ventilación y conductos de aire de 4 pulgadas de diámetro. Proporciona un flujo de aire eficiente y uniforme.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4006,
@@ -56,7 +56,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 7038.00,
         imagen: imageURL,
         descripcion: "Curva corrugada galvanizada a 45 grados, diseñada para sistemas de ventilación y conductos de aire de 5 pulgadas de diámetro. Proporciona un flujo de aire eficiente y uniforme.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4007,
@@ -64,7 +64,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 8603.19,
         imagen: imageURL,
         descripcion: "Curva corrugada galvanizada a 45 grados, diseñada para sistemas de ventilación y conductos de aire de 6 pulgadas de diámetro. Proporciona un flujo de aire eficiente y uniforme.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4010,
@@ -72,7 +72,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 2790.72,
         imagen: imageURL,
         descripcion: "Curva corrugada galvanizada a 90 grados, diseñada para sistemas de ventilación y conductos de aire de 3 pulgadas de diámetro. Proporciona un flujo de aire eficiente y uniforme.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4012,
@@ -80,7 +80,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 3197.70,
         imagen: imageURL,
         descripcion: "Curva corrugada galvanizada a 90 grados, diseñada para sistemas de ventilación y conductos de aire de 4 pulgadas de diámetro. Proporciona un flujo de aire eficiente y uniforme.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4014,
@@ -88,7 +88,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 7848.90,
         imagen: imageURL,
         descripcion: "Curva corrugada galvanizada a 90 grados, diseñada para sistemas de ventilación y conductos de aire de 5 pulgadas de diámetro. Proporciona un flujo de aire eficiente y uniforme.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4016,
@@ -96,7 +96,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 10549.35,
         imagen: imageURL,
         descripcion: "Curva corrugada galvanizada a 90 grados, diseñada para sistemas de ventilación y conductos de aire de 6 pulgadas de diámetro. Proporciona un flujo de aire eficiente y uniforme.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4018,
@@ -104,7 +104,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 2301.12,
         imagen: imageURL,
         descripcion: "Curva articulada galvanizada de 3 pulgadas de diámetro, ideal para sistemas de ventilación y conductos de aire que requieren flexibilidad en su diseño.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4020,
@@ -112,7 +112,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 2588.76,
         imagen: imageURL,
         descripcion: "Curva articulada galvanizada de 4 pulgadas de diámetro, ideal para sistemas de ventilación y conductos de aire que requieren flexibilidad en su diseño.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4022,
@@ -120,7 +120,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 4781.25,
         imagen: imageURL,
         descripcion: "Curva articulada galvanizada de 5 pulgadas de diámetro, ideal para sistemas de ventilación y conductos de aire que requieren flexibilidad en su diseño.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4024,
@@ -128,7 +128,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 7864.20,
         imagen: imageURL,
         descripcion: "Curva articulada galvanizada de 6 pulgadas de diámetro, ideal para sistemas de ventilación y conductos de aire que requieren flexibilidad en su diseño.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4026,
@@ -136,7 +136,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 8887.77,
         imagen: imageURL,
         descripcion: "Sombrero tipo H galvanizado de 3 pulgadas de diámetro, utilizado para la salida de gases y humos en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4028,
@@ -144,7 +144,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 11979.90,
         imagen: imageURL,
         descripcion: "Sombrero tipo H galvanizado de 4 pulgadas de diámetro, utilizado para la salida de gases y humos en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4030,
@@ -152,7 +152,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 18054.00,
         imagen: imageURL,
         descripcion: "Sombrero tipo H galvanizado de 5 pulgadas de diámetro, utilizado para la salida de gases y humos en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4032,
@@ -160,7 +160,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 21267.00,
         imagen: imageURL,
         descripcion: "Sombrero tipo H galvanizado de 6 pulgadas de diámetro, utilizado para la salida de gases y humos en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4036,
@@ -168,7 +168,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 4028.49,
         imagen: imageURL,
         descripcion: "Sombrero doble aro galvanizado de 3 pulgadas de diámetro, utilizado para la salida de gases y humos en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4038,
@@ -176,7 +176,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 4100.40,
         imagen: imageURL,
         descripcion: "Sombrero doble aro galvanizado de 4 pulgadas de diámetro, utilizado para la salida de gases y humos en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4040,
@@ -184,7 +184,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 4475.25,
         imagen: imageURL,
         descripcion: "Sombrero doble aro galvanizado de 5 pulgadas de diámetro, utilizado para la salida de gases y humos en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4042,
@@ -192,7 +192,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 4704.75,
         imagen: imageURL,
         descripcion: "Sombrero doble aro galvanizado de 6 pulgadas de diámetro, utilizado para la salida de gases y humos en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4046,
@@ -200,7 +200,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 5696.05,
         imagen: imageURL,
         descripcion: "Pollerita para soldar galvanizada de 3 pulgadas de diámetro, utilizada para conectar y sellar caños en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4048,
@@ -208,7 +208,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 6465.70,
         imagen: imageURL,
         descripcion: "Pollerita para soldar galvanizada de 4 pulgadas de diámetro, utilizada para conectar y sellar caños en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4050,
@@ -216,7 +216,7 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 10660.83,
         imagen: imageURL,
         descripcion: "Pollerita para soldar galvanizada de 5 pulgadas de diámetro, utilizada para conectar y sellar caños en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing03
     },
     {
         codigo: 4052,
@@ -224,8 +224,8 @@ const listaCañosYAccGalvanizadosPVent = [
         price: 12415.92,
         imagen: imageURL,
         descripcion: "Pollerita para soldar galvanizada de 6 pulgadas de diámetro, utilizada para conectar y sellar caños en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing03
     }
 ];
 
-module.exports = listaCañosYAccGalvanizadosPVent;
+module.exports = { listaCañosYAccGalvanizadosPVent, subRubroZing03 };

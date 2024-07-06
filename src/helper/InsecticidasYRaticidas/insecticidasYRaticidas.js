@@ -1,4 +1,4 @@
-const subRubro = 'Insecticidas y Raticidas';
+const subRubroInsecRat01 = 'Insecticidas y Raticidas';
 const imageURL = 'URL';
 
 const listaInsecticidasYRaticidas = [
@@ -8,7 +8,7 @@ const listaInsecticidasYRaticidas = [
         price: 5125.50,
         imagen: imageURL,
         descripcion: "Las pastillas fumigenas son ideales para eliminar insectos voladores y rastreros en espacios cerrados. Su fórmula eficaz garantiza una acción rápida y duradera, dejando el ambiente libre de plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2517,
@@ -16,7 +16,7 @@ const listaInsecticidasYRaticidas = [
         price: 800.00,
         imagen: imageURL,
         descripcion: "El cebo granulado para moscas es ideal para controlar poblaciones de moscas en áreas exteriores e interiores. Su formulación atractiva y efectiva asegura una eliminación rápida y eficaz de las moscas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2518,
@@ -24,7 +24,7 @@ const listaInsecticidasYRaticidas = [
         price: 2214.58,
         imagen: imageURL,
         descripcion: "La trampa para ratas automática es ideal para controlar poblaciones de ratas en espacios interiores y exteriores. Su diseño innovador y eficaz garantiza una captura rápida y segura de las ratas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2519,
@@ -32,7 +32,7 @@ const listaInsecticidasYRaticidas = [
         price: 1064.03,
         imagen: imageURL,
         descripcion: "La trampa para lauchas automática es ideal para controlar poblaciones de lauchas en espacios interiores y exteriores. Su diseño innovador y eficaz garantiza una captura rápida y segura de las lauchas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2520,
@@ -40,7 +40,7 @@ const listaInsecticidasYRaticidas = [
         price: 17850.00,
         imagen: imageURL,
         descripcion: "El raticida ultra granulado es ideal para controlar poblaciones de ratas y ratones en espacios interiores y exteriores. Su formulación concentrada y eficaz asegura una eliminación rápida y duradera de las plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2522,
@@ -48,7 +48,7 @@ const listaInsecticidasYRaticidas = [
         price: 1575.29,
         imagen: imageURL,
         descripcion: "El adhesivo para lauchas Roetrap es ideal para capturar y controlar poblaciones de lauchas en espacios interiores. Su formulación adhesiva y resistente garantiza una captura eficaz y segura de las lauchas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2523,
@@ -56,7 +56,7 @@ const listaInsecticidasYRaticidas = [
         price: 13333.86,
         imagen: imageURL,
         descripcion: "El raticida ultra en blocks es ideal para controlar poblaciones de ratas y ratones en espacios interiores y exteriores. Su formulación concentrada y eficaz asegura una eliminación rápida y duradera de las plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2525,
@@ -64,7 +64,7 @@ const listaInsecticidasYRaticidas = [
         price: 33012.45,
         imagen: imageURL,
         descripcion: "El raticida Panic en bloques ovales es ideal para controlar poblaciones de ratas y ratones en espacios interiores y exteriores. Su formulación concentrada y eficaz asegura una eliminación rápida y duradera de las plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2526,
@@ -72,7 +72,7 @@ const listaInsecticidasYRaticidas = [
         price: 12969.95,
         imagen: imageURL,
         descripcion: "El raticida Panic en bloques ovales sueltos es ideal para controlar poblaciones de ratas y ratones en espacios interiores y exteriores. Su formulación concentrada y eficaz asegura una eliminación rápida y duradera de las plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2530,
@@ -80,7 +80,7 @@ const listaInsecticidasYRaticidas = [
         price: 2268.21,
         imagen: imageURL,
         descripcion: "El cucarachicida en blister es ideal para controlar poblaciones de cucarachas en espacios interiores y exteriores. Su formulación concentrada y eficaz asegura una eliminación rápida y duradera de las plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2532,
@@ -88,7 +88,7 @@ const listaInsecticidasYRaticidas = [
         price: 5000.19,
         imagen: imageURL,
         descripcion: "El fumigador fogger aerosol es ideal para eliminar insectos voladores y rastreros en espacios interiores. Su fórmula concentrada y de acción rápida garantiza una eliminación efectiva de las plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2534,
@@ -96,7 +96,7 @@ const listaInsecticidasYRaticidas = [
         price: 5025.00,
         imagen: imageURL,
         descripcion: "Las pastillas fumigenas son ideales para eliminar insectos voladores y rastreros en espacios cerrados. Su fórmula eficaz garantiza una acción rápida y duradera, dejando el ambiente libre de plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2550,
@@ -104,7 +104,7 @@ const listaInsecticidasYRaticidas = [
         price: 1909.33,
         imagen: imageURL,
         descripcion: "El garrapaticida en baño BABS es ideal para controlar y eliminar garrapatas en mascotas. Su formulación suave y efectiva garantiza una protección completa y duradera contra las garrapatas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2554,
@@ -112,7 +112,7 @@ const listaInsecticidasYRaticidas = [
         price: 1660.72,
         imagen: imageURL,
         descripcion: "El garrapaticida en pipeta es ideal para controlar y eliminar garrapatas en mascotas de hasta 5 kg. Su formulación suave y efectiva garantiza una protección completa y duradera contra las garrapatas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2555,
@@ -120,7 +120,7 @@ const listaInsecticidasYRaticidas = [
         price: 1700.00,
         imagen: imageURL,
         descripcion: "El garrapaticida en pipeta es ideal para controlar y eliminar garrapatas en mascotas de hasta 10 kg. Su formulación suave y efectiva garantiza una protección completa y duradera contra las garrapatas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2556,
@@ -128,7 +128,7 @@ const listaInsecticidasYRaticidas = [
         price: 1870.00,
         imagen: imageURL,
         descripcion: "El garrapaticida en pipeta es ideal para controlar y eliminar garrapatas en mascotas de hasta 40 kg. Su formulación suave y efectiva garantiza una protección completa y duradera contra las garrapatas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2559,
@@ -136,7 +136,7 @@ const listaInsecticidasYRaticidas = [
         price: 1588.75,
         imagen: imageURL,
         descripcion: "El hormiguicida en gel es ideal para controlar poblaciones de hormigas en espacios interiores y exteriores. Su formulación atrayente y efectiva garantiza una eliminación rápida y duradera de las plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2560,
@@ -144,7 +144,7 @@ const listaInsecticidasYRaticidas = [
         price: 2031.30,
         imagen: imageURL,
         descripcion: "El hormiguicida líquido es ideal para controlar poblaciones de hormigas en espacios exteriores. Su formulación concentrada y de acción rápida garantiza una eliminación efectiva de las plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2564,
@@ -152,7 +152,7 @@ const listaInsecticidasYRaticidas = [
         price: 2102.11,
         imagen: imageURL,
         descripcion: "El hormiguicida en polvo es ideal para controlar poblaciones de hormigas en espacios interiores y exteriores. Su formulación concentrada y de acción rápida garantiza una eliminación efectiva de las plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2565,
@@ -160,7 +160,7 @@ const listaInsecticidasYRaticidas = [
         price: 2576.00,
         imagen: imageURL,
         descripcion: "El hormiguicida en polvo es ideal para controlar poblaciones de hormigas en espacios interiores y exteriores. Su formulación concentrada y de acción rápida garantiza una eliminación efectiva de las plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2567,
@@ -168,7 +168,7 @@ const listaInsecticidasYRaticidas = [
         price: 2324.07,
         imagen: imageURL,
         descripcion: "El hormiguicida Mirex Sulfa es ideal para controlar poblaciones de hormigas en espacios interiores y exteriores. Su formulación concentrada y de acción rápida garantiza una eliminación efectiva de las plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2578,
@@ -176,7 +176,7 @@ const listaInsecticidasYRaticidas = [
         price: 2550.00,
         imagen: imageURL,
         descripcion: "El derribante total ultra es ideal para eliminar plagas de insectos voladores en espacios exteriores. Su formulación concentrada y de acción rápida garantiza una eliminación efectiva de las plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2580,
@@ -184,7 +184,7 @@ const listaInsecticidasYRaticidas = [
         price: 3255.00,
         imagen: imageURL,
         descripcion: "La K-Othrine FL es ideal para controlar poblaciones de insectos voladores y rastreros en espacios interiores y exteriores. Su formulación concentrada garantiza una eliminación efectiva de las plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     },
     {
         codigo: 2581,
@@ -192,8 +192,8 @@ const listaInsecticidasYRaticidas = [
         price: 3676.25,
         imagen: imageURL,
         descripcion: "La K-Othrine LPU es ideal para controlar poblaciones de insectos voladores y rastreros en espacios exteriores. Su formulación concentrada garantiza una eliminación efectiva de las plagas.",
-        category: subRubro
+        category: subRubroInsecRat01
     }
 ];
 
-module.exports = listaInsecticidasYRaticidas;
+module.exports = { listaInsecticidasYRaticidas, subRubroInsecRat01 };

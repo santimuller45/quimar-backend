@@ -1,4 +1,4 @@
-const subRubro = 'Tornillos';
+const subRubroFerr05 = 'Tornillos';
 const imageURL = 'URL';
 
 const listaTornillos = [
@@ -8,7 +8,7 @@ const listaTornillos = [
         price: 5489.60,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza Phillips y punta aguja son ideales para fijar materiales en superficies de madera, plástico y metal. Su diseño facilita la penetración en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5105,
@@ -16,7 +16,7 @@ const listaTornillos = [
         price: 3008.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza Phillips y punta aguja son ideales para fijar materiales en superficies de madera, plástico y metal. Su diseño facilita la penetración en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5110,
@@ -24,7 +24,7 @@ const listaTornillos = [
         price: 3360.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza Phillips y punta aguja son ideales para fijar materiales en superficies de madera, plástico y metal. Su diseño facilita la penetración en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5115,
@@ -32,7 +32,7 @@ const listaTornillos = [
         price: 3600.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza Phillips y punta aguja son ideales para fijar materiales en superficies de madera, plástico y metal. Su diseño facilita la penetración en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5120,
@@ -40,7 +40,7 @@ const listaTornillos = [
         price: 3920.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza Phillips y punta aguja son ideales para fijar materiales en superficies de madera, plástico y metal. Su diseño facilita la penetración en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5130,
@@ -48,7 +48,7 @@ const listaTornillos = [
         price: 4880.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza Phillips y punta aguja son ideales para fijar materiales en superficies de madera, plástico y metal. Su diseño facilita la penetración en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5132,
@@ -56,7 +56,7 @@ const listaTornillos = [
         price: 5536.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza Phillips y punta aguja son ideales para fijar materiales en superficies de madera, plástico y metal. Su diseño facilita la penetración en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5134,
@@ -64,7 +64,7 @@ const listaTornillos = [
         price: 6192.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza Phillips y punta aguja son ideales para fijar materiales en superficies de madera, plástico y metal. Su diseño facilita la penetración en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5136,
@@ -72,7 +72,7 @@ const listaTornillos = [
         price: 7152.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza Phillips y punta aguja son ideales para fijar materiales en superficies de madera, plástico y metal. Su diseño facilita la penetración en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5137,
@@ -80,7 +80,7 @@ const listaTornillos = [
         price: 8624.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza Phillips y punta aguja son ideales para fijar materiales en superficies de madera, plástico y metal. Su diseño facilita la penetración en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5138,
@@ -88,7 +88,7 @@ const listaTornillos = [
         price: 8160.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza Phillips y punta aguja son ideales para fijar materiales en superficies de madera, plástico y metal. Su diseño facilita la penetración en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5139,
@@ -96,7 +96,7 @@ const listaTornillos = [
         price: 9520.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza Phillips y punta aguja son ideales para fijar materiales en superficies de madera, plástico y metal. Su diseño facilita la penetración en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5140,
@@ -104,7 +104,7 @@ const listaTornillos = [
         price: 10800.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza Phillips y punta aguja son ideales para fijar materiales en superficies de madera, plástico y metal. Su diseño facilita la penetración en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5150,
@@ -112,7 +112,7 @@ const listaTornillos = [
         price: 17680.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza Phillips y punta aguja son ideales para fijar materiales en superficies de madera, plástico y metal. Su diseño facilita la penetración en distintos materiales.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5200,
@@ -120,7 +120,7 @@ const listaTornillos = [
         price: 7728.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza de tanque y punta aguja son ideales para fijar materiales en superficies de madera y metal. Su diseño proporciona una sujeción segura y duradera.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5205,
@@ -128,7 +128,7 @@ const listaTornillos = [
         price: 8512.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza de tanque y punta aguja son ideales para fijar materiales en superficies de madera y metal. Su diseño proporciona una sujeción segura y duradera.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5210,
@@ -136,7 +136,7 @@ const listaTornillos = [
         price: 4624.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza de tanque y punta aguja son ideales para fijar materiales en superficies de madera y metal. Su diseño proporciona una sujeción segura y duradera.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5212,
@@ -144,7 +144,7 @@ const listaTornillos = [
         price: 5680.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza de tanque y punta aguja son ideales para fijar materiales en superficies de madera y metal. Su diseño proporciona una sujeción segura y duradera.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5240,
@@ -152,7 +152,7 @@ const listaTornillos = [
         price: 6080.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza de tanque y punta mecha son ideales para fijar materiales en superficies de madera y metal. Su diseño proporciona una sujeción segura y duradera.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5242,
@@ -160,7 +160,7 @@ const listaTornillos = [
         price: 6960.00,
         imagen: imageURL,
         descripcion: "Los tornillos con cabeza de tanque y punta mecha son ideales para fijar materiales en superficies de madera y metal. Su diseño proporciona una sujeción segura y duradera.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5300,
@@ -168,7 +168,7 @@ const listaTornillos = [
         price: 4000.00,
         imagen: imageURL,
         descripcion: "Los tornillos para drywall con punta aguja y rosca para metal son ideales para la instalación de paneles de yeso en estructuras de metal. Su diseño proporciona una sujeción firme y duradera.",
-        category: subRubro
+        category: subRubroFerr05
     },
     {
         codigo: 5302,
@@ -176,8 +176,8 @@ const listaTornillos = [
         price: 4992.00,
         imagen: imageURL,
         descripcion: "Los tornillos para drywall con punta aguja y rosca para metal son ideales para la instalación de paneles de yeso en estructuras de metal. Su diseño proporciona una sujeción firme y duradera.",
-        category: subRubro
+        category: subRubroFerr05
     }
 ];
 
-module.exports = listaTornillos;
+module.exports = { listaTornillos, subRubroFerr05 };

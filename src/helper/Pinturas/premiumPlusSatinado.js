@@ -1,4 +1,4 @@
-const subRubro = 'Pintura premium satinado';
+const subRubroPinturas23 = 'Pintura premium satinado';
 const imageURL = 'URL';
 
 const listaPremiumPlusSatinadoNetcolor = [
@@ -8,7 +8,7 @@ const listaPremiumPlusSatinadoNetcolor = [
         name: "LATEX PREMIUM PLUS SATINADO x 1 lt.",
         imagen: imageURL,
         descripcion: "Látex premium plus satinado en presentación de 1 litro.",
-        category: subRubro
+        category: subRubroPinturas23
       },
       {
         price: 38166.25,
@@ -16,7 +16,7 @@ const listaPremiumPlusSatinadoNetcolor = [
         name: "LATEX PREMIUM PLUS SATINADO x 4 lts.",
         imagen: imageURL,
         descripcion: "Látex premium plus satinado en presentación de 4 litros.",
-        category: subRubro
+        category: subRubroPinturas23
       },
       {
         price: 93665.28,
@@ -24,7 +24,7 @@ const listaPremiumPlusSatinadoNetcolor = [
         name: "LATEX PREMIUM PLUS SATINADO x 10 lts.",
         imagen: imageURL,
         descripcion: "Látex premium plus satinado en presentación de 10 litros.",
-        category: subRubro
+        category: subRubroPinturas23
       },
       {
         price: 176598.51,
@@ -32,8 +32,8 @@ const listaPremiumPlusSatinadoNetcolor = [
         name: "LATEX PREMIUM PLUS SATINADO x 20 lts.",
         imagen: imageURL,
         descripcion: "Látex premium plus satinado en presentación de 20 litros.",
-        category: subRubro
+        category: subRubroPinturas23
       }
 ];
 
-module.exports = listaPremiumPlusSatinadoNetcolor;
+module.exports = { listaPremiumPlusSatinadoNetcolor, subRubroPinturas23 };

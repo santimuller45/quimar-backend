@@ -1,4 +1,4 @@
-const subRubro = 'Reducciones Galvanizadas';
+const subRubroZing08 = 'Reducciones Galvanizadas';
 const imageURL = 'URL';
 
 const listaReduccionesGalvanizadas = [
@@ -8,7 +8,7 @@ const listaReduccionesGalvanizadas = [
         price: 3574.08,
         imagen: imageURL,
         descripcion: "Reducción galvanizada cónica de 4 pulgadas a 3 pulgadas, utilizada para conectar dos caños de diferentes diámetros en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing08
     },
     {
         codigo: 4062,
@@ -16,7 +16,7 @@ const listaReduccionesGalvanizadas = [
         price: 4014.72,
         imagen: imageURL,
         descripcion: "Reducción galvanizada cónica de 5 pulgadas a 4 pulgadas, utilizada para conectar dos caños de diferentes diámetros en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing08
     },
     {
         codigo: 4064,
@@ -24,7 +24,7 @@ const listaReduccionesGalvanizadas = [
         price: 4329.90,
         imagen: imageURL,
         descripcion: "Reducción galvanizada cónica de 6 pulgadas a 4 pulgadas, utilizada para conectar dos caños de diferentes diámetros en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing08
     },
     {
         codigo: 4066,
@@ -32,8 +32,8 @@ const listaReduccionesGalvanizadas = [
         price: 4776.66,
         imagen: imageURL,
         descripcion: "Reducción galvanizada cónica de 6 pulgadas a 5 pulgadas, utilizada para conectar dos caños de diferentes diámetros en sistemas de ventilación industrial y residencial.",
-        category: subRubro
+        category: subRubroZing08
     }
 ];
 
-module.exports = listaReduccionesGalvanizadas;
+module.exports = { listaReduccionesGalvanizadas, subRubroZing08 };

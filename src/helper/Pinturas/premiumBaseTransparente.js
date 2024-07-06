@@ -1,4 +1,4 @@
-const subRubro = 'Pintura premium transparente';
+const subRubroPinturas21 = 'Pintura premium transparente';
 const imageURL = 'URL';
 
 const listaPremiumBaseTransparenteNetcolor = [
@@ -8,7 +8,7 @@ const listaPremiumBaseTransparenteNetcolor = [
         name: "LATEX PREMIUM LAVABLE BASE TRANSPARENTE x 0.9LT",
         imagen: imageURL,
         descripcion: "Látex premium lavable con base transparente en presentación de 0.9 litros.",
-        category: subRubro
+        category: subRubroPinturas21
       },
       {
         price: 22426.60,
@@ -16,7 +16,7 @@ const listaPremiumBaseTransparenteNetcolor = [
         name: "LATEX PREMIUM BASE TRANSPARENTE X 3.6 lts.",
         imagen: imageURL,
         descripcion: "Látex premium con base transparente en presentación de 3.6 litros.",
-        category: subRubro
+        category: subRubroPinturas21
       },
       {
         price: 48677.68,
@@ -24,7 +24,7 @@ const listaPremiumBaseTransparenteNetcolor = [
         name: "LATEX PREMIUM BASE TRANSPARENTE x 9 lts.",
         imagen: imageURL,
         descripcion: "Látex premium con base transparente en presentación de 9 litros.",
-        category: subRubro
+        category: subRubroPinturas21
       },
       {
         price: 9271.94,
@@ -32,8 +32,8 @@ const listaPremiumBaseTransparenteNetcolor = [
         name: "LATEX PREMIUM BASE TRANSPARENTE x 18 lts",
         imagen: imageURL,
         descripcion: "Látex premium con base transparente en presentación de 18 litros.",
-        category: subRubro
+        category: subRubroPinturas21
       }
 ];
 
-module.exports = listaPremiumBaseTransparenteNetcolor;
+module.exports = { listaPremiumBaseTransparenteNetcolor, subRubroPinturas21 };

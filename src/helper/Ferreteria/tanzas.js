@@ -1,4 +1,4 @@
-const subRubro = 'Tanzas';
+const subRubroFerr03 = 'Tanzas';
 const imageURL = 'URL';
 
 const listaTanzas = [
@@ -8,7 +8,7 @@ const listaTanzas = [
         price: 16830.00,
         imagen: imageURL,
         descripcion: "La tanza redonda de 2 mm es ideal para diversas aplicaciones en jardinería, agricultura y construcción. Su resistencia y durabilidad la hacen perfecta para cortar y atar materiales.",
-        category: subRubro
+        category: subRubroFerr03
     },
     {
         codigo: 2441,
@@ -16,7 +16,7 @@ const listaTanzas = [
         price: 16830.00,
         imagen: imageURL,
         descripcion: "La tanza cuadrada de 2.5 mm es perfecta para cortar y atar materiales en trabajos de jardinería, agricultura y construcción. Su diseño resistente garantiza un rendimiento óptimo.",
-        category: subRubro
+        category: subRubroFerr03
     },
     {
         codigo: 2442,
@@ -24,7 +24,7 @@ const listaTanzas = [
         price: 16830.00,
         imagen: imageURL,
         descripcion: "La tanza redonda de 3 mm es ideal para cortar y atar materiales en trabajos de jardinería, agricultura y construcción. Su gran resistencia y longitud la hacen perfecta para proyectos de gran envergadura.",
-        category: subRubro
+        category: subRubroFerr03
     },
     {
         codigo: 2450,
@@ -32,8 +32,8 @@ const listaTanzas = [
         price: 2475.30,
         imagen: imageURL,
         descripcion: "La tanza de albañil de 0.80 mm es perfecta para realizar trabajos de nivelación y alineación en la construcción. Su resistencia y flexibilidad la hacen ideal para diversas aplicaciones.",
-        category: subRubro
+        category: subRubroFerr03
     }
 ];
 
-module.exports = listaTanzas;
+module.exports = { listaTanzas, subRubroFerr03 };

@@ -1,4 +1,4 @@
-const subRubro = 'Lijas y abrasivos';
+const subRubroAccPintura02 = 'Lijas y abrasivos';
 const imageURL = 'URL';
 
 const listaLijasYAbrasivos = [
@@ -8,7 +8,7 @@ const listaLijasYAbrasivos = [
         name: "LIJA AL AGUA (23X28). GRANO 60",
         imagen: imageURL,
         descripcion: "Lija al agua de tamaño 23x28, grano 60.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 480.00,
@@ -16,7 +16,7 @@ const listaLijasYAbrasivos = [
         name: "LIJA AL AGUA (23X28). GRANO 100",
         imagen: imageURL,
         descripcion: "Lija al agua de tamaño 23x28, grano 100.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 480.00,
@@ -24,7 +24,7 @@ const listaLijasYAbrasivos = [
         name: "LIJA AL AGUA (23X28). GRANO 150",
         imagen: imageURL,
         descripcion: "Lija al agua de tamaño 23x28, grano 150.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 480.00,
@@ -32,7 +32,7 @@ const listaLijasYAbrasivos = [
         name: "LIJA AL AGUA (23X28). GRANO 180",
         imagen: imageURL,
         descripcion: "Lija al agua de tamaño 23x28, grano 180.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 480.00,
@@ -40,7 +40,7 @@ const listaLijasYAbrasivos = [
         name: "LIJA AL AGUA (23X28) GRANO 360",
         imagen: imageURL,
         descripcion: "Lija al agua de tamaño 23x28, grano 360.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 510.00,
@@ -48,7 +48,7 @@ const listaLijasYAbrasivos = [
         name: "LIJA AL AGUA (21X28) GRANO  600",
         imagen: imageURL,
         descripcion: "Lija al agua de tamaño 21x28, grano 600.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 510.00,
@@ -56,7 +56,7 @@ const listaLijasYAbrasivos = [
         name: "LIJA AL AGUA (23X28) GRANO  1200",
         imagen: imageURL,
         descripcion: "Lija al agua de tamaño 23x28, grano 1200.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 260.10,
@@ -64,7 +64,7 @@ const listaLijasYAbrasivos = [
         name: "LIJA MULTIUSO ROJA (21X26). GRANO 60",
         imagen: imageURL,
         descripcion: "Lija multiuso roja de tamaño 21x26, grano 60.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 260.10,
@@ -72,7 +72,7 @@ const listaLijasYAbrasivos = [
         name: "LIJA MULTIUSO ROJA (21X26). GRANO 80",
         imagen: imageURL,
         descripcion: "Lija multiuso roja de tamaño 21x26, grano 80.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 260.10,
@@ -80,7 +80,7 @@ const listaLijasYAbrasivos = [
         name: "LIJA MULTIUSO ROJA (21X26). GRANO 120",
         imagen: imageURL,
         descripcion: "Lija multiuso roja de tamaño 21x26, grano 120.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 260.10,
@@ -88,7 +88,7 @@ const listaLijasYAbrasivos = [
         name: "LIJA MULTIUSO ROJA (21X26). GRANO 180",
         imagen: imageURL,
         descripcion: "Lija multiuso roja de tamaño 21x26, grano 180.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 459.00,
@@ -96,7 +96,7 @@ const listaLijasYAbrasivos = [
         name: "LIJAS ANTIEMPASTE  (21X36) GRANO 120",
         imagen: imageURL,
         descripcion: "Lijas antiempaste de tamaño 21x36, grano 120.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 459.00,
@@ -104,7 +104,7 @@ const listaLijasYAbrasivos = [
         name: "LIJAS ANTIEMPASTE (21X36) GRANO 220",
         imagen: imageURL,
         descripcion: "Lijas antiempaste de tamaño 21x36, grano 220.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 688.50,
@@ -112,7 +112,7 @@ const listaLijasYAbrasivos = [
         name: "TELA ESMERIL (21X26). GRANO 60",
         imagen: imageURL,
         descripcion: "Tela esmeril de tamaño 21x26, grano 60.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 688.50,
@@ -120,7 +120,7 @@ const listaLijasYAbrasivos = [
         name: "TELA ESMERIL (21X26). GRANO 80",
         imagen: imageURL,
         descripcion: "Tela esmeril de tamaño 21x26, grano 80.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 688.50,
@@ -128,7 +128,7 @@ const listaLijasYAbrasivos = [
         name: "TELA ESMERIL (21X26). GRANO 120",
         imagen: imageURL,
         descripcion: "Tela esmeril de tamaño 21x26, grano 120.",
-        category: subRubro
+        category: subRubroAccPintura02
     },
     {
         price: 688.50,
@@ -136,8 +136,8 @@ const listaLijasYAbrasivos = [
         name: "TELA ESMERIL (21X26). GRANO 180",
         imagen: imageURL,
         descripcion: "Tela esmeril de tamaño 21x26, grano 180.",
-        category: subRubro
+        category: subRubroAccPintura02
     }
 ];
 
-module.exports = listaLijasYAbrasivos;
+module.exports = { listaLijasYAbrasivos, subRubroAccPintura02 };

@@ -1,4 +1,4 @@
-const subRubro = 'Precintos';
+const subRubroFerr02 = 'Precintos';
 const imageURL = 'URL';
 
 const listaPrecintos = [
@@ -8,7 +8,7 @@ const listaPrecintos = [
         price: 7359.30,
         imagen: imageURL,
         descripcion: "Los precintos gris son perfectos para asegurar y sellar cajas y paquetes de manera segura y eficiente. Su resistencia y adherencia los hacen ideales para aplicaciones de embalaje y envío.",
-        category: subRubro
+        category: subRubroFerr02
     },
     {
         codigo: 5508,
@@ -16,7 +16,7 @@ const listaPrecintos = [
         price: 4544.00,
         imagen: imageURL,
         descripcion: "Los precintos negro son ideales para asegurar y sellar cajas y paquetes de manera segura y eficiente. Su resistencia y adherencia los hacen ideales para aplicaciones de embalaje y envío.",
-        category: subRubro
+        category: subRubroFerr02
     },
     {
         codigo: 5509,
@@ -24,7 +24,7 @@ const listaPrecintos = [
         price: 4160.00,
         imagen: imageURL,
         descripcion: "Los precintos negro son ideales para asegurar y sellar cajas y paquetes de manera segura y eficiente. Su resistencia y adherencia los hacen ideales para aplicaciones de embalaje y envío.",
-        category: subRubro
+        category: subRubroFerr02
     },
     {
         codigo: 5510,
@@ -32,7 +32,7 @@ const listaPrecintos = [
         price: 3200.00,
         imagen: imageURL,
         descripcion: "Los precintos negro son ideales para asegurar y sellar cajas y paquetes de manera segura y eficiente. Su resistencia y adherencia los hacen ideales para aplicaciones de embalaje y envío.",
-        category: subRubro
+        category: subRubroFerr02
     },
     {
         codigo: 5512,
@@ -40,7 +40,7 @@ const listaPrecintos = [
         price: 2681.60,
         imagen: imageURL,
         descripcion: "Los precintos negro son ideales para asegurar y sellar cajas y paquetes de manera segura y eficiente. Su resistencia y adherencia los hacen ideales para aplicaciones de embalaje y envío.",
-        category: subRubro
+        category: subRubroFerr02
     },
     {
         codigo: 5514,
@@ -48,8 +48,8 @@ const listaPrecintos = [
         price: 958.40,
         imagen: imageURL,
         descripcion: "Los precintos negro son ideales para asegurar y sellar cajas y paquetes de manera segura y eficiente. Su resistencia y adherencia los hacen ideales para aplicaciones de embalaje y envío.",
-        category: subRubro
+        category: subRubroFerr02
     }
 ];
 
-module.exports = listaPrecintos;
+module.exports = { listaPrecintos, subRubroFerr02 };

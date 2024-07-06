@@ -1,4 +1,4 @@
-const subRubro = 'Cielorraso';
+const subRubroPinturas04 = 'Cielorraso';
 const imageURL = 'URL';
 
 const listaCielorrasoNetcolor = [
@@ -8,7 +8,7 @@ const listaCielorrasoNetcolor = [
         name: "LATEX PARA CIELORRASO x 1 lt.",
         imagen: imageURL,
         descripcion: "Látex para cielorraso en presentación de 1 litro.",
-        category: subRubro
+        category: subRubroPinturas04
       },
       {
         price: 15294.11,
@@ -16,7 +16,7 @@ const listaCielorrasoNetcolor = [
         name: "LATEX PARA CIELORRASO x 4 lts.",
         imagen: imageURL,
         descripcion: "Látex para cielorraso en presentación de 4 litros.",
-        category: subRubro
+        category: subRubroPinturas04
       },
       {
         price: 31678.74,
@@ -24,7 +24,7 @@ const listaCielorrasoNetcolor = [
         name: "LATEX PARA CIELORRASO x 10 lts.",
         imagen: imageURL,
         descripcion: "Látex para cielorraso en presentación de 10 litros.",
-        category: subRubro
+        category: subRubroPinturas04
       },
       {
         price: 66117.40,
@@ -32,8 +32,8 @@ const listaCielorrasoNetcolor = [
         name: "LATEX PARA CIELORRASO x 20 kg.",
         imagen: imageURL,
         descripcion: "Látex para cielorraso en presentación de 20 kilogramos.",
-        category: subRubro
+        category: subRubroPinturas04
       }
 ];
 
-module.exports = listaCielorrasoNetcolor;
+module.exports = { listaCielorrasoNetcolor, subRubroPinturas04 };

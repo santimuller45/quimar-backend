@@ -1,4 +1,4 @@
-const subRubro = 'Pintura en Polvo';
+const subRubroPinturas19 = 'Pintura en Polvo';
 const imageURL = 'URL';
 
 const listaPinturaEnPolvo = [
@@ -8,8 +8,8 @@ const listaPinturaEnPolvo = [
         name: "PINTURA AL AGUA X 4 kg. BLANCA", 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro
+        category: subRubroPinturas19
     }
 ];
 
-module.exports = listaPinturaEnPolvo;
+module.exports = { listaPinturaEnPolvo, subRubroPinturas19 };

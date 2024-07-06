@@ -1,4 +1,4 @@
-const subRubro = 'Mini rodillos Coati';
+const subRubroAccPintura03 = 'Mini rodillos Coati';
 const imageURL = 'URL';
 
 const listaMiniRodillosElCoati = [
@@ -8,7 +8,7 @@ const listaMiniRodillosElCoati = [
         name: "MINI RODILLO CON FUNDA X 5 CM.",
         imagen: imageURL,
         descripcion: "Mini rodillo con funda, tamaño de 5 cm.",
-        category: subRubro
+        category: subRubroAccPintura03
     },
     {
         price: 702.58,
@@ -16,7 +16,7 @@ const listaMiniRodillosElCoati = [
         name: "MINI RODILLO CON FUNDA X 8 CM.",
         imagen: imageURL,
         descripcion: "Mini rodillo con funda, tamaño de 8 cm.",
-        category: subRubro
+        category: subRubroAccPintura03
     },
     {
         price: 822.53,
@@ -24,7 +24,7 @@ const listaMiniRodillosElCoati = [
         name: "MINI RODILLO CON FUNDA X 11 CM.",
         imagen: imageURL,
         descripcion: "Mini rodillo con funda, tamaño de 11 cm.",
-        category: subRubro
+        category: subRubroAccPintura03
     },
     {
         price: 797.44,
@@ -32,8 +32,8 @@ const listaMiniRodillosElCoati = [
         name: "MINI RODILLO PARA EPOXI X 8 CM.",
         imagen: imageURL,
         descripcion: "Mini rodillo para epoxi, tamaño de 8 cm.",
-        category: subRubro
+        category: subRubroAccPintura03
     }
 ];
 
-module.exports = listaMiniRodillosElCoati;
+module.exports = { listaMiniRodillosElCoati, subRubroAccPintura03 };

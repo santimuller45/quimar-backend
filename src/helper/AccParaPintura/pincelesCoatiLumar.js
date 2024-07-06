@@ -1,4 +1,4 @@
-const subRubro = 'Pinceles Coati/Lumar';
+const subRubroAccPintura05 = 'Pinceles Coati/Lumar';
 const imageURL = 'URL';
 
 const listaPincelesElCoatiLumar = [
@@ -8,7 +8,7 @@ const listaPincelesElCoatiLumar = [
         name: "PINCELETA CERDA BLANCA Nº 40",
         imagen: imageURL,
         descripcion: "Pinceleta de cerda blanca, tamaño número 40.",
-        category: subRubro
+        category: subRubroAccPintura05
     },
     {
         price: 4745.39,
@@ -16,8 +16,8 @@ const listaPincelesElCoatiLumar = [
         name: "PINCELETA CERDA BLANCA N° 50",
         imagen: imageURL,
         descripcion: "Pinceleta de cerda blanca, tamaño número 50.",
-        category: subRubro
+        category: subRubroAccPintura05
     }
 ];
 
-module.exports = listaPincelesElCoatiLumar;
+module.exports = { listaPincelesElCoatiLumar, subRubroAccPintura05 };

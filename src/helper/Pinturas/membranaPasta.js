@@ -1,4 +1,4 @@
-const subRubro = 'Membrana en pasta';
+const subRubroPinturas16 = 'Membrana en pasta';
 const imageURL = 'URL';
 
 const listaMembranaEnPastaMiColor = [
@@ -8,7 +8,7 @@ const listaMembranaEnPastaMiColor = [
         name: "MEMBRANA EN PASTA MI COLOR X 1 kg.",
         imagen: imageURL,
         descripcion: "Membrana en pasta de la línea Mi Color en presentación de 1 kg.",
-        category: subRubro
+        category: subRubroPinturas16
       },
       {
         price: 20578.89,
@@ -16,7 +16,7 @@ const listaMembranaEnPastaMiColor = [
         name: "MEMBRANA EN PASTA MI COLOR X 4 kg.",
         imagen: imageURL,
         descripcion: "Membrana en pasta de la línea Mi Color en presentación de 4 kg.",
-        category: subRubro
+        category: subRubroPinturas16
       },
       {
         price: 45778.04,
@@ -24,7 +24,7 @@ const listaMembranaEnPastaMiColor = [
         name: "MEMBRANA EN PASTA MI COLOR X 10 kg.",
         imagen: imageURL,
         descripcion: "Membrana en pasta de la línea Mi Color en presentación de 10 kg.",
-        category: subRubro
+        category: subRubroPinturas16
       },
       {
         price: 87682.97,
@@ -32,8 +32,8 @@ const listaMembranaEnPastaMiColor = [
         name: "MEMBRANA EN PASTA MI COLOR X 20 kg.",
         imagen: imageURL,
         descripcion: "Membrana en pasta de la línea Mi Color en presentación de 20 kg.",
-        category: subRubro
+        category: subRubroPinturas16
       }
 ];
 
-module.exports = listaMembranaEnPastaMiColor;
+module.exports = { listaMembranaEnPastaMiColor, subRubroPinturas16 };

@@ -1,4 +1,4 @@
-const subRubro = 'Cenefas para Techos';
+const subRubroZing05 = 'Cenefas para Techos';
 const imageURL = 'URL';
 
 const listaCenefasParaTechos = [
@@ -7,7 +7,7 @@ const listaCenefasParaTechos = [
         name: "CENEFAS 15 X 15 POR UN METRO",
         imagen: imageURL,
         price: 5569.20,
-        category: subRubro,
+        category: subRubroZing05,
         description: "Elemento decorativo para techos, con medidas de 15 x 15, vendido por metro lineal."
     },
     {
@@ -15,9 +15,9 @@ const listaCenefasParaTechos = [
         name: "CENEFAS 20 X 20 POR UN METRO",
         imagen: imageURL,
         price: 7956.00,
-        category: subRubro,
+        category: subRubroZing05,
         description: "Elemento decorativo para techos, con medidas de 20 x 20, vendido por metro lineal."
     }
 ];
 
-module.exports = listaCenefasParaTechos;
+module.exports = { listaCenefasParaTechos, subRubroZing05 };

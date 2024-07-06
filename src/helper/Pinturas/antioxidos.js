@@ -1,4 +1,4 @@
-const subRubro = 'Antioxidos';
+const subRubroPinturas01 = 'Antioxidos';
 const imageURL = 'URL';
 
 const listaConvertidorYAntioxidosParaSuperficies = [
@@ -8,14 +8,14 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO BLANCO X 1/4 lt', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 4307.87, 
         codigo: '1251', 
         name: 'CONVERTIDOR DE OXIDO BLANCO X 1/2 lt', 
         imagen: imageURL, descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 6926.54, 
@@ -23,7 +23,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO BLANCO X 1 lt', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 2532.47, 
@@ -31,7 +31,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO AL CROMATO BLANCO x 1/4 lt.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 3782.16, 
@@ -39,7 +39,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO AL CROMATO BLANCO x 1/2lt.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 5949.02, 
@@ -47,7 +47,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO AL CROMATO BLANCO x 1lt.', 
         imagen: imageURL, descripcion: 
         'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 20587.56, 
@@ -55,7 +55,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO AL CROMATO BLANCO x 4lts.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 104110.85, 
@@ -63,7 +63,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO BLANCO x 20lts.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 2697.94, 
@@ -71,7 +71,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO NEGRO x 1/4 lt.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 4119.40, 
@@ -79,7 +79,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO NEGRO x 1/2 lt.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 6623.51, 
@@ -87,7 +87,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO NEGRO x 1 lt.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 23285.50, 
@@ -95,14 +95,14 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO NEGRO x 4 lts.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro },
+        category: subRubroPinturas01 },
     { 
         price: 108880.69, 
         codigo: '1269', 
         name: 'CONVERTIDOR DE OXIDO NEGRO x 20 lts.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 3277.70, 
@@ -110,7 +110,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO GRIS x 1/4 lt.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 3563.61, 
@@ -118,7 +118,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO GRIS x 1/2 lt.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 8494.18, 
@@ -126,7 +126,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO GRIS x 1 lt.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 28696.76, 
@@ -134,7 +134,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO GRIS x 4lts.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 136423.06, 
@@ -142,7 +142,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'CONVERTIDOR DE OXIDO GRIS x 20 lts.', 
         imagen: imageURL,
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 8092.66, 
@@ -150,7 +150,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'ANTIOXIDO AL CROMATO GRIS  x 1 lt.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 28696.76, 
@@ -158,7 +158,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'ANTIOXIDO AL CROMATO GRIS x 4 lts.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 104110.85, 
@@ -166,7 +166,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'ANTIOXIDO AL CROMATO GRIS x 20 lts.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 90106.72, 
@@ -174,7 +174,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'Antioxido al Cromato gris 020 x 20 lts.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 2532.47, 
@@ -182,7 +182,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'Antioxido al Cromato negro x 1/4 lt.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 3782.16, 
@@ -190,7 +190,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'Antioxido al Cromato negro x 1/2 lt.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 5949.02, 
@@ -198,7 +198,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'Antioxido al Cromato negro x 1 lt.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 20587.56, 
@@ -206,7 +206,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'Antioxido al Cromato negro x 4 lts.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 106177.93, 
@@ -214,7 +214,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'Antioxido al Cromato negro x 20 lts.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 1058.84, 
@@ -222,7 +222,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'Antioxido al cromato rojo x 1/4 l.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 3240.05, 
@@ -230,7 +230,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'Antioxido al cromato rojo x 1/2 l.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 5328.99, 
@@ -238,7 +238,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'Antioxido al cromato rojo x 1 lt.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 18451.80, 
@@ -246,7 +246,7 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'Antioxido al Cromato rojo x 4 lts.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     },
     { 
         price: 40771.52, 
@@ -254,8 +254,8 @@ const listaConvertidorYAntioxidosParaSuperficies = [
         name: 'Antioxido al cromato rojo x 10 lts.', 
         imagen: imageURL, 
         descripcion: 'Descripción del producto', 
-        category: subRubro 
+        category: subRubroPinturas01 
     }
 ];
 
-module.exports = listaConvertidorYAntioxidosParaSuperficies;
+module.exports = { listaConvertidorYAntioxidosParaSuperficies, subRubroPinturas01 };
