@@ -5,13 +5,13 @@ const { PORT } = process.env;
 //HELPERS CREACIÓN DE BASE DE DATOS ----------->
 
 const { createAllRubros } = require('./src/helper/helperRubro.js');
-const { createLista1 } = require('./src/helper/helperProductos.js');
+const { createAllProducts } = require('./src/helper/helperProductos.js');
 
 //------
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then( async () => {  // cambio a alter en lugar de force
-    await createLista1();       //HELPER PRODUCTOS
+    await createAllProducts();       //HELPER PRODUCTOS
     await createAllRubros();    //HELPER RUBROS
     app.listen( PORT, () => {
         console.log('Servidor corriendo en el puerto' , PORT);
