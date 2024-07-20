@@ -1,12 +1,17 @@
 const subRubroPiletas01 = 'Granulados y Liquidos';
+
+// IMG ------->
 const imageURL = 'URL';
+const imageCloro5lt = '../../assets/img/piletas/cloro80.png';
+const imageSulfatoCobre = '../../assets/img/piletas/sulfatodecobre.png';
+// <-------------
 
 const listaGranuladosYLiquidos = [
     {
         codigo: 7100,
         name: "CLORO LIQUIDO P/PILETAS  X 5 LT  AL 80 %",
         price: 4250.00,
-        imagen: imageURL,
+        imagen: imageCloro5lt,
         descripcion: "El cloro líquido para piscinas es ideal para desinfectar y mantener el agua limpia y cristalina. Su alta concentración y eficacia garantizan una desinfección completa y duradera.",
         category: subRubroPiletas01
     },
@@ -70,7 +75,7 @@ const listaGranuladosYLiquidos = [
         codigo: 7150,
         name: "SULFATO DE COBRE X 1 KG.",
         price: 19468.80,
-        imagen: imageURL,
+        imagen: imageSulfatoCobre,
         descripcion: "El sulfato de cobre es ideal para prevenir y controlar el crecimiento de algas en piscinas y sistemas de tratamiento de agua. Su fórmula concentrada elimina las algas existentes y evita su proliferación, manteniendo el agua limpia y cristalina.",
         category: subRubroPiletas01
     }

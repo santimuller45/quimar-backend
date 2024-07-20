@@ -1,12 +1,17 @@
 const subRubroQuimDilu01 = 'Aceites';
+
+// IMG ---------->
 const imageURL = 'URL';
+const imageLino900cc = '../../assets/img/aceites/aceitelino.png';
+const imageLino5lt = '../../assets/img/aceites/aceitelino5lt.png';
+// <--------------
 
 const listaAceiteDeLinoYAceiteLubricante = [
     {
         price: 2994.54, 
         codigo: '1150', 
         name: 'ACEITE DE LINO X 900 cc', 
-        imagen: imageURL, 
+        imagen: imageLino900cc, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu01 
     },
@@ -14,7 +19,7 @@ const listaAceiteDeLinoYAceiteLubricante = [
         price: 15218.04, 
         codigo: '1151', 
         name: 'ACEITE DE LINO X 5 lts', 
-        imagen: imageURL, 
+        imagen: imageLino5lt, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu01 
     },

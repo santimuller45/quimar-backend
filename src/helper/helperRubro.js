@@ -12,8 +12,9 @@ const { rubroPolietilenoYAgro } = require('./PolietilenoYAgrotileno/RubroPoliYAg
 const { rubroPiletas } = require('./ProductosParaPiletas/RubroPiletas/rubroPiletas.js');
 const { rubroQuimicosYDiluyentes } = require('./QuimicosYDiluyentes/RubroQuim/rubroQuimicosDilu.js');
 const { rubroZingueria } = require('./Zingueria/RubroZingueria/rubroZingueria.js');
+// <----------------------------------------
 
-//CREAR CADA RUBRO EN LA DB
+//CREAR CADA RUBRO EN LA DB ------------------------------------------------------->
 
 const createRubro01 = async () => await Rubro.create(rubroAccParaPintura);
 const createRubro02 = async () => await Rubro.create(rubroArtLimpieza);
@@ -27,7 +28,9 @@ const createRubro09 = async () => await Rubro.create(rubroPiletas);
 const createRubro10 = async () => await Rubro.create(rubroQuimicosYDiluyentes);
 const createRubro11 = async () => await Rubro.create(rubroZingueria);
 
-//FUNCION PARA CREAR TODOS LOS RUBROS
+// <---------------------------------------------------------------------------------
+
+//FUNCION PARA CREAR TODOS LOS RUBROS ------->
 
 const createAllRubros = async () => {
     await createRubro01();
@@ -42,5 +45,7 @@ const createAllRubros = async () => {
     await createRubro10();
     await createRubro11();
 };
+
+// <------------------------------------------
 
 module.exports = { createAllRubros };

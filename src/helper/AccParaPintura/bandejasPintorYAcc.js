@@ -1,5 +1,5 @@
 const subRubroAccPintura01 = 'Bandejas Pintor y Acc.';
-const imageURL = 'URL';
+const imageURL = 'https://http2.mlstatic.com/D_NQ_NP_696519-MLU73289931755_122023-O.webp';
 
 const listaBandejasDePintorYAcc = [
     {

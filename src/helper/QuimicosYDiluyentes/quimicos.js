@@ -1,5 +1,12 @@
 const subRubroQuimDilu03 = 'Quimicos';
+
+// IMG ------->
 const imageURL = 'URL';
+const imageAcidoM900cc = '../../assets/img/quimicos/acidomuriatico.png';
+const imageAcidoM5lt = '../../assets/img/quimicos/acidomuriatico5lt.png';
+const imageDestapaC = '../../assets/img/quimicos/destapacañeria.png';
+const imageSodaC = '../../assets/img/quimicos/sodacaustica.png';
+// <-------------
 
 const listaQuimicosParaFerreterias = [
     { price: 1989.02, codigo: '0998', name: 'ALCOHOL FINO X 500 cc', imagen: imageURL, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
@@ -8,13 +15,13 @@ const listaQuimicosParaFerreterias = [
     { price: 8075.50, codigo: '1002', name: 'CARBURO  DE CALCIO x 120 kg.', imagen: imageURL, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
     { price: 8596.50, codigo: '1003', name: 'CARBURO DE CALCIO SUELTO X kg.', imagen: imageURL, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
     { price: 10375.63, codigo: '1004', name: 'ALUMBRE DE POTACIO X 1 kg', imagen: imageURL, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
-    { price: 1391.25, codigo: '1005', name: 'SODA CAUSTICA LIQUIDA x 900 cc.', imagen: imageURL, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
-    { price: 1140.00, codigo: '1007', name: 'ACIDO MURIATICO x 1 lt', imagen: imageURL, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
-    { price: 3400.00, codigo: '1008', name: 'ACIDO MURIATICO x 5 lts.', imagen: imageURL, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
+    { price: 1391.25, codigo: '1005', name: 'SODA CAUSTICA LIQUIDA x 900 cc.', imagen: imageSodaC, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
+    { price: 1140.00, codigo: '1007', name: 'ACIDO MURIATICO x 1 lt', imagen: imageAcidoM900cc, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
+    { price: 3400.00, codigo: '1008', name: 'ACIDO MURIATICO x 5 lts.', imagen: imageAcidoM5lt, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
     { price: 1346.40, codigo: '1009', name: 'DESENGRASANTE ALCALINO EN GRANOS X 1 kg.', imagen: imageURL, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
     { price: 6125.39, codigo: '1010', name: 'DESENGRASANTE ALCALINO LIQUIDO X 1 lt', imagen: imageURL, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
     { price: 3899.80, codigo: '1011', name: 'DESOXIDANTE FOSFATIZANTE X 1 lt.', imagen: imageURL, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
-    { price: 3062.04, codigo: '1015', name: 'DESTAPA CAÑERIAS LIQUIDO X 900 cc', imagen: imageURL, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
+    { price: 3062.04, codigo: '1015', name: 'DESTAPA CAÑERIAS LIQUIDO X 900 cc', imagen: imageDestapaC, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
     { price: 865.15, codigo: '1040', name: 'SELLADOR DE POLIPROPILENO X 25 cc.', imagen: imageURL, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
     { price: 4868.98, codigo: '1042', name: 'SELLADOR DE SILICONA PAR FISURAS X 280BL', imagen: imageURL, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
     { price: 7488.00, codigo: '1045', name: 'SELLADOR PARA CAÑOS DE GAS X 15 grs.', imagen: imageURL, descripcion: 'Descripción del producto', category: subRubroQuimDilu03 },
