@@ -1,16 +1,9 @@
 const { Productos } = require('../db.js');
 const { Op } = require('sequelize');
 
-// CREACIÓN DEL MENÚ CON EL HELPER PARA GUARDAR EN LA BASE DE DATOS
-
-// const { menuToro } = require('../helpers/menu.js')
-
-// const getHelperMenu = async () => {
-//   return await Productos.bulkCreate( menuToro );
-// }
-
+// FUNCION PARA TRANSFORMAR A MAYUS UN STRING ----->
 const mayusLetter = (string) => string.toUpperCase();
-////////////////////////////////////////////////////////////////////
+//<-------
 
 const getAllProductsController = async () => {
   return await Productos.findAll();
