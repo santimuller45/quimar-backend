@@ -1,3 +1,4 @@
+const { getAllRubrosController } = require('./rubroController.js');
 // OBTENER EL DIA MES AÑO CON DAYJS ------->
 const dayjs = require('dayjs');
 
@@ -15,4 +16,13 @@ const getDateFormat = () => {
 
 // <-----------------------------
 
-module.exports = { getDateFormat };
+const getAllSubRubrosController = async () => {
+  let allSubRubros = [];
+  let result = await getAllRubrosController();
+  for (let cat of result) {
+      allSubRubros = allSubRubros.concat(cat.subRubro);
+  }
+  return allSubRubros;
+};
+
+module.exports = { getDateFormat, getAllSubRubrosController };

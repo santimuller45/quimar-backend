@@ -35,19 +35,16 @@ const createProductList11 = async () => await Productos.bulkCreate(listProducts1
 
 const createAllProducts = async () => {
     await createProductList01();
-
-    // DESCOMENTAR -------->
-    
-    // await createProductList02();
-    // await createProductList03();
-    // await createProductList04();
-    // await createProductList05();
-    // await createProductList06();
-    // await createProductList07();
-    // await createProductList08();
-    // await createProductList09();
-    // await createProductList10();
-    // await createProductList11();
+    await createProductList02();
+    await createProductList03();
+    await createProductList04();
+    await createProductList05();
+    await createProductList06();
+    await createProductList07();
+    await createProductList08();
+    await createProductList09();
+    await createProductList10();
+    await createProductList11();
 };
 
 // <------------------------------------------

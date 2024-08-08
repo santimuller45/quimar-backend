@@ -24,6 +24,7 @@ const handlerGetRubroByID = async (req, res) => {
   };  
 };
 
+
 module.exports = {
     handlerGetRubros,
     handlerGetRubroByID
