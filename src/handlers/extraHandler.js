@@ -20,6 +20,4 @@ const handlerGetSubRubros = async (req, res) => {
   };  
 };
 
-
-
 module.exports = { handlerGetDate, handlerGetSubRubros };

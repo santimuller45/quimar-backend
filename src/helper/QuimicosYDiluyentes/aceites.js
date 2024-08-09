@@ -1,9 +1,12 @@
+require('dotenv').config();
+const { DB_HOST, PORT } = process.env;
+
 const subRubroQuimDilu01 = 'Aceites';
 
 // IMG ---------->
 const imageURL = 'URL';
-const imageLino900cc = '../../assets/img/aceites/aceitelino.png';
-const imageLino5lt = '../../assets/img/aceites/aceitelino5lt.png';
+const imageLino900cc = `http://${DB_HOST}:${PORT}/assets/img/aceites/aceitelino.png`;
+const imageLino5lt = `http://${DB_HOST}:${PORT}/assets/img/aceites/aceitelino5lt.png`;
 // <--------------
 
 const listaAceiteDeLinoYAceiteLubricante = [
