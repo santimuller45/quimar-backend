@@ -1,9 +1,11 @@
 const subRubroZing04 = 'Caños y Acc. P/Salamandra';
 
 // IMG ------->
-const imageURL = 'URL';
-const imageCañoNegro = '../../assets/img/zingueria/cañonegro.png';
-const imageCodoCorto = '../../assets/img/zingueria/codocorto.png';
+const { 
+    noImageDefault,
+    imageCañoNegro,
+    imageCodoCorto
+ } = require('../../assets/assets.js');
 // <-------------
 
 const listaCañoYAccParaSalamandra = [
@@ -51,7 +53,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4080,
         name: "SOMBRERO DE 3 1/2\" NEGRO",
         price: 7158.47,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Sombrero negro de 3 1/2 pulgadas para salamandra, utilizado para proteger la salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -59,7 +61,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4082,
         name: "SOMBRERO DE 4\" NEGRO",
         price: 4660.38,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Sombrero negro de 4 pulgadas para salamandra, utilizado para proteger la salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -67,7 +69,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4084,
         name: "SOMBRERO DE 4 1/2\" NEGRO",
         price: 5090.31,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Sombrero negro de 4 1/2 pulgadas para salamandra, utilizado para proteger la salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -75,7 +77,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4086,
         name: "SOMBRERO DE 5\" NEGRO",
         price: 5339.70,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Sombrero negro de 5 pulgadas para salamandra, utilizado para proteger la salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -83,7 +85,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4088,
         name: "SOMBRERO DE 6\" NEGRO",
         price: 5355.00,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Sombrero negro de 6 pulgadas para salamandra, utilizado para proteger la salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -131,7 +133,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4100,
         name: "CODO LARGO 3 1/2\"",
         price: 8651.77,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Codo largo de 3 1/2 pulgadas para salamandra, utilizado para cambiar la dirección de la tubería de escape en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -139,7 +141,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4102,
         name: "CODO LARGO 4 1/2\"",
         price: 7726.50,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Codo largo de 4 1/2 pulgadas para salamandra, utilizado para cambiar la dirección de la tubería de escape en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -147,7 +149,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4104,
         name: "CODO LARGO 4\"",
         price: 7342.47,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Codo largo de 4 pulgadas para salamandra, utilizado para cambiar la dirección de la tubería de escape en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -155,7 +157,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4106,
         name: "CODO LARGO 5\"",
         price: 7818.30,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Codo largo de 5 pulgadas para salamandra, utilizado para cambiar la dirección de la tubería de escape en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -163,7 +165,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4108,
         name: "CODO LARGO 6\"",
         price: 7956.00,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Codo largo de 6 pulgadas para salamandra, utilizado para cambiar la dirección de la tubería de escape en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -171,7 +173,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4110,
         name: "SOMBRERO TIPO H 3 1/2\" NEGRO",
         price: 12315.67,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Sombrero tipo H negro de 3 1/2 pulgadas para salamandra, utilizado para proteger la salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -179,7 +181,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4112,
         name: "SOMBRERO TIPO H 4\" NEGRO",
         price: 16404.46,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Sombrero tipo H negro de 4 pulgadas para salamandra, utilizado para proteger la salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -187,7 +189,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4114,
         name: "SOMBRERO TIPO H 4 1/2\" NEGRO",
         price: 19951.64,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Sombrero tipo H negro de 4 1/2 pulgadas para salamandra, utilizado para proteger la salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -195,7 +197,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4116,
         name: "SOMBRERO TIPO H 5\" NEGRO",
         price: 26940.70,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Sombrero tipo H negro de 5 pulgadas para salamandra, utilizado para proteger la salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -203,7 +205,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4118,
         name: "SOMBRERO TIPO H 6\" NEGRO",
         price: 29249.93,
-        imagen: imageURL,
+        imagen: noImageDefault,
         descripcion: "Sombrero tipo H negro de 6 pulgadas para salamandra, utilizado para proteger la salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     }

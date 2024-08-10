@@ -1,12 +1,12 @@
 const subRubroPinturas03 = 'Cal de blanqueo';
-const imageURL = 'URL';
+const { noImageDefault } = require('../../assets/assets.js');
 
 const listaCalDeBlanqueo = [
     {
         price: 1606.50, 
         codigo: 2070, 
         name: "CAL DE BLANQUEO x 4 kg.", 
-        imagen: imageURL, 
+        imagen: noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroPinturas03
     },
@@ -14,7 +14,7 @@ const listaCalDeBlanqueo = [
         price: 612.00, 
         codigo: 2071, 
         name: "LATIZADOR PARA CAL x 250 cc", 
-        imagen: imageURL, 
+        imagen: noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroPinturas03
     }

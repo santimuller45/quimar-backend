@@ -1,13 +1,15 @@
 const subRubroZing02 = 'Canaletas y Acc. para techos';
 
 // IMG ------->
-const imageCanaletaMediaCaña = '../../assets/img/zingueria/canaletas.png';
-const imageCabeceraMediaCaña = '../../assets/img/zingueria/cabecera.png';
-const imageBoquetaMediaCaña = '../../assets/img/zingueria/boqueta.png';
-const imageIntermediaMediaCaña = '../../assets/img/zingueria/intermediamediacaña.png';
-const imageSoporteMediaCaña = '../../assets/img/zingueria/soportemediacaña.png';
-const imageEsquineroMediaCaña = '../../assets/img/zingueria/esqmediacaña.png';
-const imageRinconeroMediaCaña = '../../assets/img/zingueria/rinconero.png';
+const { 
+    imageCanaletaMediaCaña,
+    imageCabeceraMediaCaña,
+    imageBoquetaMediaCaña,
+    imageIntermediaMediaCaña,
+    imageSoporteMediaCaña,
+    imageEsquineroMediaCaña,
+    imageRinconeroMediaCaña
+ } = require('../../assets/assets.js');
 // <-------------
 
 const listaCanaletasYAccParaTechos = [

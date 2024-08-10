@@ -1,7 +1,7 @@
 const subRubroZing08 = 'Reducciones Galvanizadas';
 
 // IMG ------->
-const imageReducGalv = '../../assets/img/zingueria/reducciongalvanizada.png';
+const { imageReducGalv } = require('../../assets/assets.js');
 // <-------------
 
 const listaReduccionesGalvanizadas = [

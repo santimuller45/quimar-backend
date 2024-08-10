@@ -1,12 +1,7 @@
-require('dotenv').config();
-const { DB_HOST, PORT } = process.env;
-
 const subRubroQuimDilu01 = 'Aceites';
 
 // IMG ---------->
-const imageURL = 'URL';
-const imageLino900cc = `http://${DB_HOST}:${PORT}/assets/img/aceites/aceitelino.png`;
-const imageLino5lt = `http://${DB_HOST}:${PORT}/assets/img/aceites/aceitelino5lt.png`;
+const { noImageDefault, imageLino900cc, imageLino5lt } = require('../../assets/assets.js');
 // <--------------
 
 const listaAceiteDeLinoYAceiteLubricante = [
@@ -30,7 +25,7 @@ const listaAceiteDeLinoYAceiteLubricante = [
         price: 483021.00, 
         codigo: '1152', 
         name: 'ACEITE DE LINO X 200 lts', 
-        imagen: imageURL, 
+        imagen: noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu01 
     }

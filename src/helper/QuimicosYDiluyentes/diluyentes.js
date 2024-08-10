@@ -1,16 +1,18 @@
 const subRubroQuimDilu02 = 'Diluyentes';
 
 // IMG ------->
-const imageURL = 'URL';
-const imageAguarras900cc = '../../assets/img/diluyentes/aguarras.png';
-const imageAguarras5lt = '../../assets/img/diluyentes/aguarras5lt.png';
-const imageKerosene900cc = '../../assets/img/diluyentes/kerosene.png';
-const imageKerosene5lt = '../../assets/img/diluyentes/kerosene5lt.png';
-const imageSolventeInd = '../../assets/img/diluyentes/solventeindustrial.png';
-const imageThinner900cc = '../../assets/img/diluyentes/thinner.png';
-const imageThinner5lt = '../../assets/img/diluyentes/thinner5lt.png';
-const imageThinnerOro900cc = '../../assets/img/diluyentes/thinneroro.png';
-const imageThinnerOro5lt = '../../assets/img/diluyentes/thinneroro5lt.png';
+const { 
+    noImageDefault, 
+    imageAguarras900cc, 
+    imageAguarras5lt, 
+    imageKerosene900cc, 
+    imageKerosene5lt,
+    imageSolventeInd,
+    imageThinner900cc,
+    imageThinner5lt,
+    imageThinnerOro900cc,
+    imageThinnerOro5lt
+ } = require('../../assets/assets.js');
 // <-------------
 
 const listaDiluyentes = [
@@ -34,7 +36,7 @@ const listaDiluyentes = [
         price: 295596.00, 
         codigo: '1122', 
         name: 'AGUARRAS MINERAL x 200 lts.', 
-        imagen: imageURL, 
+        imagen: noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -50,7 +52,7 @@ const listaDiluyentes = [
         price: 24945.12, 
         codigo: '1125', 
         name: 'SOLVENTE INDUSTRIAL x 5 LT.', 
-        imagen: imageURL, 
+        imagen: noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -58,7 +60,7 @@ const listaDiluyentes = [
         price: 2240.00, 
         codigo: '1128', 
         name: 'THINNER PARA LIMPIEZA X 800 cc.', 
-        imagen: imageURL, 
+        imagen: noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -66,7 +68,7 @@ const listaDiluyentes = [
         price: 2268.00, 
         codigo: '1129', 
         name: 'THINNER X 500 cc.', 
-        imagen: imageURL, 
+        imagen: noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -90,7 +92,7 @@ const listaDiluyentes = [
         price: 618120.00, 
         codigo: '1133', 
         name: 'THINNER x 200lts.', 
-        imagen: imageURL, 
+        imagen: noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -114,7 +116,7 @@ const listaDiluyentes = [
         price: 668304.00, 
         codigo: '1137', 
         name: 'THINNER SELLO DE ORO x 200 lts.', 
-        imagen: imageURL, 
+        imagen: noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -138,7 +140,7 @@ const listaDiluyentes = [
         price: 43635.60, 
         codigo: '1144', 
         name: 'REMOVEDOR GEL x 4 lts.', 
-        imagen: imageURL, 
+        imagen: noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -146,7 +148,7 @@ const listaDiluyentes = [
         price: 7129.80, 
         codigo: '1146', 
         name: 'REMOVEDOR EN GEL X 1/2 lt.', 
-        imagen: imageURL, 
+        imagen: noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -154,7 +156,7 @@ const listaDiluyentes = [
         price: 10404.00, 
         codigo: '1148', 
         name: 'REMOVEDOR EN GEL X 1 lt', 
-        imagen: imageURL, 
+        imagen: noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     }

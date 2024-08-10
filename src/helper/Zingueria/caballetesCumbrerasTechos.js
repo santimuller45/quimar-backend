@@ -1,7 +1,7 @@
 const subRubroZing01 = 'Caballetes / Cumbreras para techos';
 
 // IMG ------->
-const imageCaballetes = '../../assets/img/zingueria/caballete.png';
+const { imageCaballetes } = require('../../assets/assets.js');
 // <-------------
 
 const listaCaballetesCumbrerasParaTechos = [

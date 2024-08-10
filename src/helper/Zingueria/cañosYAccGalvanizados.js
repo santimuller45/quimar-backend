@@ -1,13 +1,15 @@
 const subRubroZing03 = 'Caños y Acc. Galvanizados P/Ventilacion';
 
 // IMG ------->
-const imageCañoGalv = '../../assets/img/zingueria/cañogalv.png';
-const imageCurva45Corrugada = '../../assets/img/zingueria/cañocorrugado.png';
-const imageCurva90Corrugada = '../../assets/img/zingueria/curvacorrugada.png';
-const imageCurvaArticulada = '../../assets/img/zingueria/curvaarticulada.png';
-const imageSombreroH = '../../assets/img/zingueria/sombrerotipoh.png';
-const imageSombreroDobleAro = '../../assets/img/zingueria/sombrerodoblearo.png';
-const imagePollerita = '../../assets/img/zingueria/pollerita.png';
+const { 
+    imageCañoGalv,
+    imageCurva45Corrugada,
+    imageCurva90Corrugada,
+    imageCurvaArticulada,
+    imageSombreroH,
+    imageSombreroDobleAro,
+    imagePollerita
+ } = require('../../assets/assets.js');
 // <-------------
 
 const listaCañosYAccGalvanizadosPVent = [

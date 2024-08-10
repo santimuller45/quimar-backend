@@ -1,7 +1,7 @@
 const subRubroZing05 = 'Cenefas para Techos';
 
 // IMG ------->
-const imageCenefas = '../../assets/img/zingueria/cenefas.png';
+const { imageCenefas } = require('../../assets/assets.js');
 // <-------------
 
 const listaCenefasParaTechos = [

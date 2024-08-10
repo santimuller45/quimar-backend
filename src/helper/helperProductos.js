@@ -51,4 +51,3 @@ const createAllProducts = async () => {
     
 
 module.exports = { createAllProducts };
-

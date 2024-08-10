@@ -1,9 +1,7 @@
 const subRubroZing07 = 'Grampas Omega';
 
 // IMG ------->
-const imageOmega = '../../assets/img/zingueria/grampasomega.png';
-const imageDektite200 = '../../assets/img/zingueria/dektite200.png';
-const imageDektite400 = '../../assets/img/zingueria/dektite400.png';
+const { imageOmega, imageDektite200, imageDektite400 } = require('../../assets/assets.js');
 // <-------------
 
 const listaGrampasOmega = [
