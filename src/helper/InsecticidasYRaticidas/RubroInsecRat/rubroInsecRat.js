@@ -1,7 +1,7 @@
 const { subRubroInsecRat01 } = require('../insecticidasYRaticidas.js');
 
 const rubroInsectRat = {
-    name:"INSECTICIDAS Y RATICIDAS",
+    name:"Insecticidas y Raticidas",
     subRubro: [
        subRubroInsecRat01
     ]

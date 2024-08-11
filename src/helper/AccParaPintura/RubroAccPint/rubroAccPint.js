@@ -7,7 +7,7 @@ const { subRubroAccPintura06 } = require('../rodillosCoatiLumar.js');
 
 
 const rubroAccParaPintura = {
-    name: "ACCESORIOS PARA PINTURA",
+    name: "Accesorios para Pintura",
     subRubro: [subRubroAccPintura01, subRubroAccPintura02, subRubroAccPintura03, subRubroAccPintura04, subRubroAccPintura05, subRubroAccPintura06 ]
 };
 

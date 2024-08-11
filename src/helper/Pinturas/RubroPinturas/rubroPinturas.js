@@ -27,7 +27,7 @@ const { subRubroPinturas26 } = require('../tintaParaBarniz.js');
 
 
 const rubroPinturas = {
-    name:"PINTURAS",
+    name:"Pinturas",
     subRubro: [
         subRubroPinturas01,
         subRubroPinturas02,

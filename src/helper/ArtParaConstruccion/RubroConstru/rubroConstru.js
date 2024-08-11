@@ -7,7 +7,7 @@ const { subRubroArtContr04 } = require('../sika.js');
 const { subRubroArtContr05 } = require('../supertech.js');
 
 const rubroArtConstru = {
-    name:"ARTICULOS PARA LA CONSTRUCCION",
+    name:"Articulos para la construcción",
     subRubro: [ 
         subRubroArtContr01, 
         subRubroArtContr02,

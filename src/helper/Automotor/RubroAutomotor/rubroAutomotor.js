@@ -1,7 +1,7 @@
 const { subRubroAuto01 } = require('../lustreYMasillas.js');
 
 const rubroAutomotor = {
-    name:"AUTOMOTOR",
+    name:"Automotor",
     subRubro: [
         subRubroAuto01
     ]

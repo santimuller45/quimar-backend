@@ -1,7 +1,7 @@
 const { subRubroPiletas01 } = require('../granuladosYLiquidos.js');
 
 const rubroPiletas = {
-    name:"PRODUCTOS PARA PILETAS",
+    name:"Productos para Piletas",
     subRubro: [
         subRubroPiletas01
     ]

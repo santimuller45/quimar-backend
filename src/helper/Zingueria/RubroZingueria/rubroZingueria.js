@@ -8,7 +8,7 @@ const { subRubroZing07 } = require('../grampasOmega.js');
 const { subRubroZing08 } = require('../reduccionesGalvanizadas.js');
 
 const rubroZingueria = {
-    name:"ZINGUERIA",
+    name:"Zingueria",
     subRubro: [
         subRubroZing01,
         subRubroZing02,

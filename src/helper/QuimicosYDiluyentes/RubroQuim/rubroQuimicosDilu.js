@@ -3,7 +3,7 @@ const { subRubroQuimDilu02 } = require('../diluyentes.js');
 const { subRubroQuimDilu03 } = require('../quimicos.js');
 
 const rubroQuimicosYDiluyentes = {
-    name:"QUIMICOS Y DILUYENTES",
+    name:"Quimicos y Diluyentes",
     subRubro: [
         subRubroQuimDilu01,
         subRubroQuimDilu02,

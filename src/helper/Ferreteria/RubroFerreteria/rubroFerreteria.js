@@ -5,7 +5,7 @@ const { subRubroFerr04 } = require('../tarugosDeNylon.js');
 const { subRubroFerr05 } = require('../tornillos.js');
 
 const rubroFerreteria = {
-    name:"FERRETERIA",
+    name:"Ferreteria",
     subRubro: [
         subRubroFerr01,
         subRubroFerr02 ,
