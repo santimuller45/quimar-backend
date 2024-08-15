@@ -6,6 +6,7 @@ const { PORT } = process.env;
 
 const { createAllRubros } = require('./src/helper/helperRubro.js');
 const { createAllProducts } = require('./src/helper/helperProductos.js');
+const { createAdmin } = require('./src/controllers/extraController.js');
 
 //------
 
@@ -13,6 +14,7 @@ const { createAllProducts } = require('./src/helper/helperProductos.js');
 conn.sync({ force: true }).then( async () => {  // cambio a alter en lugar de force
     await createAllProducts();       //HELPER PRODUCTOS
     await createAllRubros();    //HELPER RUBROS
+    await createAdmin();
     app.listen( PORT, () => {
         console.log('Servidor corriendo en el puerto' , PORT);
     });
