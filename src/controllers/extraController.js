@@ -1,4 +1,7 @@
 const { getAllRubrosController } = require('./rubroController.js');
+const { Users } = require("../db.js");
+const { userAdmin } = require("../helper/helperAdmin.js");
+
 // OBTENER EL DIA MES AÑO CON DAYJS ------->
 const dayjs = require('dayjs');
 
@@ -25,4 +28,26 @@ const getAllSubRubrosController = async () => {
   return allSubRubros;
 };
 
-module.exports = { getDateFormat, getAllSubRubrosController };
+// CREAMOS EL ADMIN POR DEFAULT EN LA DB
+const createAdmin = async () => {
+  return await Users.create( userAdmin )
+};
+// <--------
+
+const infoUser = (data) => {
+  return {
+    email: data.email,
+    firstname: data.firstname,
+    lastname: data.lastname,
+    address: data.address,
+    cp: data.cp,
+    city: data.city,
+    country: data.country,
+    phone: data.phone,
+    userType: data.userType,
+    adminType: data.adminType
+  }
+};
+
+
+module.exports = { getDateFormat, getAllSubRubrosController, infoUser, createAdmin };

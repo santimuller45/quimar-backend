@@ -44,12 +44,9 @@ module.exports = (sequelize) => {
       phone: {
         type: DataTypes.STRING,
       },
-      customerStatus: {
+      status: {
         type: DataTypes.BOOLEAN,
-        defaultValue: true,
-      },
-      userType: {
-        type: DataTypes.STRING,
+        defaultValue: false,
       },
       adminType: {
           type: DataTypes.BOOLEAN,
