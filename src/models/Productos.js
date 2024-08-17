@@ -17,7 +17,7 @@ module.exports = (sequelize) => {
             allowNull: false,
         },
         price: {
-            type: DataTypes.FLOAT,
+            type: DataTypes.INTEGER,
             allowNull: false,
         },
         imagen: {
@@ -38,7 +38,7 @@ module.exports = (sequelize) => {
             defaultValue:0
         },
         total: {
-            type: DataTypes.DECIMAL,
+            type: DataTypes.INTEGER,
             defaultValue: 0
         },
         status: {
