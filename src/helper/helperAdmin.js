@@ -6,7 +6,9 @@ const userAdmin = {
     password: USER_ADM_QUIMAR_PASSWORD,
     firstname: 'Marco',
     lastname: 'Pegurri',
-    adminType: true,
+    cuit: "99-999-999",
+    userStatus: true,
+    admin: true,
 };
 
 module.exports = { userAdmin };

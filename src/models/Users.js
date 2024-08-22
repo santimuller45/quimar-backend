@@ -29,26 +29,30 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
+      cuit: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
       address: {
         type: DataTypes.STRING,
-      },
-      cp: {
-        type: DataTypes.INTEGER,
       },
       city: {
         type: DataTypes.STRING,
       },
-      country: {
+      state: {
         type: DataTypes.STRING,
+      },
+      postalCode: {
+        type: DataTypes.INTEGER,
       },
       phone: {
         type: DataTypes.STRING,
       },
-      status: {
+      userStatus: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
-      adminType: {
+      admin: {
           type: DataTypes.BOOLEAN,
           defaultValue: false,
       },

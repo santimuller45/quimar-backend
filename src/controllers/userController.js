@@ -19,10 +19,10 @@ const getUserController = async ( email ) => {
   else return findUser;
 };
 
-const createUserController = async ( email , password , firstname , lastname , address , cp , city , country , phone , adminType ) => {
+const createUserController = async ( email, password, firstname, lastname, cuit, address, postalCode, city, state, phone, userStatus, admin ) => {
   const newUser = await Users.findByPk(email);
   if (!newUser) {
-      await Users.create({ email , password , firstname ,  lastname , address , cp , city , country , phone , adminType })
+      await Users.create({ email, password, firstname,  lastname, cuit, address, postalCode, city, state, phone, userStatus, admin })
       return "User Created succesfully";
   } else throw Error ("Email already exist");
 };
@@ -32,7 +32,7 @@ const loginUserController = async ( email , password ) => {
   const user = await Users.findByPk(email);
   if (!user) throw Error ("Incorrect email");
   else if (user.password !== password) throw Error ("Incorrect password");
-  else if (!user.status) throw Error("User is currently disabled");
+  else if (!user.userStatus) throw Error("User is currently disabled");
   else return infoUser(user);
 };
 

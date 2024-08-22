@@ -12,8 +12,8 @@ const getUsersHandler = async (req, res) => {
 
 const createUserHandler = async (req, res) => {
     try {
-        const { email , password , firstname , lastname , address , cp , city , country , phone, adminType } = req.body;
-        const newUser = await createUserController( email , password , firstname , lastname , address , cp , city , country , phone ,adminType)
+        const { email, password, firstname, lastname, cuit, address, postalCode, city, state, phone, userStatus, admin } = req.body;
+        const newUser = await createUserController( email, password, firstname, lastname, cuit, address, postalCode, city, state, phone, userStatus, admin )
         res.status(200).send(newUser);
     } catch (error) {
         res.status(404).json({ error: error.message });
