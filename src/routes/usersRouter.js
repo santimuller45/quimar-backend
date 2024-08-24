@@ -5,7 +5,7 @@ const { getUsersHandler, createUserHandler, loginUserHandler } = require('../han
 const userRouter = Router();
 
 userRouter.get('/', getUsersHandler);
-userRouter.post('/', createUserHandler);
+userRouter.post('/register', createUserHandler);
 userRouter.post('/login', loginUserHandler);
 
 module.exports = userRouter;

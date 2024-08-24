@@ -40,12 +40,12 @@ const infoUser = (data) => {
     firstname: data.firstname,
     lastname: data.lastname,
     address: data.address,
-    cp: data.cp,
+    postalCode: data.postalCode,
     city: data.city,
-    country: data.country,
+    state: data.state,
     phone: data.phone,
-    userType: data.userType,
-    adminType: data.adminType
+    userStatus: data.userStatus,
+    admin: data.admin
   }
 };
 

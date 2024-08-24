@@ -3,7 +3,7 @@ const { infoUser } = require('./extraController.js');
 
 const getAllUsersDBController = async () => {
     const allUsers = await Users.findAll();
-    if (!allUsers) throw Error ("Did not found users in DB");
+    if (!allUsers) throw Error ("Usuario no encontrado");
     else return allUsers;
 };
 
@@ -15,7 +15,7 @@ const getUserController = async ( email ) => {
         attributes: ['id']
       }
   });
-  if (!findUser) throw Error("User did not found");
+  if (!findUser) throw Error("Usuario no encontrado");
   else return findUser;
 };
 
@@ -23,16 +23,16 @@ const createUserController = async ( email, password, firstname, lastname, cuit,
   const newUser = await Users.findByPk(email);
   if (!newUser) {
       await Users.create({ email, password, firstname,  lastname, cuit, address, postalCode, city, state, phone, userStatus, admin })
-      return "User Created succesfully";
+      return "Usuario creado correctamente, espere a que su cuenta sea activada";
   } else throw Error ("Email already exist");
 };
 
 const loginUserController = async ( email , password ) => {
-  if (!email || !password) throw Error("Please enter email and password");
+  if (!email || !password) throw Error("Porfavor ingrese email y contraseña");
   const user = await Users.findByPk(email);
-  if (!user) throw Error ("Incorrect email");
-  else if (user.password !== password) throw Error ("Incorrect password");
-  else if (!user.userStatus) throw Error("User is currently disabled");
+  if (!user) throw Error ("Email incorrecto");
+  else if (user.password !== password) throw Error ("Contraseña incorrecta");
+  else if (!user.userStatus) throw Error("La cuenta todavia no esta activada");
   else return infoUser(user);
 };
 
