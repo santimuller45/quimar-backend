@@ -1,4 +1,4 @@
-const { getAllUsersDBController,  getUserController, createUserController, loginUserController } = require('../controllers/userController.js');
+const { getAllUsersDBController,  getUserController, createUserController, loginUserController, updateUserController } = require('../controllers/userController.js');
 
 const getUsersHandler = async (req, res) => {
     try {
@@ -29,8 +29,20 @@ const loginUserHandler = async (req, res) => {
         res.status(400).json({ error : error.message});
     }
 };
+
+const updateUserHandler = async (req,res) => {
+    const { email, password, firstname, lastname, cuit, address, postalCode, city, state, phone, userStatus, admin } = req.body;
+    try {
+        const userUpdate = await updateUserController( email, password, firstname, lastname, cuit, address, postalCode, city, state, phone, userStatus, admin );
+        res.status(201).json(userUpdate);
+    } catch (error) {
+        res.status(400).json({ error : error.message});
+    }
+};
+
 module.exports = {
     getUsersHandler,
     createUserHandler,
-    loginUserHandler
+    loginUserHandler,
+    updateUserHandler
 };

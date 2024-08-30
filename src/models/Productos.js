@@ -31,7 +31,6 @@ module.exports = (sequelize) => {
         descripcion: {
             type: DataTypes.STRING(),
             defaultValue: "",
-            allowNull: false,
         },
         quantity: {
             type: DataTypes.INTEGER,

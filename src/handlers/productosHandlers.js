@@ -1,5 +1,5 @@
 // const { getAllMenuController, getFoodByNameController, getFoodByIDController, postFoodController, putFoodController } = require('../controllers/foodControllers.js');
-const { getAllProductsController, getProductByNameController, getProductByIDController } = require('../controllers/productosController.js');
+const { getAllProductsController, getProductByNameController, getProductByIDController, postProductController, updateProductController } = require('../controllers/productosController.js');
 
 const handlerGetProducts = async (req, res) => {
     const { name } = req.query;
@@ -13,6 +13,17 @@ const handlerGetProducts = async (req, res) => {
       res.status(400).send(error.message);
     };  
 };
+
+// const handlerGetProductByCodigo = async (req, res) => {
+//   const { code } = req.query;
+//   try {
+//     const findProduct = await getProductByCodigoController(code);
+//     if (!findProduct) throw Error('Producto no encontrado');
+//     res.status(200).json(findProduct);
+//   } catch (error) {
+//     res.status(400).send(error.message);
+//   };  
+// };
   
 const handlerGetProductByID = async (req, res) => {
   const { productID } = req.params;
@@ -25,26 +36,26 @@ const handlerGetProductByID = async (req, res) => {
   };  
 };
 
-//   const handlerPostFood = async (req, res) => {
-//     const food = req.body;
-//     try {
-//       const result = await postFoodController(food);
-//       if (result === null) throw Error('Could not create food');
-//       res.status(200).send('Food created successfully');
-//     } catch (error) {
-//       res.status(400).send(error.message);
-//     }
-//   };
+  const handlerPostProduct = async (req, res) => {
+    try {
+      const { codigo, name, price, imagen, category, descripcion, status } = req.body;
+      const result = await postProductController( codigo, name, price, imagen, category, descripcion, status );
+      if (result === null) throw Error('No se puede crear el producto');
+      res.status(200).send('Producto creado exitosamente!');
+    } catch (error) {
+      res.status(400).send(error.message);
+    }
+  };
 
-//   const handlerPutFood = async (req, res) => {
-//     const food = req.body;
-//     try {
-//       const newStatusFood = await putFoodController(food);
-//       if (newStatusFood === null) throw Error('Could not update food or food not found');
-//       res.status(200).send('Food modified successfully');
-//     } catch (error) {
-//       res.status(400).send(error.message);
-//     }
-//   };
+  const handlerPutProduct = async (req, res) => {
+    const { id ,codigo, name, price, imagen, category, descripcion, status } = req.body;
+    try {
+      const newStatusFood = await updateProductController( id, codigo, name, price, imagen, category, descripcion, status );
+      if (newStatusFood === null) throw Error('No se pudo actualizar el producto o no se encontró');
+      res.status(200).send('Producto actualizado exitosamente!');
+    } catch (error) {
+      res.status(400).send(error.message);
+    }
+  };
 
-  module.exports = { handlerGetProducts, handlerGetProductByID };
+  module.exports = { handlerGetProducts, handlerGetProductByID, handlerPostProduct, handlerPutProduct };

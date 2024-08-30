@@ -34,11 +34,17 @@ const createAdmin = async () => {
 };
 // <--------
 
+// FUNCION PARA TRANSFORMAR A MAYUS UN STRING ----->
+const mayusLetter = (string) => string.toUpperCase();
+//<-------
+
 const infoUser = (data) => {
+
   return {
     email: data.email,
     firstname: data.firstname,
     lastname: data.lastname,
+    cuit: data.cuit,
     address: data.address,
     postalCode: data.postalCode,
     city: data.city,
@@ -50,4 +56,4 @@ const infoUser = (data) => {
 };
 
 
-module.exports = { getDateFormat, getAllSubRubrosController, infoUser, createAdmin };
+module.exports = { getDateFormat, getAllSubRubrosController, infoUser, createAdmin, mayusLetter };

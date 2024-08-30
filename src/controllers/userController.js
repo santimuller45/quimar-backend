@@ -36,9 +36,30 @@ const loginUserController = async ( email , password ) => {
   else return infoUser(user);
 };
 
+const updateUserController = async ( email, password, firstname, lastname, cuit, address, postalCode, city, state, phone, userStatus, admin ) => {
+  const userDB = await Users.findByPk( email );
+  if (userDB === null) throw Error ('Email incorrecto');
+  await userDB.update({
+    password,
+    firstname,
+    lastname,
+    cuit,
+    address,
+    postalCode,
+    city,
+    state,
+    phone,
+    userStatus,
+    admin
+  });
+  await userDB.save();
+  return infoUser(userDB);
+};
+
 module.exports = {
     getAllUsersDBController,
     getUserController,
     createUserController,
-    loginUserController
+    loginUserController,
+    updateUserController
 }

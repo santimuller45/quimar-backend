@@ -1,9 +1,8 @@
 const { Productos } = require('../db.js');
 const { Op } = require('sequelize');
+const { mayusLetter } = require('./extraController.js');
 
-// FUNCION PARA TRANSFORMAR A MAYUS UN STRING ----->
-const mayusLetter = (string) => string.toUpperCase();
-//<-------
+// -----------------------------------------------------
 
 const getAllProductsController = async () => {
   return await Productos.findAll();
@@ -21,20 +20,50 @@ const getProductByIDController = async (productID) => {
   return await Productos.findByPk(productID);
 };
 
-// const postFoodController = async (food) => {
-//   return await Foods.create(food);
+// const getProductByCodigoController = async (code) => {
+//   return await Productos.findAll({
+//     where: { 
+//       codigo: { code } 
+//     }
+//   });
 // };
 
-// const putFoodController = async ( food ) => {
-//   const findFoodByID = await Foods.findByPk(food.id);
-//   if (findFoodByID === null) return null;
-//   food.name ? findFoodByID.name = food.name : null;
-//   food.image ? findFoodByID.image = food.image : null;
-//   food.description ? findFoodByID.description = food.description : null;
-//   food.price ? findFoodByID.price = food.price : null;
-//   food.status ? findFoodByID.status = food.status : null;
-//   findFoodByID.save();
-//   return findFoodByID;
-// }
+const postProductController = async ( codigo, name, price, imagen, category, descripcion, status ) => {
 
-module.exports = { getAllProductsController, getProductByNameController, getProductByIDController }
+  // const isCodeAvailable = getProductByCodigoController(product.codigo);
+
+  // if (isCodeAvailable) throw Error('Ya existe ese codigo en los productos');
+  if (!codigo) throw Error('Porfavor agregue un código al producto');
+  if (!name) throw Error('Porfavor agregue un nombre al producto');
+  if (!price) throw Error('Porfavor agregue un precio al producto');
+
+  return await Productos.create({ codigo, name, price, imagen, category, descripcion, status });
+};
+
+const updateProductController = async ( id, codigo, name, price, imagen, category, descripcion, status ) => {
+
+  const productDB = await getProductByIDController(id);
+  if (productDB === null) throw Error('Producto no encontrado');
+
+  await productDB.update({
+    codigo,
+    name,
+    price,
+    imagen,
+    category,
+    descripcion,
+    status
+  });
+
+  await productDB.save();
+
+  return productDB;
+}
+
+module.exports = { 
+  getAllProductsController, 
+  getProductByNameController, 
+  getProductByIDController,
+  postProductController, 
+  updateProductController 
+}
