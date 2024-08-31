@@ -8,12 +8,12 @@ module.exports = (sequelize) => {
             defaultValue: DataTypes.UUIDV4,
         },
         codigo: {
-            type: DataTypes.FLOAT,
+            type: DataTypes.STRING,
             allowNull: false,
             unique: true
         },
         name: {
-            type: DataTypes.STRING(),
+            type: DataTypes.STRING,
             allowNull: false,
         },
         price: {
@@ -21,15 +21,15 @@ module.exports = (sequelize) => {
             allowNull: false,
         },
         imagen: {
-            type: DataTypes.STRING(),
+            type: DataTypes.STRING,
             defaultValue: '',
         },
         category: {
-            type: DataTypes.STRING(),
+            type: DataTypes.STRING,
             defaultValue: ""
         },
         descripcion: {
-            type: DataTypes.STRING(),
+            type: DataTypes.STRING,
             defaultValue: "",
         },
         quantity: {
@@ -44,11 +44,16 @@ module.exports = (sequelize) => {
             type: DataTypes.BOOLEAN,
             defaultValue: true,
         },
-        updated: {
+        createdAt: {
             type: DataTypes.DATE,
             defaultValue: DataTypes.NOW,
         },
-    },{
-        timestamps: false,
+        updatedAt: {
+            type: DataTypes.DATE,
+            defaultValue: DataTypes.NOW,
+        },
+    },
+    {
+        timestamps: true,
     });
 };

@@ -4,7 +4,12 @@ const { handlerGetRubros, handlerGetRubroByID } = require('../handlers/rubroHand
 
 const rubroRouter = Router();
 
+// GET
 rubroRouter.get('/', handlerGetRubros);
 rubroRouter.get('/:rubroID', handlerGetRubroByID);
+
+// PUT
+
+// POST
 
 module.exports = rubroRouter;

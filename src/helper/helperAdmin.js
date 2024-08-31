@@ -7,6 +7,11 @@ const userAdmin = {
     firstname: 'Marco',
     lastname: 'Pegurri',
     cuit: "99-999-999",
+    address: "Avellaneda 163",
+    city: "Bahia Blanca",
+    state: "Buenos Aires",
+    postalColde: 8000,
+    phone: 154445566,
     userStatus: true,
     admin: true,
 };

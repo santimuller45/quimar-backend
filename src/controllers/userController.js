@@ -1,4 +1,4 @@
-const { Users , Pedido } = require("../db.js");
+const { Users , Orders } = require("../db.js");
 const { infoUser } = require('./extraController.js');
 
 const getAllUsersDBController = async () => {
@@ -11,7 +11,7 @@ const getUserController = async ( email ) => {
   const findUser = await Users.findByPk(email, {
     include:
       {
-        model: Pedido,
+        model: Orders,
         attributes: ['id']
       }
   });

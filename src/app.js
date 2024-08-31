@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 app.use(cookieParser());
 
-// ESTE ES EL QUE SUBE LAS IMÁGENES ---->
+// ROUTER QUE SUBE LAS IMÁGENES ---->
 const path = require('path');
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 // <-------------------------------------

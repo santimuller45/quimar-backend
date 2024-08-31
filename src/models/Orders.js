@@ -1,7 +1,7 @@
 const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {
-  sequelize.define("pedido", {
+  sequelize.define("orders", {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -9,28 +9,34 @@ module.exports = (sequelize) => {
     },
     listaPedido: {
       type: DataTypes.ARRAY(DataTypes.STRING),
+      allowNull: false,
+      defaultValue: []
     },
     amount: {
-      type: DataTypes.FLOAT,
-      defaultValue: 0,
+      type: DataTypes.DECIMAL(10, 2),
+      defaultValue: 0.00,
     },
     totalAmount: {
-      type: DataTypes.FLOAT,
-      defaultValue: 0,
+      type: DataTypes.DECIMAL(10, 2),
+      defaultValue: 0.00,
     },
     comentary: {
       type: DataTypes.STRING,
-      defaultValue:'empty'
+      defaultValue: null
     },
     orderStatus: {
-      type: DataTypes.STRING,
+      type: DataTypes.ENUM('PENDIENTE', 'COMPLETADO', 'CANCELADO'),
       defaultValue: 'PENDIENTE',
     },
-    updated: {
+    createdAt: {
+      type: DataTypes.DATE,
+      defaultValue: DataTypes.NOW,
+    },
+    updatedAt: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
     },
   },{
-    // timestamps: false,
+    timestamps: true,
   });
 };

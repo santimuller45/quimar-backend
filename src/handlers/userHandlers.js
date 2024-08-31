@@ -1,4 +1,10 @@
-const { getAllUsersDBController,  getUserController, createUserController, loginUserController, updateUserController } = require('../controllers/userController.js');
+const { 
+    getAllUsersDBController,  
+    getUserController, 
+    createUserController, 
+    loginUserController, 
+    updateUserController 
+} = require('../controllers/userController.js');
 
 const getUsersHandler = async (req, res) => {
     try {

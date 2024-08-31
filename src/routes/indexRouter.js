@@ -6,7 +6,8 @@ const { Router } = require('express');
 const productRouter = require('./productosRouter.js');
 const rubroRouter = require("./rubroRouter.js");
 const userRouter = require('./usersRouter.js');
-const { handlerGetDate, handlerGetSubRubros } = require('../handlers/extraHandler.js');
+const ordersRouter = require('./ordersRouter.js');
+const { handlerGetDate } = require('../handlers/extraHandler.js');
 
 //----------------------
 
@@ -17,12 +18,20 @@ const router = Router();
 
 //---------------------------------------
 
+// ROUTER DE LOS PRODUCTOS
 router.use('/productos', productRouter);
+
+// ROUTER DE LOS RUBROS
 router.use('/rubro', rubroRouter);
+
+// ROUTER DE LOS USERS
 router.use('/users', userRouter);
-router.use('/subRubro', handlerGetSubRubros);
+
+// ROUTER DE LAS ORDERS
+router.use('/orders', ordersRouter);
+
+// OTROS ROUTERS
 router.use('/getDateNow', handlerGetDate);
-// router.use("/users", usersRouter);
 
 //--------------------------------------
 

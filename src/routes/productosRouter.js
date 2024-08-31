@@ -4,10 +4,14 @@ const { handlerGetProducts, handlerGetProductByID, handlerPostProduct, handlerPu
 
 const productRouter = Router();
 
+// GET
 productRouter.get('/', handlerGetProducts);
-productRouter.put('', handlerPutProduct);
 productRouter.get('/:productID', handlerGetProductByID);
-// productRouter.get('/findBycode', handlerGetProductByCodigo);
+
+// PUT
+productRouter.put('', handlerPutProduct);
+
+// POST
 productRouter.post('/registerProduct', handlerPostProduct);
 
 module.exports = productRouter;
