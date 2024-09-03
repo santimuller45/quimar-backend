@@ -19,10 +19,10 @@ const getUserController = async ( email ) => {
   else return findUser;
 };
 
-const createUserController = async ( email, password, firstname, lastname, cuit, address, postalCode, city, state, phone, userStatus, admin ) => {
+const createUserController = async ( email, password, name, cuit, address, postalCode, city, state, phone, userStatus, admin ) => {
   const newUser = await Users.findByPk(email);
   if (!newUser) {
-      await Users.create({ email, password, firstname,  lastname, cuit, address, postalCode, city, state, phone, userStatus, admin })
+      await Users.create({ email, password, name, cuit, address, postalCode, city, state, phone, userStatus, admin })
       return "Usuario creado correctamente, espere a que su cuenta sea activada";
   } else throw Error ("Email already exist");
 };
@@ -36,13 +36,12 @@ const loginUserController = async ( email , password ) => {
   else return infoUser(user);
 };
 
-const updateUserController = async ( email, password, firstname, lastname, cuit, address, postalCode, city, state, phone, userStatus, admin ) => {
+const updateUserController = async ( email, password, name, cuit, address, postalCode, city, state, phone, userStatus, admin ) => {
   const userDB = await Users.findByPk( email );
   if (userDB === null) throw Error ('Email incorrecto');
   await userDB.update({
     password,
-    firstname,
-    lastname,
+    name,
     cuit,
     address,
     postalCode,

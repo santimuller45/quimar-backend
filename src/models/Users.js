@@ -21,11 +21,7 @@ module.exports = (sequelize) => {
           is: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/, // Validar que la contraseña contenga al menos una letra minúscula, una letra mayúscula y un número
         },
       },
-      firstname: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      lastname: {
+      name: {
         type: DataTypes.STRING,
         allowNull: false,
       },

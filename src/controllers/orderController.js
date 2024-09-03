@@ -2,7 +2,7 @@ const { Orders, Users } = require('../db.js');
 
 const getAllOrdersController = async () => {
 
-    const resultAllOrders = await Orders.findAll({ include:{ model: Users, attributes:["email","firstname","lastname"] }});
+    const resultAllOrders = await Orders.findAll({ include:{ model: Users, attributes:["email","name"] }});
     const orderPending = [];
     const orderCompleted = [];
     const orderCancel = [];
@@ -24,7 +24,7 @@ const getOrderByIdController = async ( id ) => {
     return await Orders.findByPk( id, 
         { include: { 
             model: Users,
-            attributes:["email","firstname","lastname"],
+            attributes:["email","name"],
         }}
     );
 };
@@ -34,7 +34,7 @@ const updateOrderByIdController = async ( id , status) => {
     const orderToModify = await Orders.findByPk(id,
         { include: {
             model: Users,
-            attributes:["email","firstname","lastname"],
+            attributes:["email","name"],
         }}
     );
 

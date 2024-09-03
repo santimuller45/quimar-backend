@@ -42,8 +42,7 @@ const infoUser = (data) => {
 
   return {
     email: data.email,
-    firstname: data.firstname,
-    lastname: data.lastname,
+    name: data.name,
     cuit: data.cuit,
     address: data.address,
     postalCode: data.postalCode,
