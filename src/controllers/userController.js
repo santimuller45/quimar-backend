@@ -3,8 +3,8 @@ const { infoUser } = require('./extraController.js');
 
 const getAllUsersDBController = async () => {
     const allUsers = await Users.findAll();
-    if (!allUsers) throw Error ("Usuario no encontrado");
-    else return allUsers;
+    if (!allUsers.length) return [];
+    return allUsers;
 };
 
 const getUserController = async ( email ) => {
@@ -15,30 +15,34 @@ const getUserController = async ( email ) => {
         attributes: ['id']
       }
   });
-  if (!findUser) throw Error("Usuario no encontrado");
+  if (!findUser) throw {status: 400, message: "Usuario no encontrado"};
   else return findUser;
 };
 
 const createUserController = async ( email, password, name, cuit, address, postalCode, city, state, phone, userStatus, admin ) => {
   const newUser = await Users.findByPk(email);
-  if (!newUser) {
-      await Users.create({ email, password, name, cuit, address, postalCode, city, state, phone, userStatus, admin })
-      return "Usuario creado correctamente, espere a que su cuenta sea activada";
-  } else throw Error ("Email already exist");
+  if (newUser) {
+    throw { status: 400, message: "El email ya se encuentra registrado" };
+  }
+  if (!password) {
+    throw { status: 400, message: "La contraseña es requerida" };
+  }
+  await Users.create({ email, password, name, cuit, address, postalCode, city, state, phone, userStatus, admin })
+  return "Usuario creado correctamente, espere a que su cuenta sea activada";
 };
 
 const loginUserController = async ( email , password ) => {
-  if (!email || !password) throw Error("Porfavor ingrese email y contraseña");
+  if (!email || !password) throw { status: 400, message: "Por favor ingrese email y contraseña"};
   const user = await Users.findByPk(email);
-  if (!user) throw Error ("Email incorrecto");
-  else if (user.password !== password) throw Error ("Contraseña incorrecta");
-  else if (!user.userStatus) throw Error("La cuenta todavia no esta activada");
+  if (!user) throw { status: 401, message: "Email incorrecto" };
+  else if (user.password !== password) throw { status: 401, message: "Contraseña incorrecta" };
+  else if (!user.userStatus) throw { status: 403, message: "La cuenta todavía no está activada" };
   else return infoUser(user);
 };
 
 const updateUserController = async ( email, password, name, cuit, address, postalCode, city, state, phone, userStatus, admin ) => {
   const userDB = await Users.findByPk( email );
-  if (userDB === null) throw Error ('Email incorrecto');
+  if (!userDB) throw { status: 404, message: 'Email incorrecto' };
   await userDB.update({
     password,
     name,
@@ -61,4 +65,4 @@ module.exports = {
     createUserController,
     loginUserController,
     updateUserController
-}
+};

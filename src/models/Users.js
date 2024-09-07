@@ -16,10 +16,6 @@ module.exports = (sequelize) => {
       password: {
         type: DataTypes.STRING,
         allowNull: false,
-        validate: {
-          len: [5, 20], // Validar que la longitud de la contraseña sea entre 8 y 20 caracteres
-          is: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/, // Validar que la contraseña contenga al menos una letra minúscula, una letra mayúscula y un número
-        },
       },
       name: {
         type: DataTypes.STRING,
