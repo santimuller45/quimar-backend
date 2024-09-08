@@ -2,7 +2,8 @@ const {
     getAllUsersDBController,  
     getUserController, 
     createUserController, 
-    loginUserController, 
+    loginUserController,
+    updateUserPasswordController, 
     updateUserController 
 } = require('../controllers/userController.js');
 
@@ -19,8 +20,7 @@ const getUsersHandler = async (req, res) => {
 const createUserHandler = async (req, res) => {
     try {
         const { email, name, cuit, address, postalCode, city, state, phone, userStatus, admin } = req.body;
-        const password = cuit;
-        const newUser = await createUserController( email, password, name, cuit, address, postalCode, city, state, phone, userStatus, admin )
+        const newUser = await createUserController( email, name, cuit, address, postalCode, city, state, phone, userStatus, admin )
         res.status(201).send(newUser);
     } catch (error) {
         res.status(error.status || 500).json({ message: error.message });
@@ -34,6 +34,16 @@ const loginUserHandler = async (req, res) => {
         res.status(200).send(user);
     } catch (error) {
         res.status(error.status || 500 ).json({ message: error.message });
+    }
+};
+
+const updateUserPasswordHandler = async (req,res) => {
+    const { email, cuit } = req.body;
+    try {
+        const userUpdate = await updateUserPasswordController(email, cuit);
+        res.status(200).send(userUpdate);
+    } catch (error) {
+        res.status(error.status || 500).json({ message: error.message });
     }
 };
 
@@ -51,5 +61,6 @@ module.exports = {
     getUsersHandler,
     createUserHandler,
     loginUserHandler,
+    updateUserPasswordHandler,
     updateUserHandler
 };

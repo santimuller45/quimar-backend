@@ -19,14 +19,12 @@ const getUserController = async ( email ) => {
   else return findUser;
 };
 
-const createUserController = async ( email, password, name, cuit, address, postalCode, city, state, phone, userStatus, admin ) => {
+const createUserController = async ( email, name, cuit, address, postalCode, city, state, phone, userStatus, admin ) => {
   const newUser = await Users.findByPk(email);
   if (newUser) {
     throw { status: 400, message: "El email ya se encuentra registrado" };
   }
-  if (!password) {
-    throw { status: 400, message: "La contraseña es requerida" };
-  }
+  const password = cuit;
   await Users.create({ email, password, name, cuit, address, postalCode, city, state, phone, userStatus, admin })
   return "Usuario creado correctamente, espere a que su cuenta sea activada";
 };
@@ -38,6 +36,19 @@ const loginUserController = async ( email , password ) => {
   else if (user.password !== password) throw { status: 401, message: "Contraseña incorrecta" };
   else if (!user.userStatus) throw { status: 403, message: "La cuenta todavía no está activada" };
   else return infoUser(user);
+};
+
+const updateUserPasswordController = async ( email, cuit ) => {
+  const userDB = await Users.findByPk( email );
+  if (!userDB) throw { status: 404, message: 'Email incorrecto' };
+  if (userDB.cuit !== cuit) throw { status: 404, message: 'CUIT/CUIL incorrecto' };
+  const password = cuit;
+  await userDB.update ({
+    ...userDB,
+    password
+  });
+  await userDB.save();
+  return infoUser(userDB);
 };
 
 const updateUserController = async ( email, password, name, cuit, address, postalCode, city, state, phone, userStatus, admin ) => {
@@ -64,5 +75,6 @@ module.exports = {
     getUserController,
     createUserController,
     loginUserController,
+    updateUserPasswordController,
     updateUserController
 };

@@ -1,6 +1,6 @@
 const { Router } = require("express");
 
-const { getUsersHandler, createUserHandler, loginUserHandler, updateUserHandler } = require('../handlers/userHandlers.js')
+const { getUsersHandler, createUserHandler, loginUserHandler, updateUserPasswordHandler, updateUserHandler } = require('../handlers/userHandlers.js')
 
 const userRouter = Router();
 
@@ -8,7 +8,8 @@ const userRouter = Router();
 userRouter.get('/', getUsersHandler);
 
 // PUT
-userRouter.put('/', updateUserHandler);
+userRouter.put('/config-users', updateUserHandler);
+userRouter.put('/forgot-password', updateUserPasswordHandler);
 
 //POST
 userRouter.post('/register', createUserHandler);

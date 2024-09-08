@@ -35,7 +35,7 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
       },
       postalCode: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
       },
       phone: {
         type: DataTypes.STRING,
@@ -47,10 +47,6 @@ module.exports = (sequelize) => {
       admin: {
           type: DataTypes.BOOLEAN,
           defaultValue: false,
-      },
-      token: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV1,
       },
       updated: {
         type: DataTypes.DATE,
