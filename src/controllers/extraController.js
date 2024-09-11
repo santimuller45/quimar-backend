@@ -1,4 +1,3 @@
-const { getAllRubrosController } = require('./rubroController.js');
 const { Users } = require("../db.js");
 const { userAdmin } = require("../helper/helperAdmin.js");
 
@@ -18,15 +17,6 @@ const getDateFormat = () => {
 };
 
 // <-----------------------------
-
-const getAllSubRubrosController = async () => {
-  let allSubRubros = [];
-  let result = await getAllRubrosController();
-  for (let cat of result) {
-      allSubRubros = allSubRubros.concat(cat.subRubro);
-  }
-  return allSubRubros;
-};
 
 // CREAMOS EL ADMIN POR DEFAULT EN LA DB
 const createAdmin = async () => {
@@ -55,4 +45,4 @@ const infoUser = (data) => {
 };
 
 
-module.exports = { getDateFormat, getAllSubRubrosController, infoUser, createAdmin, mayusLetter };
+module.exports = { getDateFormat, infoUser, createAdmin, mayusLetter };

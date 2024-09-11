@@ -1,4 +1,4 @@
-const { getDateFormat, getAllSubRubrosController } = require('../controllers/extraController.js');
+const { getDateFormat } = require('../controllers/extraController.js');
 
 
 const handlerGetDate =  (req, res) => {
@@ -11,13 +11,4 @@ const handlerGetDate =  (req, res) => {
     }
 };
 
-const handlerGetSubRubros = async (req, res) => {
-  try {
-    const subRubro = await getAllSubRubrosController();
-    res.status(200).json(subRubro);
-  } catch (error) {
-    res.status(400).send(error.message);
-  };  
-};
-
-module.exports = { handlerGetDate, handlerGetSubRubros };
+module.exports = { handlerGetDate };
