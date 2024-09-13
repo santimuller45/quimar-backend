@@ -11,7 +11,8 @@ const {
     imageThinner900cc,
     imageThinner5lt,
     imageThinnerOro900cc,
-    imageThinnerOro5lt
+    imageThinnerOro5lt,
+    imageRemovedorGel
  } = require('../../assets/assets.js');
 // <-------------
 
@@ -140,7 +141,7 @@ const listaDiluyentes = [
         price: 43635.60, 
         codigo: '1144', 
         name: 'REMOVEDOR GEL x 4 lts.', 
-        imagen: noImageDefault, 
+        imagen: imageRemovedorGel, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -148,7 +149,7 @@ const listaDiluyentes = [
         price: 7129.80, 
         codigo: '1146', 
         name: 'REMOVEDOR EN GEL X 1/2 lt.', 
-        imagen: noImageDefault, 
+        imagen: imageRemovedorGel, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -156,7 +157,7 @@ const listaDiluyentes = [
         price: 10404.00, 
         codigo: '1148', 
         name: 'REMOVEDOR EN GEL X 1 lt', 
-        imagen: noImageDefault, 
+        imagen: imageRemovedorGel, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     }

@@ -1,7 +1,14 @@
 const subRubroPiletas01 = 'Granulados y Liquidos';
 
 // IMG ------->
-const { noImageDefault, imageCloro5lt, imageSulfatoCobre } = require('../../assets/assets.js');
+const { 
+    noImageDefault, 
+    imageCloro5lt, 
+    imageSulfatoCobre,
+    image7105,
+    image7110,
+    image7145 
+} = require('../../assets/assets.js');
 // <-------------
 
 const listaGranuladosYLiquidos = [
@@ -17,7 +24,7 @@ const listaGranuladosYLiquidos = [
         codigo: 7105,
         name: "CLORO GRANULADO DILUCION LENTA X 1 KG.",
         price: 7200.18,
-        imagen: noImageDefault,
+        imagen: image7105,
         descripcion: "El cloro granulado de dilución lenta es ideal para desinfectar y mantener el agua limpia y cristalina en piscinas y sistemas de tratamiento de agua. Su liberación gradual asegura una desinfección continua y duradera.",
         category: subRubroPiletas01
     },
@@ -25,7 +32,7 @@ const listaGranuladosYLiquidos = [
         codigo: 7110,
         name: "PASTILLAS MULTIACCION X 200g X 1 KG.",
         price: 8526.69,
-        imagen: noImageDefault,
+        imagen: image7110,
         descripcion: "Las pastillas multiacción son ideales para desinfectar y mantener el agua limpia y cristalina en piscinas y sistemas de tratamiento de agua. Su fórmula concentrada ofrece una desinfección completa y duradera.",
         category: subRubroPiletas01
     },
@@ -33,7 +40,7 @@ const listaGranuladosYLiquidos = [
         codigo: 7115,
         name: "PASTILLAS MULTIACCION X 50g X 1 KG.",
         price: 7770.87,
-        imagen: noImageDefault,
+        imagen: image7110,
         descripcion: "Las pastillas multiacción son ideales para desinfectar y mantener el agua limpia y cristalina en piscinas y sistemas de tratamiento de agua. Su fórmula concentrada ofrece una desinfección completa y duradera.",
         category: subRubroPiletas01
     },
@@ -65,7 +72,7 @@ const listaGranuladosYLiquidos = [
         codigo: 7145,
         name: "TEST KIT PH/CLORO COMPLETO",
         price: 13760.00,
-        imagen: noImageDefault,
+        imagen: image7145,
         descripcion: "El test kit de pH y cloro completo es ideal para medir y controlar los niveles de pH y cloro en piscinas y sistemas de tratamiento de agua. Su diseño práctico y preciso garantiza una correcta desinfección y equilibrio químico del agua.",
         category: subRubroPiletas01
     },

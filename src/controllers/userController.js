@@ -28,7 +28,7 @@ const createUserController = async ( email, name, password, cuit, address, posta
 
   // Verificar si el email ya está registrado
   const existingUser  = await Users.findByPk(email);
-  if (existingUser ) {
+  if (existingUser) {
     throw { status: 400, message: "El email ya se encuentra registrado" };
   }
   // Si no se proporciona una contraseña se le asigna el CUIT como contraseña

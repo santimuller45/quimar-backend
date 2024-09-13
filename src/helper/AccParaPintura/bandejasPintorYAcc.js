@@ -1,4 +1,14 @@
-const { noImageDefault } = require('../../assets/assets.js');
+const { 
+    noImageDefault,
+    image2360,
+    image2361,
+    image2366, 
+    image2369, 
+    image2370, 
+    image2371,
+    image2377,
+    image2378
+ } = require('../../assets/assets.js');
 const subRubroAccPintura01 = 'Bandejas Pintor y Acc.';
 
 const listaBandejasDePintorYAcc = [
@@ -6,7 +16,7 @@ const listaBandejasDePintorYAcc = [
         codigo: 2360,
         price: 7038.00,
         name: "CINTA PARA PLACA DE YESO DE PAPEL (50 X 75)",
-        imagen: noImageDefault,
+        imagen: image2360,
         descripcion: "Cinta para placas de yeso de papel, tamaño 50 x 75.",
         category: subRubroAccPintura01
     },
@@ -14,7 +24,7 @@ const listaBandejasDePintorYAcc = [
         codigo: 2361,
         price: 12087.00,
         name: "CINTA DE PAPEL PARA PLACA DE YESO TRAMADA (50 X 90)",
-        imagen: noImageDefault,
+        imagen: image2361,
         descripcion: "Cinta de papel para placas de yeso tramada, tamaño 50 x 90.",
         category: subRubroAccPintura01
     },
@@ -22,7 +32,7 @@ const listaBandejasDePintorYAcc = [
         codigo: 2366,
         price: 1883.43,
         name: "CINTA DE PAPEL 18 X 50",
-        imagen: noImageDefault,
+        imagen: image2366,
         descripcion: "Cinta de papel, tamaño 18 x 50.",
         category: subRubroAccPintura01
     },
@@ -30,7 +40,7 @@ const listaBandejasDePintorYAcc = [
         codigo: 2367,
         price: 2720.00,
         name: "CINTA DE PAPEL 24 X 50",
-        imagen: noImageDefault,
+        imagen: image2366,
         descripcion: "Cinta de papel, tamaño 24 x 50.",
         category: subRubroAccPintura01
     },
@@ -38,7 +48,7 @@ const listaBandejasDePintorYAcc = [
         codigo: 2368,
         price: 3825.00,
         name: "CINTA DE PAPEL 36 X 40",
-        imagen: noImageDefault,
+        imagen: image2366,
         descripcion: "Cinta de papel, tamaño 36 x 40.",
         category: subRubroAccPintura01
     },
@@ -46,7 +56,7 @@ const listaBandejasDePintorYAcc = [
         codigo: 2369,
         price: 2111.40,
         name: "VIRUTA DE ACERO X 330 G. MEDIANA",
-        imagen: noImageDefault,
+        imagen: image2369,
         descripcion: "Viruta de acero, tamaño mediano (330 g).",
         category: subRubroAccPintura01
     },
@@ -54,7 +64,7 @@ const listaBandejasDePintorYAcc = [
         codigo: 2370,
         price: 2060.80,
         name: "BANDEJA PINTOR DE COLGAR",
-        imagen: noImageDefault,
+        imagen: image2370,
         descripcion: "Bandeja pintor de colgar, para facilitar el trabajo.",
         category: subRubroAccPintura01
     },
@@ -62,7 +72,7 @@ const listaBandejasDePintorYAcc = [
         codigo: 2371,
         price: 588.00,
         name: "BANDEJA PINTOR MINI",
-        imagen: noImageDefault,
+        imagen: image2371,
         descripcion: "Bandeja pintor de tamaño mini, ideal para trabajos pequeños.",
         category: subRubroAccPintura01
     },
@@ -102,7 +112,7 @@ const listaBandejasDePintorYAcc = [
         codigo: 2377,
         price: 6080.00,
         name: "LLANA DENTADA 12X12 DE ACERO",
-        imagen: noImageDefault,
+        imagen: image2377,
         descripcion: "Llana dentada de acero, tamaño 12 x 12.",
         category: subRubroAccPintura01
     },
@@ -110,7 +120,7 @@ const listaBandejasDePintorYAcc = [
         codigo: 2378,
         price: 3656.00,
         name: "LLANA PLASTICA CON ASA 14 X 30",
-        imagen: noImageDefault,
+        imagen: image2378,
         descripcion: "Llana plástica con asa, tamaño 14 x 30.",
         category: subRubroAccPintura01
     }
