@@ -1,12 +1,15 @@
 const subRubroPinturas25 = 'Textudecor Venier';
-const { noImageDefault } = require('../../assets/assets.js');
+const { 
+    noImageDefault,
+    image2154,
+ } = require('../../assets/assets.js');
 
 const listaTextudecorVenierTipoRevear = [
     {
         price: 22880.00, 
         codigo: 2154, 
         name: "TEXTUDECOR VENIER BLANCO X 7 kg.", 
-        imagen: noImageDefault, 
+        imagen: image2154, 
         descripcion: 'Descripción del producto', 
         category: subRubroPinturas25
     },
@@ -14,7 +17,7 @@ const listaTextudecorVenierTipoRevear = [
         price: 80800.00, 
         codigo: 2155, 
         name: "TEXTUDECOR VENIER BLANCO X 30 kg.", 
-        imagen: noImageDefault, 
+        imagen: image2154, 
         descripcion: 'Descripción del producto', 
         category: subRubroPinturas25
     },

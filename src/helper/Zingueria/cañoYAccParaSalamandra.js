@@ -3,8 +3,8 @@ const subRubroZing04 = 'Caños y Acc. P/Salamandra';
 // IMG ------->
 const { 
     noImageDefault,
-    imageCañoNegro,
-    imageCodoCorto
+    image4070,
+    image4090,
  } = require('../../assets/assets.js');
 // <-------------
 
@@ -13,7 +13,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4070,
         name: "CAÑO NEGRO DE 3 1/2\"",
         price: 6773.62,
-        imagen: imageCañoNegro,
+        imagen: image4070,
         descripcion: "Caño negro de 3 1/2 pulgadas para salamandra, utilizado como conducto de salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -21,7 +21,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4072,
         name: "CAÑO NEGRO DE 4\"",
         price: 7117.56,
-        imagen: imageCañoNegro,
+        imagen: image4070,
         descripcion: "Caño negro de 4 pulgadas para salamandra, utilizado como conducto de salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -29,7 +29,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4074,
         name: "CAÑO NEGRO DE 4 1/2\"",
         price: 8506.80,
-        imagen: imageCañoNegro,
+        imagen: image4070,
         descripcion: "Caño negro de 4 1/2 pulgadas para salamandra, utilizado como conducto de salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -37,7 +37,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4076,
         name: "CAÑO NEGRO DE 5\"",
         price: 8889.30,
-        imagen: imageCañoNegro,
+        imagen: image4070,
         descripcion: "Caño negro de 5 pulgadas para salamandra, utilizado como conducto de salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -45,7 +45,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4078,
         name: "CAÑO NEGRO DE 6\"",
         price: 9934.29,
-        imagen: imageCañoNegro,
+        imagen: image4070,
         descripcion: "Caño negro de 6 pulgadas para salamandra, utilizado como conducto de salida de humos en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -93,7 +93,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4090,
         name: "CODO CORTO 3 1/2\"",
         price: 6003.92,
-        imagen: imageCodoCorto,
+        imagen: image4090,
         descripcion: "Codo corto de 3 1/2 pulgadas para salamandra, utilizado para cambiar la dirección de la tubería de escape en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -101,7 +101,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4092,
         name: "CODO CORTO 4\"",
         price: 4960.26,
-        imagen: imageCodoCorto,
+        imagen: image4090,
         descripcion: "Codo corto de 4 pulgadas para salamandra, utilizado para cambiar la dirección de la tubería de escape en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -109,7 +109,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4094,
         name: "CODO CORTO 4 1/2\"",
         price: 5071.95,
-        imagen: imageCodoCorto,
+        imagen: image4090,
         descripcion: "Codo corto de 4 1/2 pulgadas para salamandra, utilizado para cambiar la dirección de la tubería de escape en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -117,7 +117,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4096,
         name: "CODO CORTO 5\"",
         price: 5765.04,
-        imagen: imageCodoCorto,
+        imagen: image4090,
         descripcion: "Codo corto de 5 pulgadas para salamandra, utilizado para cambiar la dirección de la tubería de escape en sistemas de calefacción.",
         category: subRubroZing04
     },
@@ -125,7 +125,7 @@ const listaCañoYAccParaSalamandra = [
         codigo: 4098,
         name: "CODO CORTO 6\"",
         price: 5951.70,
-        imagen: imageCodoCorto,
+        imagen: image4090,
         descripcion: "Codo corto de 6 pulgadas para salamandra, utilizado para cambiar la dirección de la tubería de escape en sistemas de calefacción.",
         category: subRubroZing04
     },

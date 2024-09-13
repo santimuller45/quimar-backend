@@ -61,40 +61,40 @@ const image1081 = mainUrl('/assets/img/quimicos/1081.jpeg');
 // ZINGUERIA ------->
 
 // CABALLETES
-const imageCaballetes = mainUrl('/assets/img/zingueria/7200.jpg');
+const image7200 = mainUrl('/assets/img/zingueria/7200.jpg');
 
 // CANALETAS Y ACC TECHOS
-const imageCanaletaMediaCaña = mainUrl('/assets/img/zingueria/7000.jpg');
-const imageCabeceraMediaCaña = mainUrl('/assets/img/zingueria/7010.jpg');
-const imageBoquetaMediaCaña = mainUrl('/assets/img/zingueria/7020.jpg');
-const imageIntermediaMediaCaña = mainUrl('/assets/img/zingueria/7030.jpg');
-const imageSoporteMediaCaña = mainUrl('/assets/img/zingueria/7040.jpg');
-const imageEsquineroMediaCaña = mainUrl('/assets/img/zingueria/7050.jpg');
-const imageRinconeroMediaCaña = mainUrl('/assets/img/zingueria/7060.jpg');
+const image7000 = mainUrl('/assets/img/zingueria/7000.jpg');
+const image7010 = mainUrl('/assets/img/zingueria/7010.jpg');
+const image7020 = mainUrl('/assets/img/zingueria/7020.jpg');
+const image7030 = mainUrl('/assets/img/zingueria/7030.jpg');
+const image7040 = mainUrl('/assets/img/zingueria/7040.jpg');
+const image7050 = mainUrl('/assets/img/zingueria/7050.jpg');
+const image7060 = mainUrl('/assets/img/zingueria/7060.jpg');
 
 // CAÑOS Y ACC GALVANIZADOS
-const imageCañoGalv = mainUrl('/assets/img/zingueria/4000.jpg');
-const imageCurva45Corrugada = mainUrl('/assets/img/zingueria/4004.jpg');
-const imageCurva90Corrugada = mainUrl('/assets/img/zingueria/4010.jpg');
-const imageCurvaArticulada = mainUrl('/assets/img/zingueria/4018.jpg');
-const imageSombreroH = mainUrl('/assets/img/zingueria/4026.jpg');
-const imageSombreroDobleAro = mainUrl('/assets/img/zingueria/4036.jpg');
-const imagePollerita = mainUrl('/assets/img/zingueria/4046.jpg');
+const image4000 = mainUrl('/assets/img/zingueria/4000.jpg');
+const image4004 = mainUrl('/assets/img/zingueria/4004.jpg');
+const image4010 = mainUrl('/assets/img/zingueria/4010.jpg');
+const image4018 = mainUrl('/assets/img/zingueria/4018.jpg');
+const image4026 = mainUrl('/assets/img/zingueria/4026.jpg');
+const image4036 = mainUrl('/assets/img/zingueria/4036.jpg');
+const image4046 = mainUrl('/assets/img/zingueria/4046.jpg');
 
 // CAÑOS Y ACC SALAMANDRA
-const imageCañoNegro = mainUrl('/assets/img/zingueria/4070.jpg');
-const imageCodoCorto = mainUrl('/assets/img/zingueria/4090.jpg');
+const image4070 = mainUrl('/assets/img/zingueria/4070.jpg');
+const image4090 = mainUrl('/assets/img/zingueria/4090.jpg');
 
 // CENEFAS
-const imageCenefas = mainUrl('/assets/img/zingueria/7300.jpg');
+const image7300 = mainUrl('/assets/img/zingueria/7300.jpg');
 
 // GRAMPAS
-const imageOmega = mainUrl('/assets/img/zingueria/4300.jpg');
-const imageDektite200 = mainUrl('/assets/img/zingueria/4400.jpg');
-const imageDektite400 = mainUrl('/assets/img/zingueria/4404.jpg');
+const image4300 = mainUrl('/assets/img/zingueria/4300.jpg');
+const image4400 = mainUrl('/assets/img/zingueria/4400.jpg');
+const image4404 = mainUrl('/assets/img/zingueria/4404.jpg');
 
 // REDUCC GALVANIZADAS
-const imageReducGalv = mainUrl('/assets/img/zingueria/4060.jpg');
+const image4060 = mainUrl('/assets/img/zingueria/4060.jpg');
 
 // <----------
 
@@ -259,16 +259,105 @@ const image2404 = mainUrl('/assets/img/polietileno-agrotileno/2404.jpg');
 const image2413 = mainUrl('/assets/img/polietileno-agrotileno/2413.jpg');
 const image2416 = mainUrl('/assets/img/polietileno-agrotileno/2416.jpg');
 
+// PINTURAS -------->
+
+// ANTIOXIDOS
+const image1250 = mainUrl('/assets/img/pinturas/1250.jpg');
+
+// BARNIZ MARINO
+const image1780 = mainUrl('/assets/img/pinturas/1780.jpg');
+const image1900 = mainUrl('/assets/img/pinturas/1900.jpg');
+const image1920 = mainUrl('/assets/img/pinturas/1920.jpg');
+const image1930 = mainUrl('/assets/img/pinturas/1930.jpg');
+
+// CAL DE BLANQUEO
+const image2070 = mainUrl('/assets/img/pinturas/2070.jpg');
+const image2071 = mainUrl('/assets/img/pinturas/2071.jpg');
+
+// CIELORRASO
+const image2200 = mainUrl('/assets/img/pinturas/2200.jpg');
+
+// CONVERTIDOR + ESMALTE
+const image1700 = mainUrl('/assets/img/pinturas/1700.jpg');
+
+// ENTONADORES
+const image1450 = mainUrl('/assets/img/pinturas/1450.jpg');
+
+// ESMALTE MATE
+const image1760 = mainUrl('/assets/img/pinturas/1760.jpg');
+
+// ESMALTE SATINADO
+const image1750 = mainUrl('/assets/img/pinturas/1750.jpg');
+
+// FONDOS Y FIJADORES
+const image1392 = mainUrl('/assets/img/pinturas/1392.jpg');
+const image1396 = mainUrl('/assets/img/pinturas/1396.jpg');
+const image1399 = mainUrl('/assets/img/pinturas/1399.jpg');
+const image1403 = mainUrl('/assets/img/pinturas/1403.jpg');
+const image1414 = mainUrl('/assets/img/pinturas/1414.jpg');
+const image1420 = mainUrl('/assets/img/pinturas/1420.jpg');
+
+// FRENTES FLEX
+const image2150 = mainUrl('/assets/img/pinturas/2150.jpg');
+
+// LATEX AMATEUR EXTERIOR
+const image2245 = mainUrl('/assets/img/pinturas/2245.jpg');
+
+// LATEX AMATEUR INTERIOR
+const image2250 = mainUrl('/assets/img/pinturas/2250.jpg');
+
+// LATEX FRENTES
+const image2090 = mainUrl('/assets/img/pinturas/2090.jpg');
+
+// LATEX INTERIOR EXTERIOR
+const image2230 = mainUrl('/assets/img/pinturas/2230.jpg');
+
+// MEMBRANA PASTA
+const image2180 = mainUrl('/assets/img/pinturas/2180.jpg');
+
+// PINTURA AEROSOL
+const image2010 = mainUrl('/assets/img/pinturas/2010.jpg');
+const image2028 = mainUrl('/assets/img/pinturas/2028.jpg');
+const image2029 = mainUrl('/assets/img/pinturas/2029.jpg');
+const image2030 = mainUrl('/assets/img/pinturas/2030.jpg');
+const image2039 = mainUrl('/assets/img/pinturas/2039.jpg');
+const image2043 = mainUrl('/assets/img/pinturas/2043.jpg');
+const image2049 = mainUrl('/assets/img/pinturas/2049.jpg');
+const image2051 = mainUrl('/assets/img/pinturas/2051.jpg');
+
+// PINTURA ASFALTICA EPOXI
+const image2055 = mainUrl('/assets/img/pinturas/2055.jpg');
+const image2060 = mainUrl('/assets/img/pinturas/2060.jpg');
+const image2062 = mainUrl('/assets/img/pinturas/2062.jpg');
+
+// PINTURA EN POLVO
+const image2075 = mainUrl('/assets/img/pinturas/2075.jpg');
+
+// PINTURA PARA PIZARRON
+const image2255 = mainUrl('/assets/img/pinturas/2255.jpg');
+
+// TEXTUDECO VENIER
+const image2154 = mainUrl('/assets/img/pinturas/2154.jpg');
+
+// TINTA PARA BARNIZ
+const image1805 = mainUrl('/assets/img/pinturas/1805.jpg');
+const image1840 = mainUrl('/assets/img/pinturas/1840.jpg');
+
+// LATEX PREMIUM INTERIOR EXTERIOR
+const image2205 = mainUrl('/assets/img/pinturas/2205.jpg');
+
+// <-----------------
+
 // <----------------------------------------------
 
 module.exports = {
     noImageDefault, imageCloro5lt, imageSulfatoCobre, imageLino900cc, imageLino5lt, imageAguarras900cc,
     imageAguarras5lt, imageKerosene900cc, imageKerosene5lt, imageSolventeInd, imageThinner900cc, imageThinner5lt,
     imageThinnerOro900cc, imageThinnerOro5lt, imageAcidoM900cc, imageAcidoM5lt, imageDestapaC, imageSodaC,
-    imageCaballetes, imageCanaletaMediaCaña, imageCabeceraMediaCaña, imageBoquetaMediaCaña, imageIntermediaMediaCaña, 
-    imageSoporteMediaCaña, imageEsquineroMediaCaña, imageRinconeroMediaCaña, imageCañoGalv, imageCurva45Corrugada,
-    imageCurva90Corrugada, imageCurvaArticulada, imageSombreroH, imageSombreroDobleAro, imagePollerita,
-    imageCañoNegro, imageCodoCorto, imageCenefas, imageOmega, imageDektite200, imageDektite400, imageReducGalv,
+    image7200, image7000, image7010, image7020, image7030, 
+    image7040, image7050, image7060, image4000, image4004,
+    image4010, image4018, image4026, image4036, image4046,
+    image4070, image4090, image7300, image4300, image4400, image4404, image4060,
     imageRemovedorGel, image998, image1001, image1004, image1009, image1011, image1040, image1046, image1048, 
     image1050, image1056, image1060, image1066, image1068, image1070, image1075, image1076, image1080, image1081,
     image7105, image7110, image7145, image2465, image2470, image2484, image2485, image2486, image2487, image2488,
@@ -287,4 +376,8 @@ module.exports = {
     image2404, image2413, image2416,
     image2330, image2331, image2332, image2340, image2350,
     image2859, image2870,
+    image1250, image1780, image1900, image1920, image1930, image2070, image2071, image2200, image1700, image1450, image1760, image1750,
+    image1392, image1396, image1399, image1403, image1414, image1420, image2150, image2245, image2250, image2090, image2230, image2180,
+    image2010, image2028, image2029, image2030, image2039, image2043, image2049, image2051, image2055, image2060, image2062, image2075,
+    image2255, image2154, image1805, image1840, image2205,
 };
