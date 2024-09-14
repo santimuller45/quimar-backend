@@ -1,19 +1,7 @@
 const subRubroQuimDilu02 = 'Diluyentes';
 
 // IMG ------->
-const { 
-    noImageDefault, 
-    imageAguarras900cc, 
-    imageAguarras5lt, 
-    imageKerosene900cc, 
-    imageKerosene5lt,
-    imageSolventeInd,
-    imageThinner900cc,
-    imageThinner5lt,
-    imageThinnerOro900cc,
-    imageThinnerOro5lt,
-    imageRemovedorGel
- } = require('../../assets/assets.js');
+const { images } = require('../../assets/assets.js');
 // <-------------
 
 const listaDiluyentes = [
@@ -21,7 +9,7 @@ const listaDiluyentes = [
         price: 1675.35, 
         codigo: '1120', 
         name: 'AGUARRAS MINERAL x 900 cc.', 
-        imagen: imageAguarras900cc, 
+        imagen: images.diluyentes.image1120, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -29,7 +17,7 @@ const listaDiluyentes = [
         price: 8704.17, 
         codigo: '1121', 
         name: 'AGUARRAS MINERAL x 5 lts.', 
-        imagen: imageAguarras5lt, 
+        imagen: images.diluyentes.image1121, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -37,7 +25,7 @@ const listaDiluyentes = [
         price: 295596.00, 
         codigo: '1122', 
         name: 'AGUARRAS MINERAL x 200 lts.', 
-        imagen: noImageDefault, 
+        imagen: images.noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -45,7 +33,7 @@ const listaDiluyentes = [
         price: 5188.23, 
         codigo: '1124', 
         name: 'SOLVENTE INDUSTRIAL  x 900 cc', 
-        imagen: imageSolventeInd, 
+        imagen: images.diluyentes.image1124, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -53,7 +41,7 @@ const listaDiluyentes = [
         price: 24945.12, 
         codigo: '1125', 
         name: 'SOLVENTE INDUSTRIAL x 5 LT.', 
-        imagen: noImageDefault, 
+        imagen: images.noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -61,7 +49,7 @@ const listaDiluyentes = [
         price: 2240.00, 
         codigo: '1128', 
         name: 'THINNER PARA LIMPIEZA X 800 cc.', 
-        imagen: noImageDefault, 
+        imagen: images.noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -69,7 +57,7 @@ const listaDiluyentes = [
         price: 2268.00, 
         codigo: '1129', 
         name: 'THINNER X 500 cc.', 
-        imagen: noImageDefault, 
+        imagen: images.noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -77,7 +65,7 @@ const listaDiluyentes = [
         price: 3393.60, 
         codigo: '1130', 
         name: 'THINNER x 900 cc.', 
-        imagen: imageThinner900cc, 
+        imagen: images.diluyentes.image1130, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -85,7 +73,7 @@ const listaDiluyentes = [
         price: 17377.60, 
         codigo: '1131', 
         name: 'THINNER x 5 lts', 
-        imagen: imageThinner5lt, 
+        imagen: images.diluyentes.image1131, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -93,7 +81,7 @@ const listaDiluyentes = [
         price: 618120.00, 
         codigo: '1133', 
         name: 'THINNER x 200lts.', 
-        imagen: noImageDefault, 
+        imagen: images.noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -101,7 +89,7 @@ const listaDiluyentes = [
         price: 4151.35, 
         codigo: '1134', 
         name: 'THINNER SELLO DE ORO x 900 cc.', 
-        imagen: imageThinnerOro900cc, 
+        imagen: images.diluyentes.image1134, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -109,7 +97,7 @@ const listaDiluyentes = [
         price: 21705.75, 
         codigo: '1135', 
         name: 'THINNER SELLO DE ORO x 5 lts.', 
-        imagen: imageThinnerOro5lt, 
+        imagen: images.diluyentes.image1135, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -117,7 +105,7 @@ const listaDiluyentes = [
         price: 668304.00, 
         codigo: '1137', 
         name: 'THINNER SELLO DE ORO x 200 lts.', 
-        imagen: noImageDefault, 
+        imagen: images.noImageDefault, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -125,7 +113,7 @@ const listaDiluyentes = [
         price: 1969.60, 
         codigo: '1140', 
         name: 'KEROSENE x 900 cc.', 
-        imagen: imageKerosene900cc, 
+        imagen: images.diluyentes.image1140, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -133,7 +121,7 @@ const listaDiluyentes = [
         price: 10808.00, 
         codigo: '1141', 
         name: 'KEROSENE x 5 lts.', 
-        imagen: imageKerosene5lt, 
+        imagen: images.diluyentes.image1141, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -141,7 +129,7 @@ const listaDiluyentes = [
         price: 43635.60, 
         codigo: '1144', 
         name: 'REMOVEDOR GEL x 4 lts.', 
-        imagen: imageRemovedorGel, 
+        imagen: images.diluyentes.image1146, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -149,7 +137,7 @@ const listaDiluyentes = [
         price: 7129.80, 
         codigo: '1146', 
         name: 'REMOVEDOR EN GEL X 1/2 lt.', 
-        imagen: imageRemovedorGel, 
+        imagen: images.diluyentes.image1146, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     },
@@ -157,7 +145,7 @@ const listaDiluyentes = [
         price: 10404.00, 
         codigo: '1148', 
         name: 'REMOVEDOR EN GEL X 1 lt', 
-        imagen: imageRemovedorGel, 
+        imagen: images.diluyentes.image1146, 
         descripcion: 'Descripción del producto', 
         category: subRubroQuimDilu02 
     }
