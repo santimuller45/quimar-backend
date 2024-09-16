@@ -8,10 +8,6 @@ app.name = 'DISTRI-QUIMAR';
 
 const mainRouter = require('./routes/indexRouter.js');
 
-// ROUTER QUE SUBE LAS IMÁGENES ---->
-const imageUploadRouter = require('./routes/imageRouter.js');
-// <-------------------------------------
-
 // ESTE ES PARA SUBIR LOS ARCHIVOS QUE ESTAN ALMACENADOS EN LA CARPETA ASSETS---->
 const path = require('path');
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
@@ -35,7 +31,6 @@ app.use((req, res, next) => {
 
 // MIS ROUTER ---->
 app.use('/', mainRouter);
-app.use('/api', imageUploadRouter);
 // <---------------
 
 // Error catching endware.

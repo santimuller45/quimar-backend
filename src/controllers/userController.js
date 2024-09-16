@@ -64,6 +64,17 @@ const updateUserPasswordController = async ( email, cuit ) => {
 const updateUserController = async ( email, password, name, cuit, address, postalCode, city, state, phone, userStatus, admin ) => {
   const userDB = await Users.findByPk( email );
   if (!userDB) throw { status: 404, message: 'Email incorrecto' };
+  if (!password) password = userDB.password;
+  if (!name) name = userDB.name;
+  if (!cuit) cuit = userDB.cuit;
+  if (!address) address = userDB.address;
+  if (!postalCode) postalCode = userDB.postalCode;
+  if (!city) city = userDB.city;
+  if (!state) state = userDB.state;
+  if (!phone) phone = userDB.phone;
+  if (!userStatus) userStatus = userDB.userStatus;
+  if (!admin) admin = userDB.admin;
+
   await userDB.update({
     password,
     name,

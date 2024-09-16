@@ -347,4 +347,4 @@ const images = {
     }
 };
 
-module.exports = { images };
+module.exports = { mainUrl, images };

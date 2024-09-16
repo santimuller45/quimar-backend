@@ -1,6 +1,7 @@
 const { Productos } = require('../db.js');
 const { Op } = require('sequelize');
 const { mayusLetter } = require('./extraController.js');
+const { mainUrl } = require('../assets/assets.js');
 
 // -----------------------------------------------------
 
@@ -30,18 +31,18 @@ const getProductByCodeController = async (code) => {
 
 const postProductController = async ( codigo, name, price, imagen, category, descripcion, status ) => {
 
-  if (!codigo) throw Error('Porfavor agregue un código al producto');
-  if (!name) throw Error('Porfavor agregue un nombre al producto');
-  if (!price) throw Error('Porfavor agregue un precio al producto');
+  if (!codigo) throw { status: 400, message: 'Porfavor agregue un código al producto' };
+  if (!name) throw { status: 400, message: 'Porfavor agregue un nombre al producto' };
+  if (!price) throw { status: 400, message: 'Porfavor agregue un precio al producto' };
 
   const isCodeAvailable = await getProductByCodeController(codigo);
-  if (isCodeAvailable) throw new Error('Ya existe ese codigo en los productos');
+  if (isCodeAvailable) throw { status: 409, message: 'El código de producto ingresado ya existe en la base de datos' };
 
   return await Productos.create({ 
     codigo, 
     name, 
     price, 
-    imagen, 
+    imagen: mainUrl(`/assets/img/${imagen}`), 
     category, 
     descripcion, 
     status 
@@ -51,13 +52,27 @@ const postProductController = async ( codigo, name, price, imagen, category, des
 const updateProductController = async ( id, codigo, name, price, imagen, category, descripcion, status ) => {
 
   const productDB = await getProductByIDController(id);
-  if (productDB === null) throw Error('Producto no encontrado');
+  if (!productDB) throw { status: 404, message: 'Producto no encontrado' };
+
+  if (codigo && productDB.codigo !== codigo) {
+    const isCodeAvailable = await getProductByCodeController(codigo);
+    if (isCodeAvailable) throw { status: 409, message: 'El código de producto ingresado ya existe en la base de datos' };
+  } else {
+    codigo = productDB.codigo;
+  }
+
+  if (!name) name = productDB.name;
+  if (!price) price = productDB.price;
+  if (!imagen) imagen = productDB.imagen;
+  if (!category) category = productDB.category;
+  if (!descripcion) descripcion = productDB.descripcion;
+  if (!status) status = productDB.status;
 
   await productDB.update({
     codigo,
     name,
     price,
-    imagen,
+    imagen: mainUrl(`/assets/img/${imagen}`),
     category,
     descripcion,
     status
@@ -65,7 +80,7 @@ const updateProductController = async ( id, codigo, name, price, imagen, categor
 
   await productDB.save();
   return productDB;
-}
+};
 
 module.exports = { 
   getAllProductsController, 
@@ -74,4 +89,4 @@ module.exports = {
   postProductController, 
   updateProductController,
   getProductByCodeController 
-}
+};
