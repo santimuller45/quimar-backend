@@ -64,7 +64,6 @@ const updateProductController = async ( id, codigo, name, price, imagen, categor
   });
 
   await productDB.save();
-
   return productDB;
 }
 

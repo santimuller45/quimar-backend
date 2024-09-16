@@ -9,7 +9,7 @@ productRouter.get('/', handlerGetProducts);
 productRouter.get('/:productID', handlerGetProductByID);
 
 // PUT
-productRouter.put('', handlerPutProduct);
+productRouter.put('/config-products', handlerPutProduct);
 
 // POST
 productRouter.post('/registerProduct', handlerPostProduct);
