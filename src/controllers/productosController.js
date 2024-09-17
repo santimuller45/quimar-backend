@@ -34,6 +34,9 @@ const postProductController = async ( codigo, name, price, imagen, category, des
   if (!codigo) throw { status: 400, message: 'Porfavor agregue un código al producto' };
   if (!name) throw { status: 400, message: 'Porfavor agregue un nombre al producto' };
   if (!price) throw { status: 400, message: 'Porfavor agregue un precio al producto' };
+  
+  // IMAGEN POR DEFECTO SI AL PRODUCTO NO SE LE PROPORCIONA UNO
+  if (!imagen) imagen = mainUrl(`/assets/img/no-photo.png`);
 
   const isCodeAvailable = await getProductByCodeController(codigo);
   if (isCodeAvailable) throw { status: 409, message: 'El código de producto ingresado ya existe en la base de datos' };
