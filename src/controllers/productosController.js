@@ -8,7 +8,11 @@ const { mainUrl } = require('../assets/assets.js');
 const getAllProductsController = async () => {
   return await Productos.findAll();
 };
-  
+
+const getProductByIDController = async (productID) => {
+  return await Productos.findByPk(productID);
+};
+
 const getProductByNameController = async (name) => {
   const productName = mayusLetter(name);
   return await Productos.findAll({
@@ -17,14 +21,10 @@ const getProductByNameController = async (name) => {
     }})
 };
   
-const getProductByIDController = async (productID) => {
-  return await Productos.findByPk(productID);
-};
-
 const getProductByCodeController = async (code) => {
-  return await Productos.findOne({
+  return await Productos.findAll({
     where: { 
-      codigo: code  
+      codigo: code
     }
   });
 };
