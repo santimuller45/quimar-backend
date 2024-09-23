@@ -39,7 +39,7 @@ const postProductController = async ( codigo, name, price, imagen, category, des
   if (!imagen) imagen = mainUrl(`/assets/img/no-photo.png`);
 
   const isCodeAvailable = await getProductByCodeController(codigo);
-  if (isCodeAvailable) throw { status: 409, message: 'El código de producto ingresado ya existe en la base de datos' };
+  if (isCodeAvailable.length > 0) throw { status: 409, message: 'El código de producto ingresado ya existe en la base de datos' };
 
   return await Productos.create({ 
     codigo, 

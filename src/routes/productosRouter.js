@@ -25,6 +25,6 @@ productRouter.get('/:productID', handlerGetProductByID);
 productRouter.put('/config-products', upload.single('imagen'), handlerPutProduct);
 
 // POST para crear un producto
-productRouter.post('/registerProduct', upload.single('imagen'), handlerPostProduct);
+productRouter.post('/register-product', upload.single('imagen'), handlerPostProduct);
 
 module.exports = productRouter;
