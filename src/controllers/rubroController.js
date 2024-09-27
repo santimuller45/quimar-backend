@@ -35,23 +35,25 @@ const postRubroController = async (name, subRubro) => {
   if (subRubro.length < 0) throw { status: 409, message: 'El rubro debe tener al menos 1 subrubro' };
 
   const isRubroAvailable = await getRubroByNameController(name);
-  if (isRubroAvailable || isRubroAvailable.length > 0) throw { status: 409, message: 'Ya existe un rubro con ese nombre' };
+  if (isRubroAvailable.length > 0) throw { status: 409, message: 'Ya existe un rubro con ese nombre' };
 
   return await Rubro.create({ name, subRubro });
 };
 
-const addSubRubroController = async ( rubroID, addSub ) => {
+const updateRubroController = async ( rubroID, name, subRubro ) => {
 
   if (!rubroID) throw { status: 409, message: 'Error al buscar el rubro'};
-  if (!addSub || addSub.length === 0) throw { status: 409, message: 'Porfavor el subrubro debe contener un nombre' };
+  if (!name) throw { status: 409, message: 'Porfavor el rubro debe contener un nombre'};
+  if (!subRubro || subRubro.length === 0) throw { status: 409, message: 'Porfavor el subrubro debe contener un nombre' };
 
   const findRubroDB = await getRubroByIDController(rubroID);
-  if (!findRubroDB) throw { status: 409, message: 'No se pudo encontrar el rubro ingresado' };
-  if (!Array.isArray(addSub)) addSub = [addSub];
+  if (findRubroDB.length === 0) throw { status: 409, message: 'No se pudo encontrar el rubro ingresado' };
+  if (!Array.isArray(subRubro)) subRubro = [subRubro];
 
-  const updatedSubRubros = [...findRubroDB.subRubro, ...addSub];
-
-  await findRubroDB.update({ subRubro: updatedSubRubros });
+  await findRubroDB.update({
+    name, 
+    subRubro
+  });
   await findRubroDB.save();
 
   return findRubroDB;
@@ -63,5 +65,5 @@ module.exports = {
     getRubroByNameController,
     getRubroByIDController,
     postRubroController,
-    addSubRubroController,
+    updateRubroController,
 }

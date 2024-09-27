@@ -3,7 +3,7 @@ const {
   getRubroByNameController, 
   getRubroByIDController, 
   postRubroController, 
-  addSubRubroController 
+  updateRubroController 
 } = require('../controllers/rubroController.js');
 
 const handlerGetRubros = async (req, res) => {
@@ -41,9 +41,9 @@ const handlerCreateRubro = async (req, res) => {
 };
 
 const handlerAddSubRubro = async (req, res) => {
-  const { rubroID, addSub } = req.body;
+  const { rubroID, name, subRubro } = req.body;
   try {
-    const rubroUpdated = await addSubRubroController(rubroID, addSub);
+    const rubroUpdated = await updateRubroController(rubroID, name, subRubro);
     res.status(200).json({ message: 'Rubro actualizado exitosamente!', rubro: rubroUpdated });
   } catch (error) {
     res.status(error.status || 500).json({ message: error.message });

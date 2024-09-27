@@ -66,7 +66,11 @@ const updateProductController = async ( id, codigo, name, price, imagen, categor
 
   if (!name) name = productDB.name;
   if (!price) price = productDB.price;
-  if (!imagen) imagen = productDB.imagen;
+  if (!imagen) {
+    imagen = productDB.imagen;
+  } else {
+    imagen = mainUrl(`/assets/img/${imagen}`);
+  }
   if (!category) category = productDB.category;
   if (!descripcion) descripcion = productDB.descripcion;
   if (!status) status = productDB.status;
@@ -75,7 +79,7 @@ const updateProductController = async ( id, codigo, name, price, imagen, categor
     codigo,
     name,
     price,
-    imagen: mainUrl(`/assets/img/${imagen}`),
+    imagen,
     category,
     descripcion,
     status
