@@ -9,9 +9,9 @@ ordersRouter.get("/", handlerGetAllOrders);
 ordersRouter.get('/:orderID', handlerGetOrderById);
 
 // PUT
-ordersRouter.put('/', handlerUpdateOrder);
+ordersRouter.put('/config-order', handlerUpdateOrder);
 
 // POST
-ordersRouter.post('/', handlerCreateOrder);
+ordersRouter.post('/register-order', handlerCreateOrder);
 
 module.exports = ordersRouter;
