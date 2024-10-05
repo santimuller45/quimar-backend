@@ -1,5 +1,5 @@
 const { Users } = require("../db.js");
-const { userAdmin } = require("../helper/helperAdmin.js");
+const { admin, quimarAdmin } = require("../helper/helperAdmin.js");
 
 // OBTENER EL DIA MES AÑO CON DAYJS ------->
 const dayjs = require('dayjs');
@@ -13,14 +13,16 @@ const getDateFormat = () => {
   const minute = dateNow.format('mm');   // Minutos en formato 2 dígitos
   const second = dateNow.format('ss');   // Segundos en formato 2 dígitos
 
-  return `ESTAMOS EN EL DIA: ${day} MES ${month} AÑO ${year} Y LA HORA ES: ${hour} ${minute} ${second}`;
+  return `DIA: ${day} MES ${month} AÑO ${year} HORA: ${hour} ${minute} ${second}`;
 };
 
 // <-----------------------------
 
 // CREAMOS EL ADMIN POR DEFAULT EN LA DB
 const createAdmin = async () => {
-  return await Users.create( userAdmin )
+  await Users.create(admin);
+  await Users.create(quimarAdmin);
+  return;
 };
 // <--------
 
