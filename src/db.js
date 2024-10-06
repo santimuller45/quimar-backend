@@ -27,8 +27,9 @@ fs.readdirSync(path.join(__dirname, '/models'))
       modelDefiners.push(require(path.join(__dirname, '/models', file)));
    });
 
-// Injectamos la conexion (sequelize) a todos los modelos
+// Inyectamos la conexion (sequelize) a todos los modelos
 modelDefiners.forEach((model) => model(sequelize));
+
 // Capitalizamos los nombres de los modelos ie: product => Product
 let entries = Object.entries(sequelize.models);
 let capsEntries = entries.map((entry) => [
@@ -41,14 +42,13 @@ sequelize.models = Object.fromEntries(capsEntries);
 // Para relacionarlos hacemos un destructuring
 const { Orders, Productos, Rubro, Users } = sequelize.models;
 
-// Aca vendrian las relaciones
-// Product.hasMany(Reviews);
+// Aca vendrian las relaciones entre modelos
 
 Productos.belongsToMany(Orders, { through: "productosOrders" });
 Orders.belongsToMany(Productos, { through: "productosOrders" });
 
-Users.belongsToMany(Orders, { through: "usersOrders"});
-Orders.belongsToMany(Users, { through: "usersOrders"});
+Users.hasMany(Orders, { foreignKey: 'userId' });
+Orders.belongsTo(Users, { foreignKey: 'userId'});
 
 Productos.belongsToMany(Rubro, { through: "productosRubro"});
 Rubro.belongsToMany(Productos, { through: "productosRubro"});

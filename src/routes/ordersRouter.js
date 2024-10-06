@@ -1,12 +1,12 @@
 const { Router } = require('express');
 
-const { handlerGetAllOrders, handlerGetOrderById, handlerUpdateOrder, handlerCreateOrder } = require('../handlers/orderHandlers.js');
+const { handlerGetAllOrders, handlerGetOrderBy, handlerUpdateOrder, handlerCreateOrder } = require('../handlers/orderHandlers.js');
 
 const ordersRouter = Router();
 
 // GET
 ordersRouter.get("/", handlerGetAllOrders);
-ordersRouter.get('/:orderID', handlerGetOrderById);
+ordersRouter.get('/:orderID', handlerGetOrderBy);
 
 // PUT
 ordersRouter.put('/config-order', handlerUpdateOrder);

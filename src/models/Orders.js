@@ -25,18 +25,17 @@ module.exports = (sequelize) => {
       defaultValue: null
     },
     orderStatus: {
-      type: DataTypes.ENUM('PENDIENTE', 'COMPLETADO', 'CANCELADO'),
-      defaultValue: 'PENDIENTE',
+      type: DataTypes.STRING,
+      defaultValue: 'COMPLETADO',
     },
-    createdAt: {
-      type: DataTypes.DATE,
-      defaultValue: DataTypes.NOW,
-    },
-    updatedAt: {
-      type: DataTypes.DATE,
-      defaultValue: DataTypes.NOW,
+    userId: {
+      type: DataTypes.UUID,
+      references: {
+        model: 'users',
+        key: 'id',
+      },
     },
   },{
-    timestamps: true,
+    timestamps: false,
   });
 };

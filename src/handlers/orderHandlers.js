@@ -2,25 +2,36 @@ const {
     getAllOrdersController,
     getOrderByIdController,
     updateOrderByIdController,
+    getOrderByUserController,
     createOrderController
 } = require('../controllers/orderController.js');
 
 const handlerGetAllOrders = async ( req , res ) => {
+    const { email } = req.query;
     try {
-        const allOrders = await getAllOrdersController();
-        if (allOrders.length < 1) throw Error('Orden de compra no encontrada');
-        res.status(200).json(allOrders);
+
+        let result;
+
+        if (email) {
+            result = await getOrderByUserController(email);
+        } else {
+            result = await getAllOrdersController();
+        }
+
+        if (result.length < 1) throw Error('Orden de compra no encontrada');
+
+        res.status(200).json(result);
     } catch (error) {
         res.status(404).json(error.message);
     }
 };
 
-const handlerGetOrderById = async ( req, res ) => {
+const handlerGetOrderBy = async ( req, res ) => {
     const { orderID } = req.params;
     try {
-        const orderFound = await getOrderByIdController(orderID);
-        if (orderFound === null) throw Error('Orden de compra no encontrada');
-        res.status(200).json(orderFound);
+        const findOrder = await getOrderByIdController(orderID);
+        if (!findOrder) throw Error('Orden de compra no encontrada');
+        res.status(200).json(findOrder);
     } catch (error) {
         res.status(404).json(error.message);
     }
@@ -51,7 +62,7 @@ const handlerCreateOrder = async (req, res) => {
 
 module.exports = {
     handlerGetAllOrders,
-    handlerGetOrderById,
+    handlerGetOrderBy,
     handlerUpdateOrder,
     handlerCreateOrder
 };
