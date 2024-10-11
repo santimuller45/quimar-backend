@@ -34,6 +34,7 @@ const infoUser = (data) => {
 
   return {
     email: data.email,
+    userNumber: data.userNumber,
     name: data.name,
     cuit: data.cuit,
     address: data.address,

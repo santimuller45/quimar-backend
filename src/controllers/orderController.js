@@ -4,7 +4,7 @@ const { Orders, Users } = require('../db.js');
 const getAllOrdersController = async () => {
     try {
         return await Orders.findAll({ 
-            include: { model: Users, attributes: ["email", "name"] } 
+            include: { model: Users, attributes: ["userNumber","email", "name"] } 
         });
     } catch (error) {
         throw new Error("Error al obtener las órdenes: " + error.message);
@@ -15,16 +15,16 @@ const getAllOrdersController = async () => {
 const getOrderByIdController = async (orderID) => {
     try {
         return await Orders.findByPk(orderID, { 
-            include: { model: Users, attributes: ["email", "name"] } 
+            include: { model: Users, attributes: ["userNumber","email", "name"] } 
         });
     } catch (error) {
         throw new Error("Error al obtener la orden: " + error.message);
     }
 };
 
-const getOrderByUserController = async (email) => {
+const getOrderByUserController = async (userNumber) => {
     try {
-        const findUser = await Users.findOne({ where: { email } });
+        const findUser = await Users.findOne({ where: { userNumber } });
         
         if (!findUser) {
             throw new Error("Usuario no encontrado");
@@ -32,7 +32,7 @@ const getOrderByUserController = async (email) => {
 
         const orders = await Orders.findAll({ 
             where: { userId: findUser.id },
-            include: { model: Users, attributes: ["email", "name"] 
+            include: { model: Users, attributes: ["userNumber","email", "name"] 
             }}
         );
 
@@ -51,7 +51,7 @@ const getOrderByUserController = async (email) => {
 const updateOrderByIdController = async (id, status) => {
     try {
         const orderToModify = await Orders.findByPk(id, { 
-            include: { model: Users, attributes: ["email", "name"] } 
+            include: { model: Users, attributes: ["userNumber","email", "name"] } 
         });
 
         if (!orderToModify) throw new Error("No se pudo encontrar la orden de compra");

@@ -7,13 +7,13 @@ const {
 } = require('../controllers/orderController.js');
 
 const handlerGetAllOrders = async ( req , res ) => {
-    const { email } = req.query;
+    const { userNumber } = req.query;
     try {
 
         let result;
 
-        if (email) {
-            result = await getOrderByUserController(email);
+        if (userNumber) {
+            result = await getOrderByUserController(userNumber);
         } else {
             result = await getAllOrdersController();
         }
