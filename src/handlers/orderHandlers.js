@@ -17,11 +17,6 @@ const handlerGetAllOrders = async (req, res) => {
             result = await getAllOrdersController();
         }
 
-        // Si el resultado es un array vacío, devuelves un 200 con el array vacío
-        if (result.length === 0) {
-            return res.status(200).json([]); // O puedes devolver un mensaje específico
-        }
-
         res.status(200).json(result);
     } catch (error) {
         // Maneja el error correctamente
