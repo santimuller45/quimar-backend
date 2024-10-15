@@ -6,10 +6,9 @@ const {
     createOrderController
 } = require('../controllers/orderController.js');
 
-const handlerGetAllOrders = async ( req , res ) => {
+const handlerGetAllOrders = async (req, res) => {
     const { userNumber } = req.query;
     try {
-
         let result;
 
         if (userNumber) {
@@ -18,11 +17,15 @@ const handlerGetAllOrders = async ( req , res ) => {
             result = await getAllOrdersController();
         }
 
-        if (result.length < 1) throw Error('Orden de compra no encontrada');
+        // Si el resultado es un array vacío, devuelves un 200 con el array vacío
+        if (result.length === 0) {
+            return res.status(200).json([]); // O puedes devolver un mensaje específico
+        }
 
         res.status(200).json(result);
     } catch (error) {
-        res.status(404).json(error.message);
+        // Maneja el error correctamente
+        res.status(500).json({ message: error.message });
     }
 };
 

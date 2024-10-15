@@ -3,9 +3,16 @@ const { Orders, Users } = require('../db.js');
 // Obtener todas las órdenes
 const getAllOrdersController = async () => {
     try {
-        return await Orders.findAll({ 
-            include: { model: Users, attributes: ["userNumber","email", "name"] } 
+        const orders = await Orders.findAll({ 
+            include: { model: Users, attributes: ["userNumber", "email", "name"] } 
         });
+
+        // Manejar el caso en que no hay órdenes
+        if (!orders || orders.length === 0) {
+            return []; // O lanzar un error si prefieres
+        }
+
+        return orders;
     } catch (error) {
         throw new Error("Error al obtener las órdenes: " + error.message);
     }
