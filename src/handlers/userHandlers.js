@@ -8,9 +8,20 @@ const {
 } = require('../controllers/userController.js');
 
 const getUsersHandler = async (req, res) => {
-    const { email } = req.query;
+    const { name, userNumber } = req.query;
     try {
-        const userDB = email ? await getUserController(email) : await getAllUsersDBController();
+        let userDB;
+
+        if (name || userNumber) {
+            userDB = await getUserController(name || null, userNumber || null);
+        } else {
+            userDB = await getAllUsersDBController();
+        }
+
+        if (!userDB) {
+            return res.status(404).json({ message: "Usuario no encontrado" });
+        }
+
         res.status(200).json(userDB);
     } catch (error) {
         res.status(error.status || 500).json({ message: error.message });

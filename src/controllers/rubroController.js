@@ -18,7 +18,6 @@ const getAllRubrosController = async () => {
   
 const getRubroByNameController = async (name) => {
   const rubroName = mayusLetter(name);
-  console.log(rubroName);
   return await Rubro.findAll({
     where: { 
       name: {[Op.substring]:`${rubroName}`}

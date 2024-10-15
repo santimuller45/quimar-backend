@@ -18,7 +18,7 @@ const admin = {
 const quimarAdmin = {
     email: USER_ADM_QUIMAR,
     password: USER_ADM_QUIMAR_PASSWORD,
-    name: 'Pegurri Marco Ariel',
+    name: 'Pegurri Marcos Ariel',
     cuit: "20-23130541-7",
     address: "Argentinas del Sur 1182",
     city: "Bahia Blanca",

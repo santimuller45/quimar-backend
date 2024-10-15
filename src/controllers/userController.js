@@ -1,5 +1,6 @@
 const { Users, Orders } = require("../db.js");
 const { infoUser } = require('./extraController.js');
+const { Op } = require('sequelize');
 
 const getAllUsersDBController = async () => {
     const allUsers = await Users.findAll();
@@ -7,16 +8,34 @@ const getAllUsersDBController = async () => {
     return allUsers;
 };
 
-const getUserController = async (email) => {
-    const findUser = await Users.findOne({
-        where: { email },
-        include: {
-            model: Orders,
-            attributes: ['id']
-        }
-    });
-    if (!findUser) throw { status: 400, message: "Usuario no encontrado" };
-    else return findUser;
+const getUserController = async (name, userNumber) => {
+    let findUser;
+
+    if (name) {
+        findUser = await Users.findAll({
+            where: {
+                name: {
+                    [Op.iLike]: `%${name}%` // Usar Op.like para buscar coincidencias parciales
+                }
+            },
+            include: {
+                model: Orders
+            }
+        });
+    } else if (userNumber) {
+        findUser = await Users.findAll({
+            where: { userNumber },
+            include: {
+                model: Orders
+            }
+        });
+    }
+
+    if (!findUser || (Array.isArray(findUser) && findUser.length === 0)) {
+        throw { status: 400, message: "Usuario no encontrado" };
+    } else {
+        return findUser;
+    }
 };
 
 const createUserController = async (email, name, password, cuit, address, postalCode, city, state, phone, userStatus, admin) => {
