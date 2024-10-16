@@ -13,7 +13,14 @@ const getDateFormat = () => {
   const minute = dateNow.format('mm');   // Minutos en formato 2 dígitos
   const second = dateNow.format('ss');   // Segundos en formato 2 dígitos
 
-  return `DIA: ${day} MES ${month} AÑO ${year} HORA: ${hour} ${minute} ${second}`;
+  return {
+    day,
+    month,
+    year,
+    hour,
+    minute,
+    second
+  }
 };
 
 // <-----------------------------

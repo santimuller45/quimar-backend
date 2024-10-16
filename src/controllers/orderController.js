@@ -1,4 +1,5 @@
 const { Orders, Users } = require('../db.js');
+const { getDateFormat } = require('../controllers/extraController.js');
 
 // Obtener todas las órdenes
 const getAllOrdersController = async () => {
@@ -78,6 +79,8 @@ const createOrderController = async (listaPedido, amount, totalAmount, comentary
         const user = await Users.findOne({ where: { email: userEmail } });
         if (!user) throw new Error("Usuario no encontrado");
 
+        const getDateNow = getDateFormat();
+
         // Crear la nueva orden y asociarla al usuario
         const newOrder = await Orders.create({ 
             listaPedido, 
@@ -85,7 +88,8 @@ const createOrderController = async (listaPedido, amount, totalAmount, comentary
             totalAmount, 
             comentary, 
             orderStatus, 
-            userId: user.id // Aquí asignas el ID del usuario
+            userId: user.id, // Aquí asignas el ID del usuario
+            orderDate: getDateNow,
         });
 
         return newOrder;

@@ -28,6 +28,10 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       defaultValue: 'COMPLETADO',
     },
+    orderDate: {
+      type: DataTypes.JSONB,
+      defaultValue: [],
+    },
     userId: {
       type: DataTypes.UUID,
       references: {
