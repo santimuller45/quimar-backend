@@ -3,7 +3,7 @@ const subRubroAccPintura01 = 'Bandejas Pintor y Acc.';
 
 const listaBandejasDePintorYAcc = [
     {
-        codigo: 2360,
+        codigo: "2360",
         price: 7038.00,
         name: "CINTA PARA PLACA DE YESO DE PAPEL (50 X 75)",
         imagen: images.accPintura.image2360,
@@ -11,7 +11,7 @@ const listaBandejasDePintorYAcc = [
         category: subRubroAccPintura01
     },
     {
-        codigo: 2361,
+        codigo: "2361",
         price: 12087.00,
         name: "CINTA DE PAPEL PARA PLACA DE YESO TRAMADA (50 X 90)",
         imagen: images.accPintura.image2361,
@@ -19,7 +19,7 @@ const listaBandejasDePintorYAcc = [
         category: subRubroAccPintura01
     },
     {
-        codigo: 2366,
+        codigo: "2366",
         price: 1883.43,
         name: "CINTA DE PAPEL 18 X 50",
         imagen: images.accPintura.image2366,
@@ -27,7 +27,7 @@ const listaBandejasDePintorYAcc = [
         category: subRubroAccPintura01
     },
     {
-        codigo: 2367,
+        codigo: "2367",
         price: 2720.00,
         name: "CINTA DE PAPEL 24 X 50",
         imagen: images.accPintura.image2366,
@@ -35,7 +35,7 @@ const listaBandejasDePintorYAcc = [
         category: subRubroAccPintura01
     },
     {
-        codigo: 2368,
+        codigo: "2368",
         price: 3825.00,
         name: "CINTA DE PAPEL 36 X 40",
         imagen: images.accPintura.image2366,
@@ -43,7 +43,7 @@ const listaBandejasDePintorYAcc = [
         category: subRubroAccPintura01
     },
     {
-        codigo: 2369,
+        codigo: "2369",
         price: 2111.40,
         name: "VIRUTA DE ACERO X 330 G. MEDIANA",
         imagen: images.accPintura.image2369,
@@ -51,7 +51,7 @@ const listaBandejasDePintorYAcc = [
         category: subRubroAccPintura01
     },
     {
-        codigo: 2370,
+        codigo: "2370",
         price: 2060.80,
         name: "BANDEJA PINTOR DE COLGAR",
         imagen: images.accPintura.image2370,
@@ -59,7 +59,7 @@ const listaBandejasDePintorYAcc = [
         category: subRubroAccPintura01
     },
     {
-        codigo: 2371,
+        codigo: "2371",
         price: 588.00,
         name: "BANDEJA PINTOR MINI",
         imagen: images.accPintura.image2371,
@@ -67,7 +67,7 @@ const listaBandejasDePintorYAcc = [
         category: subRubroAccPintura01
     },
     {
-        codigo: 2372,
+        codigo: "2372",
         price: 698.58,
         name: "LAMINA PLASTICA DE MASILLAR 12 CM.",
         imagen: images.noImageDefault,
@@ -75,7 +75,7 @@ const listaBandejasDePintorYAcc = [
         category: subRubroAccPintura01
     },
     {
-        codigo: 2373,
+        codigo: "2373",
         price: 361.62,
         name: "ESPATULA PLASTICA 75 mm C/MANGO",
         imagen: images.noImageDefault,
@@ -83,7 +83,7 @@ const listaBandejasDePintorYAcc = [
         category: subRubroAccPintura01
     },
     {
-        codigo: 2375,
+        codigo: "2375",
         price: 1406.03,
         name: "ESPATULA PLASTICA MULTIUSO",
         imagen: images.noImageDefault,
@@ -91,7 +91,7 @@ const listaBandejasDePintorYAcc = [
         category: subRubroAccPintura01
     },
     {
-        codigo: 2376,
+        codigo: "2376",
         price: 2191.23,
         name: "ESPATULA YESERO 15 X 23 PLASTICA",
         imagen: images.noImageDefault,
@@ -99,7 +99,7 @@ const listaBandejasDePintorYAcc = [
         category: subRubroAccPintura01
     },
     {
-        codigo: 2377,
+        codigo: "2377",
         price: 6080.00,
         name: "LLANA DENTADA 12X12 DE ACERO",
         imagen: images.accPintura.image2377,
@@ -107,7 +107,7 @@ const listaBandejasDePintorYAcc = [
         category: subRubroAccPintura01
     },
     {
-        codigo: 2378,
+        codigo: "2378",
         price: 3656.00,
         name: "LLANA PLASTICA CON ASA 14 X 30",
         imagen: images.accPintura.image2378,

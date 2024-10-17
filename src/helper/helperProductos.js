@@ -12,7 +12,6 @@ const { listProducts08 } = require('./PolietilenoYAgrotileno/RubroPoliYAgro/list
 const { listProducts09 } = require('./ProductosParaPiletas/RubroPiletas/listaPiletas.js');
 const { listProducts10 } = require('./QuimicosYDiluyentes/RubroQuim/listaQuimicosDilu.js');
 const { listProducts11 } = require('./Zingueria/RubroZingueria/listaZingueria.js');
-
 // <---------------------------------------
 
 //CREAR CADA PRODUCTO EN LA DB ------------------------------------------------------->
@@ -31,7 +30,7 @@ const createProductList11 = async () => await Productos.bulkCreate(listProducts1
 
 // <----------------------------------------------------------------------------------
 
-//FUNCION PARA CREAR TODOS LOS RUBROS ------->
+//FUNCION PARA CREAR TODOS LOS PRODUCTOS ------->
 
 const createAllProducts = async () => {
     await createProductList01();

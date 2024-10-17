@@ -19,7 +19,7 @@ module.exports = (sequelize) => {
             allowNull: false,
         },
         price: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.DECIMAL(10,2),
             allowNull: false,
         },
         imagen: {
@@ -36,10 +36,10 @@ module.exports = (sequelize) => {
         },
         quantity: {
             type: DataTypes.INTEGER,
-            defaultValue:0
+            defaultValue: 0
         },
         total: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.DECIMAL(10,2),
             defaultValue: 0
         },
         status: {
@@ -54,8 +54,7 @@ module.exports = (sequelize) => {
             type: DataTypes.DATE,
             defaultValue: DataTypes.NOW,
         },
-    },
-    {
-        timestamps: true,
+    },{
+    timestamps: true,
     });
 };
