@@ -28,7 +28,7 @@ module.exports = (sequelize) => {
         },
         orderStatus: {
           type: DataTypes.STRING,
-          defaultValue: 'COMPLETADO',
+          defaultValue: 'PEDIDO-WEB',
         },
         orderDate: {
           type: DataTypes.JSONB,
