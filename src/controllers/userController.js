@@ -1,6 +1,6 @@
 const { Users, Orders } = require("../db.js");
 const { infoUser } = require('./extraController.js');
-const { Op } = require('sequelize');
+const { Op, where } = require('sequelize');
 
 const getAllUsersDBController = async () => {
     const allUsers = await Users.findAll();
@@ -78,24 +78,31 @@ const updateUserPasswordController = async (email, cuit) => {
     return infoUser(userDB);
 };
 
-const updateUserController = async (email, password, name, cuit, address, postalCode, city, state, phone, userStatus, admin) => {
-    const userDB = await Users.findOne({ where: { email } });
-    if (!userDB) throw { status: 404, message: 'Email incorrecto' };
+const updateUserController = async ( id, email, name, cuit, address, postalCode, city, state, phone, userStatus, admin ) => {
+
+    const findUserDB = await Users.findByPk(id);
+
+    if ( email && findUserDB.email !== email ) {
+        const isEmailAvailable = Users.findOne({ where: { email } });
+        if (isEmailAvailable.length > 0 || isEmailAvailable.id ) throw { status: 404, message: 'Este email ya existe en el sistema' };
+    } else {
+        email = findUserDB.email;
+    }
     
-    await userDB.update({
-        password: password || userDB.password,
-        name: name || userDB.name,
-        cuit: cuit || userDB.cuit,
-        address: address || userDB.address,
-        postalCode: postalCode || userDB.postalCode,
-        city: city || userDB.city,
-        state: state || userDB.state,
-        phone: phone || userDB.phone,
+    await findUserDB.update({
+        email: email || findUserDB.email,
+        name: name || findUserDB.name,
+        cuit: cuit || findUserDB.cuit,
+        address: address || findUserDB.address,
+        postalCode: postalCode || findUserDB.postalCode,
+        city: city || findUserDB.city,
+        state: state || findUserDB.state,
+        phone: phone || findUserDB.phone,
         userStatus: userStatus !== undefined ? userStatus : userDB.userStatus,
-        admin: admin !== undefined ? admin : userDB.admin
+        admin: admin !== undefined ? admin : userDB.admin,
     });
-    await userDB.save();
-    return infoUser(userDB);
+    await findUserDB.save();
+    return infoUser(findUserDB);
 };
 
 module.exports = {

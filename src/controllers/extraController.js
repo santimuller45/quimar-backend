@@ -40,6 +40,7 @@ const mayusLetter = (string) => string.toUpperCase();
 const infoUser = (data) => {
 
   return {
+    id: data.id,
     email: data.email,
     userNumber: data.userNumber,
     name: data.name,
