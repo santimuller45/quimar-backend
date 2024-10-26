@@ -1,5 +1,5 @@
 const { Users } = require("../db.js");
-const { admin, quimarAdmin } = require("../helper/helperAdmin.js");
+const { dev, admin } = require("../helper/helperAdmin.js");
 
 // LIBRERIA BCRYPT PARA HASHEAR LAS CONTRASEÑAS ----->
 const bcrypt = require('bcrypt');
@@ -42,8 +42,38 @@ const getDateFormat = () => {
 
 // CREAMOS EL ADMIN POR DEFAULT EN LA DB
 const createAdmin = async () => {
-  await Users.create(admin);
-  await Users.create(quimarAdmin);
+
+  let hashedDevPassword = await hashPassword(dev.password);
+  let hashedAdminPassword = await hashPassword(admin.password);
+
+  await Users.create({
+    email: dev.email, 
+    password: hashedDevPassword, 
+    name: dev.name, 
+    cuit: dev.cuit, 
+    address: dev.address, 
+    postalCode: dev.postalCode, 
+    city: dev.city, 
+    state: dev.state, 
+    phone: dev.phone, 
+    userStatus: dev.userStatus, 
+    admin: dev.admin, 
+  });
+
+  await Users.create({
+    email: admin.email, 
+    password: hashedAdminPassword, 
+    name: admin.name, 
+    cuit: admin.cuit, 
+    address: admin.address, 
+    postalCode: admin.postalCode, 
+    city: admin.city, 
+    state: admin.state, 
+    phone: admin.phone, 
+    userStatus: admin.userStatus, 
+    admin: admin.admin, 
+  });
+  
   return;
 };
 // <--------

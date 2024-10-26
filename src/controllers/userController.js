@@ -1,5 +1,5 @@
 const { Users, Orders } = require("../db.js");
-const { hashPassword, compareHash, infoUser } = require('./extraController.js');
+const { hashPassword, compareHash } = require('./extraController.js');
 const { Op } = require('sequelize');
 
 const getAllUsersDBController = async () => {
@@ -53,9 +53,22 @@ const createUserController = async (email, name, password, cuit, address, postal
 
     // Si no se proporciona una contraseña se le asigna el CUIT como contraseña
     if (!password) password = cuit;
+    const hashedPassword = await hashPassword(password);
 
     // Creación del nuevo usuario
-    await Users.create({ email, password, name, cuit, address, postalCode, city, state, phone, userStatus, admin });
+    await Users.create({ 
+        email, 
+        password: hashedPassword, 
+        name, 
+        cuit, 
+        address, 
+        postalCode, 
+        city, 
+        state, 
+        phone, 
+        userStatus, 
+        admin 
+    });
     return "Usuario creado correctamente, espere a que su cuenta sea activada";
 };
 
@@ -63,9 +76,12 @@ const loginUserController = async (email, password) => {
     if (!email || !password) throw { status: 400, message: "Por favor ingrese email y contraseña" };
     const user = await Users.findOne({ where: { email } });
     if (!user) throw { status: 401, message: "Email incorrecto" };
-    else if (user.password !== password) throw { status: 401, message: "Contraseña incorrecta" };
-    else if (!user.userStatus) throw { status: 403, message: "La cuenta todavía no está activada" };
-    else return infoUser(user);
+    
+    const isPasswordValid = await compareHash(password, user.password);
+    if (!isPasswordValid) throw { status: 401, message: "Contraseña incorrecta" };
+
+    if (!user.userStatus) throw { status: 403, message: "La cuenta todavía no está activada" };
+    return user;
 };
 
 const updateUserPasswordController = async (email, cuit, password, newPassword ) => {
@@ -74,17 +90,19 @@ const updateUserPasswordController = async (email, cuit, password, newPassword )
 
     if (cuit) {
         if (userDB.cuit !== cuit) throw { status: 404, message: 'CUIT/CUIL incorrecto' };
-        await userDB.update({ password: cuit });
+        const hashedPassword = hashPassword(cuit);
+        await userDB.update({ password: hashedPassword });
         await userDB.save();
-        return infoUser(userDB);
+        return userDB;
     } else if (password) {
-        if (userDB.password !== password) throw { status: 401, message: "Contraseña incorrecta" };
-        else if (!newPassword) throw { status: 401, message: "Debe ingresar una contraseña nueva" };
-        else {
-            await userDB.update({ password: newPassword });
-            await userDB.save();
-            return infoUser(userDB);
-        }
+        const isPasswordValid = await compareHash(password, userDB.password);
+        if (!isPasswordValid) throw { status: 401, message: "Contraseña incorrecta" };
+        if (!newPassword) throw { status: 401, message: "Debe ingresar una contraseña nueva" };
+        
+        const hashedNewPassword = await hashPassword(newPassword);
+        await userDB.update({ password: hashedNewPassword });
+        await userDB.save();
+        return userDB;
     }
 };
 
@@ -112,7 +130,7 @@ const updateUserController = async ( id, email, name, cuit, address, postalCode,
         admin: admin !== undefined ? admin : userDB.admin,
     });
     await findUserDB.save();
-    return infoUser(findUserDB);
+    return findUserDB;
 };
 
 module.exports = {

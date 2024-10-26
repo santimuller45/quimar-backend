@@ -1,9 +1,9 @@
 require('dotenv').config();
-const { USER_ADMIN, USER_ADMIN_PASSWORD, USER_ADM_QUIMAR, USER_ADM_QUIMAR_PASSWORD } = process.env;
+const { DEV_QUIMAR, DEV_QUIMAR_PASSWORD, ADM_QUIMAR, ADM_QUIMAR_PASSWORD } = process.env;
 
-const admin = {
-    email: USER_ADMIN,
-    password: USER_ADMIN_PASSWORD,
+const dev = {
+    email: DEV_QUIMAR,
+    password: DEV_QUIMAR_PASSWORD,
     name: 'Santiago Muller',
     cuit: "20-39157263-2",
     address: "Bahia Blanca",
@@ -15,9 +15,9 @@ const admin = {
     admin: true,
 }
 
-const quimarAdmin = {
-    email: USER_ADM_QUIMAR,
-    password: USER_ADM_QUIMAR_PASSWORD,
+const admin = {
+    email: ADM_QUIMAR,
+    password: ADM_QUIMAR_PASSWORD,
     name: 'Pegurri Marcos Ariel',
     cuit: "20-23130541-7",
     address: "Argentinas del Sur 1182",
@@ -29,4 +29,4 @@ const quimarAdmin = {
     admin: true,
 };
 
-module.exports = { admin, quimarAdmin };
+module.exports = { dev, admin };
