@@ -1,6 +1,6 @@
 const { Users, Orders } = require("../db.js");
-const { infoUser } = require('./extraController.js');
-const { Op, where } = require('sequelize');
+const { hashPassword, compareHash, infoUser } = require('./extraController.js');
+const { Op } = require('sequelize');
 
 const getAllUsersDBController = async () => {
     const allUsers = await Users.findAll();
@@ -68,14 +68,24 @@ const loginUserController = async (email, password) => {
     else return infoUser(user);
 };
 
-const updateUserPasswordController = async (email, cuit) => {
+const updateUserPasswordController = async (email, cuit, password, newPassword ) => {
     const userDB = await Users.findOne({ where: { email } });
     if (!userDB) throw { status: 404, message: 'Email incorrecto' };
-    if (userDB.cuit !== cuit) throw { status: 404, message: 'CUIT/CUIL incorrecto' };
-    const password = cuit;
-    await userDB.update({ password });
-    await userDB.save();
-    return infoUser(userDB);
+
+    if (cuit) {
+        if (userDB.cuit !== cuit) throw { status: 404, message: 'CUIT/CUIL incorrecto' };
+        await userDB.update({ password: cuit });
+        await userDB.save();
+        return infoUser(userDB);
+    } else if (password) {
+        if (userDB.password !== password) throw { status: 401, message: "Contraseña incorrecta" };
+        else if (!newPassword) throw { status: 401, message: "Debe ingresar una contraseña nueva" };
+        else {
+            await userDB.update({ password: newPassword });
+            await userDB.save();
+            return infoUser(userDB);
+        }
+    }
 };
 
 const updateUserController = async ( id, email, name, cuit, address, postalCode, city, state, phone, userStatus, admin ) => {

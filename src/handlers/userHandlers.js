@@ -49,9 +49,9 @@ const loginUserHandler = async (req, res) => {
 };
 
 const updateUserPasswordHandler = async (req,res) => {
-    const { email, cuit } = req.body;
+    const { email, cuit, password, newPassword } = req.body;
     try {
-        const userUpdate = await updateUserPasswordController(email, cuit);
+        const userUpdate = await updateUserPasswordController(email, cuit, password, newPassword);
         res.status(200).send(userUpdate);
     } catch (error) {
         res.status(error.status || 500).json({ message: error.message });

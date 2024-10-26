@@ -1,7 +1,22 @@
 const { Users } = require("../db.js");
 const { admin, quimarAdmin } = require("../helper/helperAdmin.js");
 
-// OBTENER EL DIA MES AÑO CON DAYJS ------->
+// LIBRERIA BCRYPT PARA HASHEAR LAS CONTRASEÑAS ----->
+const bcrypt = require('bcrypt');
+
+// Hashear una contraseña
+const hashPassword = async (password) => {
+    const saltRounds = 10; // Número de rondas para el hashing
+    return await bcrypt.hash(password, saltRounds);
+};
+
+// Comparar una contraseña ingresada con una hasheada
+const compareHash = async (password, hashedPassword) => {
+    return await bcrypt.compare(password, hashedPassword);
+};
+// <-------------------------------------------
+
+// LIBRERIA DAYJS PARA OBTENER DIA/MES/AÑO HORA/MINUTOS/SEGUNDOS ACTUALES ------->
 const dayjs = require('dayjs');
 
 const getDateFormat = () => {
@@ -56,4 +71,4 @@ const infoUser = (data) => {
 };
 
 
-module.exports = { getDateFormat, infoUser, createAdmin, mayusLetter };
+module.exports = { hashPassword, compareHash, getDateFormat, infoUser, createAdmin, mayusLetter };

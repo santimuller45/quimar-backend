@@ -9,7 +9,7 @@ userRouter.get('/', getUsersHandler);
 
 // PUT
 userRouter.put('/config-users', updateUserHandler);
-userRouter.put('/forgot-password', updateUserPasswordHandler);
+userRouter.put('/update-password', updateUserPasswordHandler);
 
 //POST
 userRouter.post('/register', createUserHandler);
