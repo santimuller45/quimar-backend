@@ -3,7 +3,8 @@ const {
     getOrderByIdController,
     updateOrderByIdController,
     getOrderByUserController,
-    createOrderController
+    createOrderController,
+    filterOrderByDate,
 } = require('../controllers/orderController.js');
 
 const handlerGetAllOrders = async (req, res) => {
@@ -21,6 +22,17 @@ const handlerGetAllOrders = async (req, res) => {
     } catch (error) {
         // Maneja el error correctamente
         res.status(500).json({ message: error.message });
+    }
+};
+
+const handlerGetOrderByDate = async (req,res) => {
+    const { day, month, year } = req.query;
+    try {
+        const order = await filterOrderByDate(day, month, year);
+        if (!order) throw Error("No se pudo crear la orden de compra");
+        res.status(200).json(order);
+    } catch (error) {
+        res.status(404).json(error.message);
     }
 };
 
@@ -62,5 +74,6 @@ module.exports = {
     handlerGetAllOrders,
     handlerGetOrderBy,
     handlerUpdateOrder,
-    handlerCreateOrder
+    handlerCreateOrder,
+    handlerGetOrderByDate,
 };

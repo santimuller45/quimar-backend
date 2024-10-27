@@ -98,10 +98,29 @@ const createOrderController = async (listaPedido, amount, totalAmount, comentary
     }
 };
 
+const filterOrderByDate = async (day, month, year) => {
+    try {
+        const getOrder = await Orders.findAll({
+            where: {
+                orderDate: {
+                    day,
+                    month,
+                    year,
+                }
+            },
+            include: { model: Users, attributes: ["userNumber","email", "name"]},
+        });
+        return getOrder;
+    } catch (error) {
+        throw new Error("Error al buscar la orden: " + error.message);
+    }
+};
+
 module.exports = {
     getAllOrdersController,
     getOrderByIdController,
     getOrderByUserController,
     updateOrderByIdController,
-    createOrderController
+    createOrderController,
+    filterOrderByDate,
 }

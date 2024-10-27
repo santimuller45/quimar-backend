@@ -1,11 +1,12 @@
 const { Router } = require('express');
 
-const { handlerGetAllOrders, handlerGetOrderBy, handlerUpdateOrder, handlerCreateOrder } = require('../handlers/orderHandlers.js');
+const { handlerGetAllOrders, handlerGetOrderBy, handlerUpdateOrder, handlerCreateOrder, handlerGetOrderByDate } = require('../handlers/orderHandlers.js');
 
 const ordersRouter = Router();
 
 // GET
 ordersRouter.get("/", handlerGetAllOrders);
+ordersRouter.get("/filter-order", handlerGetOrderByDate);
 ordersRouter.get('/:orderID', handlerGetOrderBy);
 
 // PUT
