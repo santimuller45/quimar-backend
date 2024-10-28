@@ -1,9 +1,9 @@
-const { getDateFormat } = require('../controllers/extraController.js');
+const { getDatesForOrders } = require('../controllers/extraController.js');
 
 
 const handlerGetDate =  (req, res) => {
     try {
-      const dateNow = getDateFormat();
+      const dateNow = getDatesForOrders();
       if (dateNow) res.status(200).json(dateNow);
       else throw Error('Error de fecha')
     } catch (error) {

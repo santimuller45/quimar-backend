@@ -31,7 +31,7 @@ router.use('/users', userRouter);
 router.use('/orders', ordersRouter);
 
 // OTROS ROUTERS
-router.use('/getDateNow', handlerGetDate);
+router.use('/getDate', handlerGetDate);
 
 //--------------------------------------
 

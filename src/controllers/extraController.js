@@ -38,6 +38,15 @@ const getDateFormat = () => {
   }
 };
 
+// FUNCIÓN PARA UTILIZAR EN EL FRONT PARA FILTRAR LAS ORDERS POR DIA, MES Y AÑO
+const getDatesForOrders = () => {
+  const days = Array.from({ length: 31 }, (_, i) => i + 1); // Días del 1 al 31
+  const months = Array.from({ length: 12 }, (_, i) => i + 1); // Meses del 1 al 12
+  const years = [2024, 2025, 2026, 2027, 2028]; // Años predefinidos
+
+  return { days, months, years };
+};
+
 // <-----------------------------
 
 // CREAMOS EL ADMIN POR DEFAULT EN LA DB
@@ -82,23 +91,5 @@ const createAdmin = async () => {
 const mayusLetter = (string) => string.toUpperCase();
 //<-------
 
-const infoUser = (data) => {
 
-  return {
-    id: data.id,
-    email: data.email,
-    userNumber: data.userNumber,
-    name: data.name,
-    cuit: data.cuit,
-    address: data.address,
-    postalCode: data.postalCode,
-    city: data.city,
-    state: data.state,
-    phone: data.phone,
-    userStatus: data.userStatus,
-    admin: data.admin
-  }
-};
-
-
-module.exports = { hashPassword, compareHash, getDateFormat, infoUser, createAdmin, mayusLetter };
+module.exports = { hashPassword, compareHash, getDateFormat, getDatesForOrders, createAdmin, mayusLetter };
