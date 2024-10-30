@@ -49,6 +49,37 @@ const getDatesForOrders = () => {
 
 // <-----------------------------
 
+// RESEND ---------------------->
+require('dotenv').config();
+const { RESEND_EMAIL_FROM, RESEND_EMAIL_TO, RESEND_API_KEY } = process.env;
+const { Resend } = require('resend');
+const resend = new Resend(RESEND_API_KEY);
+
+const sendOrderEmail = async (userEmail, orderDetails) => {
+  const emailContent = `
+      <h1>Detalles de tu Pedido</h1>
+      <p><strong>Lista de Productos:</strong></p>
+      <ul>
+          ${orderDetails.listaPedido.map(item => `<li>${item}</li>`).join('')}
+      </ul>
+      <p><strong>Total a Pagar:</strong> $${orderDetails.totalAmount}</p>
+      <p><strong>Comentario:</strong> ${orderDetails.comentary}</p>
+  `;
+
+  try {
+      await resend.emails.send({
+          from: RESEND_EMAIL_FROM,
+          to: RESEND_EMAIL_TO,
+          subject: `PEDIDO-WEB de: ${userEmail} ORDEN N°${orderDetails.id}`,
+          html: emailContent,
+      });
+      console.log('Correo enviado exitosamente');
+  } catch (error) {
+      console.error('Error al enviar el correo:', error);
+  }
+};
+// <-----------------------------
+
 // CREAMOS EL ADMIN POR DEFAULT EN LA DB
 const createAdmin = async () => {
 
@@ -92,4 +123,4 @@ const mayusLetter = (string) => string.toUpperCase();
 //<-------
 
 
-module.exports = { hashPassword, compareHash, getDateFormat, getDatesForOrders, createAdmin, mayusLetter };
+module.exports = { hashPassword, compareHash, getDateFormat, getDatesForOrders, sendOrderEmail, createAdmin, mayusLetter };

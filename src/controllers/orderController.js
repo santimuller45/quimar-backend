@@ -1,5 +1,5 @@
 const { Orders, Users } = require('../db.js');
-const { getDateFormat } = require('../controllers/extraController.js');
+const { getDateFormat, sendOrderEmail } = require('../controllers/extraController.js');
 
 // Obtener todas las órdenes
 const getAllOrdersController = async () => {
@@ -91,6 +91,9 @@ const createOrderController = async (listaPedido, amount, totalAmount, comentary
             userId: user.id, // Aquí asignas el ID del usuario
             orderDate: getDateNow,
         });
+
+        // Llamar a la función para enviar el correo
+        await sendOrderEmail(userEmail, newOrder);
 
         return newOrder;
     } catch (error) {
