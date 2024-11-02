@@ -1,4 +1,6 @@
 const { Router } = require('express');
+require('dotenv').config();
+const { PRODUCTS_MAIN_ROUTER, RUBROS_MAIN_ROUTER, USERS_MAIN_ROUTER, ORDERS_MAIN_ROUTER, DATES_MAIN_ROUTER } = process.env; 
 // Importar todos los routers;
 // Ejemplo: const authRouter = require('./auth.js');
 //----------------------
@@ -19,19 +21,19 @@ const router = Router();
 //---------------------------------------
 
 // ROUTER DE LOS PRODUCTOS
-router.use('/productos', productRouter);
+router.use(PRODUCTS_MAIN_ROUTER, productRouter);
 
 // ROUTER DE LOS RUBROS
-router.use('/rubro', rubroRouter);
+router.use(RUBROS_MAIN_ROUTER, rubroRouter);
 
 // ROUTER DE LOS USERS
-router.use('/users', userRouter);
+router.use(USERS_MAIN_ROUTER, userRouter);
 
 // ROUTER DE LAS ORDERS
-router.use('/orders', ordersRouter);
+router.use(ORDERS_MAIN_ROUTER, ordersRouter);
 
 // OTROS ROUTERS
-router.use('/getDate', handlerGetDate);
+router.use(DATES_MAIN_ROUTER, handlerGetDate);
 
 //--------------------------------------
 
