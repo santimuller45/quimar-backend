@@ -1,6 +1,6 @@
 require('dotenv').config();
-const { DB_HOST, PORT } = process.env;
-const mainUrl = (path) => `http://${DB_HOST}:${PORT}${path}`;
+const { URL_BACK_RAILWAY } = process.env;
+const mainUrl = (path) => `${URL_BACK_RAILWAY}${path}`;
 
 const images = {
     // IMAGEN NO DISPONIBLE -->
