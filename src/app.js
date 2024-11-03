@@ -17,19 +17,14 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 require('dotenv').config();
 const { URL_LOCAL, URL_WEB_DEPLOY } = process.env;
 
-// Configuración de CORS
-const allowedOrigins = [
-    URL_WEB_DEPLOY, // Dominio de Vercel
-    URL_LOCAL, // Para desarrollo local, si usas puerto 3001 en el front
-];
-
-app.use(cors({
+// Configura CORS para que acepte solo el dominio de tu frontend en Vercel
+const corsOptions = {
     origin: URL_WEB_DEPLOY,
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept'],
-}));
+    credentials: true, // permite el envío de cookies si tu aplicación lo necesita
+    optionsSuccessStatus: 200
+};
 
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(morgan('dev'));
 app.use(cookieParser());
