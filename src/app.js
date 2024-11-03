@@ -14,10 +14,13 @@ const path = require('path');
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 // <-------------------------------------
 
+require('dotenv').config();
+const { URL_LOCAL, URL_WEB_DEPLOY } = process.env;
+
 // Configuración de CORS
 const allowedOrigins = [
-    'https://tu-frontend-en-vercel.vercel.app', // Dominio de Vercel
-    'http://localhost:3001', // Para desarrollo local, si usas puerto 3001 en el front
+    URL_WEB_DEPLOY, // Dominio de Vercel
+    URL_LOCAL, // Para desarrollo local, si usas puerto 3001 en el front
 ];
 
 app.use(cors({
