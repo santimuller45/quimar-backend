@@ -33,16 +33,16 @@ const createRubro11 = async () => await Rubro.create(rubroZingueria);
 //FUNCION PARA CREAR TODOS LOS RUBROS ------->
 
 const createAllRubros = async () => {
+    await createRubro10();
+    await createRubro07();
+    await createRubro03();
     await createRubro01();
     await createRubro02();
-    await createRubro03();
     await createRubro04();
     await createRubro05();
     await createRubro06();
-    await createRubro07();
     await createRubro08();
     await createRubro09();
-    await createRubro10();
     await createRubro11();
 };
 

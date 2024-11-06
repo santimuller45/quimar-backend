@@ -90,7 +90,7 @@ const updateUserPasswordController = async (email, cuit, password, newPassword )
 
     if (cuit) {
         if (userDB.cuit !== cuit) throw { status: 404, message: 'CUIT/CUIL incorrecto' };
-        const hashedPassword = hashPassword(cuit);
+        const hashedPassword = await hashPassword(cuit);
         await userDB.update({ password: hashedPassword });
         await userDB.save();
         return userDB;
@@ -126,8 +126,8 @@ const updateUserController = async ( id, email, name, cuit, address, postalCode,
         city: city || findUserDB.city,
         state: state || findUserDB.state,
         phone: phone || findUserDB.phone,
-        userStatus: userStatus !== undefined ? userStatus : userDB.userStatus,
-        admin: admin !== undefined ? admin : userDB.admin,
+        userStatus: userStatus !== undefined ? userStatus : findUserDB.userStatus,
+        admin: admin !== undefined ? admin : findUserDB.admin,
     });
     await findUserDB.save();
     return findUserDB;
