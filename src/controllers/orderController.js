@@ -5,12 +5,18 @@ const { getDateFormat, sendOrderEmail } = require('../controllers/extraControlle
 const getAllOrdersController = async () => {
     try {
         const orders = await Orders.findAll({ 
-            include: { model: Users, attributes: ["userNumber", "email", "name"] } 
+            include: { 
+                model: Users, 
+                attributes: ["userNumber", "email", "name"] 
+            },
+            order: [
+                ['id', 'DESC']  // Ordenar por 'id' de manera descendente
+            ]
         });
 
         // Manejar el caso en que no hay órdenes
         if (!orders || orders.length === 0) {
-            return []; // O lanzar un error si prefieres
+            return [];
         }
 
         return orders;

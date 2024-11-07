@@ -6,7 +6,11 @@ const { mainUrl } = require('../assets/assets.js');
 // -----------------------------------------------------
 
 const getAllProductsController = async () => {
-  return await Productos.findAll();
+  return await Productos.findAll({
+    order: [
+      ['codigo', 'ASC'] // Ordenar por 'codigo' de forma ascendente
+    ]
+  });
 };
 
 const getProductByIDController = async (productID) => {

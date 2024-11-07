@@ -40,9 +40,14 @@ const getDateFormat = () => {
 
 // FUNCIÓN PARA UTILIZAR EN EL FRONT PARA FILTRAR LAS ORDERS POR DIA, MES Y AÑO
 const getDatesForOrders = () => {
-  const days = Array.from({ length: 31 }, (_, i) => i + 1); // Días del 1 al 31
-  const months = Array.from({ length: 12 }, (_, i) => i + 1); // Meses del 1 al 12
-  const years = [2024, 2025, 2026, 2027, 2028]; // Años predefinidos
+  // Días del 1 al 31 con formato '01', '02', ..., '31'
+  const days = Array.from({ length: 31 }, (_, i) => String(i + 1).padStart(2, '0'));
+  
+  // Meses del 1 al 12 con formato '01', '02', ..., '12'
+  const months = Array.from({ length: 12 }, (_, i) => String(i + 1).padStart(2, '0'));
+
+  // Años predefinidos
+  const years = [2024, 2025, 2026, 2027, 2028];
 
   return { days, months, years };
 };

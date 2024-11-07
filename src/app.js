@@ -27,7 +27,7 @@ const { URL_LOCAL, URL_WEB_DEPLOY } = process.env;
 // };
 // <----------------------------------------------
 
-// Configura CORS para que acepte solo el dominio de tu frontend en Vercel
+// CONFIGURACION DE CORS PARA EL DEPLOY CON DOMINIO
 const corsOptions = {
     origin: URL_WEB_DEPLOY,
     credentials: true, // permite el envío de cookies si tu aplicación lo necesita

@@ -3,8 +3,17 @@ const { hashPassword, compareHash } = require('./extraController.js');
 const { Op } = require('sequelize');
 
 const getAllUsersDBController = async () => {
-    const allUsers = await Users.findAll();
-    if (!allUsers.length) return [];
+    const allUsers = await Users.findAll({
+        order: [
+            ['userNumber', 'ASC']  // Ordenar por 'userNumber' de manera ascendente
+        ]
+    });
+
+    // Manejar el caso en que no hay usuarios
+    if (!allUsers.length) {
+        return [];
+    }
+
     return allUsers;
 };
 
