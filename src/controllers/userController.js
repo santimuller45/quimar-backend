@@ -119,9 +119,13 @@ const updateUserController = async ( id, email, name, cuit, address, postalCode,
 
     const findUserDB = await Users.findByPk(id);
 
-    if ( email && findUserDB.email !== email ) {
-        const isEmailAvailable = Users.findOne({ where: { email } });
-        if (isEmailAvailable.length > 0 || isEmailAvailable.id ) throw { status: 404, message: 'Este email ya existe en el sistema' };
+    if (!findUserDB) {
+        throw { status: 404, message: 'Usuario no encontrado' };  // Manejo de error si no se encuentra el usuario
+    }
+
+    if (email && findUserDB.email !== email ) {
+        const isEmailAvailable = await Users.findOne({ where: { email } });
+        if (isEmailAvailable) throw { status: 404, message: 'Este email ya existe en el sistema' };
     } else {
         email = findUserDB.email;
     }

@@ -20,19 +20,19 @@ const { URL_LOCAL, URL_WEB_DEPLOY } = process.env;
 
 // PARA TRABAJAR DE FORMA LOCAL LOCALHOST ------>
 
-// const corsOptions = {
-//     origin: URL_LOCAL,
-//     credentials: true, // permite el envío de cookies si tu aplicación lo necesita
-//     optionsSuccessStatus: 200
-// };
-// <----------------------------------------------
-
-// CONFIGURACION DE CORS PARA EL DEPLOY CON DOMINIO
 const corsOptions = {
-    origin: URL_WEB_DEPLOY,
+    origin: URL_LOCAL,
     credentials: true, // permite el envío de cookies si tu aplicación lo necesita
     optionsSuccessStatus: 200
 };
+// <----------------------------------------------
+
+// CONFIGURACION DE CORS PARA EL DEPLOY CON DOMINIO
+// const corsOptions = {
+//     origin: URL_WEB_DEPLOY,
+//     credentials: true, // permite el envío de cookies si tu aplicación lo necesita
+//     optionsSuccessStatus: 200
+// };
 
 app.use(cors(corsOptions));
 app.use(express.json());
