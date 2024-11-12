@@ -15,21 +15,28 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 // <-------------------------------------
 
 require('dotenv').config();
-const { URL_LOCAL, URL_WEB_DEPLOY } = process.env;
+const { URL_WEB_DEPLOY, URL_WEB_DEPLOY2 } = process.env;
 
+// CONFIGURACION DE CORS PARA EL DEPLOY CON DOMINIO
 
-// PARA TRABAJAR DE FORMA LOCAL LOCALHOST ------>
+// CONFIGURACIÓN DE CORS PARA EL DEPLOY CON DOMINIO
+const allowedOrigins = [URL_WEB_DEPLOY, URL_WEB_DEPLOY2];
 
 // const corsOptions = {
-//     origin: URL_LOCAL,
+//     origin: URL_WEB_DEPLOY,
 //     credentials: true, // permite el envío de cookies si tu aplicación lo necesita
 //     optionsSuccessStatus: 200
 // };
-// <----------------------------------------------
 
-// CONFIGURACION DE CORS PARA EL DEPLOY CON DOMINIO
 const corsOptions = {
-    origin: URL_WEB_DEPLOY,
+    origin: (origin, callback) => {
+        // Permitir solicitudes de orígenes en `allowedOrigins`
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error('No permitido por CORS'));
+        }
+    },
     credentials: true, // permite el envío de cookies si tu aplicación lo necesita
     optionsSuccessStatus: 200
 };
