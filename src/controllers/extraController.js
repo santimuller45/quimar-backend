@@ -62,53 +62,13 @@ const resend = new Resend(RESEND_API_KEY);
 
 const sendOrderEmail = async (userEmail, orderDetails) => {
   const emailContent = `
-    <html>
-      <head>
-        <style>
-          body { font-family: Arial, sans-serif; color: #333; }
-          h1 { color: #0194DC; }
-          table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-          th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
-          th { background-color: #f2f2f2; }
-          .total { font-weight: bold; margin-top: 20px; }
-        </style>
-      </head>
-      <body>
-        <h1>Detalles de tu Pedido</h1>
-        <p>¡Gracias por tu compra! Aquí están los detalles de tu pedido.</p>
-        
-        <h3>Lista de Productos:</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Código</th>
-              <th>Detalle</th>
-              <th>Cantidad</th>
-              <th>Precio</th>
-              <th>SubTotal</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${orderDetails.listaPedido.map(item => `
-              <tr>
-                <td>${item.codigo}</td>
-                <td>${item.name}</td>
-                <td>${item.quantity}</td>
-                <td>$${item.price.toFixed(2)}</td>
-                <td>$${item.total.toFixed(2)}</td>
-              </tr>
-            `).join('')}
-          </tbody>
-        </table>
-
-        <p class="total"><strong>Total a Pagar:</strong> $${orderDetails.totalAmount.toFixed(2)}</p>
-        
-        <p><strong>Comentario:</strong> ${orderDetails.comentary || 'Ninguno'}</p>
-
-        <p>Si tienes alguna pregunta, no dudes en ponerte en contacto con nosotros.</p>
-        <p>¡Gracias por tu preferencia!</p>
-      </body>
-    </html>
+      <h1>Detalles del Pedido</h1>
+      <p><strong>Lista de Productos:</strong></p>
+      <ul>
+          ${orderDetails.listaPedido.map(item => `<li>Codigo:${item.codigo} Detalle:${item.name} Cantidades:${item.quantity} Precio:${item.price} SubTotal:${item.total}</li>`).join('')}
+      </ul>
+      <p><strong>Total a Pagar:</strong> $${orderDetails.totalAmount}</p>
+      <p><strong>Comentario:</strong> ${orderDetails.comentary}</p>
   `;
 
   try {
