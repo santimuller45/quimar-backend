@@ -64,9 +64,27 @@ const sendOrderEmail = async (userEmail, orderDetails) => {
   const emailContent = `
       <h1>Detalles del Pedido</h1>
       <p><strong>Lista de Productos:</strong></p>
-      <ul>
-          ${orderDetails.listaPedido.map(item => `<li>Codigo:${item.codigo} Detalle:${item.name} Cantidades:${item.quantity} Precio:${item.price} SubTotal:${item.total}</li>`).join('')}
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Detalle</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>SubTotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${orderDetails.listaPedido.map(item => `
+            <tr>
+              <td>${item.codigo}</td>
+              <td>${item.name}</td>
+              <td>${item.quantity}</td>
+              <td>$${item.price.toFixed(2)}</td>
+              <td>$${item.total.toFixed(2)}</td>
+            </tr>`).join('')}
+        </tbody>
+      </table>
       <p><strong>Total a Pagar:</strong> $${orderDetails.totalAmount}</p>
       <p><strong>Comentario:</strong> ${orderDetails.comentary}</p>
   `;
