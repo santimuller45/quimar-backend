@@ -67,49 +67,46 @@ const sendOrderEmail = async (userEmail, orderDetails) => {
         <style>
           body { font-family: Arial, sans-serif; color: #333; }
           h1 { color: #0194DC; }
-          .order-details { margin-top: 20px; }
-          table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+          table { width: 100%; border-collapse: collapse; margin-top: 20px; }
           th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
           th { background-color: #f2f2f2; }
-          .total { font-weight: bold; }
+          .total { font-weight: bold; margin-top: 20px; }
         </style>
       </head>
       <body>
         <h1>Detalles de tu Pedido</h1>
         <p>¡Gracias por tu compra! Aquí están los detalles de tu pedido.</p>
         
-        <div class="order-details">
-          <h3>Lista de Productos:</h3>
-          <table>
-            <thead>
+        <h3>Lista de Productos:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Detalle</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>SubTotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${orderDetails.listaPedido.map(item => `
               <tr>
-                <th>Código</th>
-                <th>Detalle</th>
-                <th>Cantidad</th>
-                <th>Precio</th>
-                <th>SubTotal</th>
+                <td>${item.codigo}</td>
+                <td>${item.name}</td>
+                <td>${item.quantity}</td>
+                <td>$${item.price.toFixed(2)}</td>
+                <td>$${item.total.toFixed(2)}</td>
               </tr>
-            </thead>
-            <tbody>
-              ${orderDetails.listaPedido.map(item => `
-                <tr>
-                  <td>${item.codigo}</td>
-                  <td>${item.name}</td>
-                  <td>${item.quantity}</td>
-                  <td>$${item.price.toFixed(2)}</td>
-                  <td>$${item.total.toFixed(2)}</td>
-                </tr>
-              `).join('')}
-            </tbody>
-          </table>
+            `).join('')}
+          </tbody>
+        </table>
 
-          <p class="total"><strong>Total a Pagar:</strong> $${orderDetails.totalAmount.toFixed(2)}</p>
-          
-          <p><strong>Comentario:</strong> ${orderDetails.comentary || 'Ninguno'}</p>
-        </div>
+        <p class="total"><strong>Total a Pagar:</strong> $${orderDetails.totalAmount.toFixed(2)}</p>
+        
+        <p><strong>Comentario:</strong> ${orderDetails.comentary || 'Ninguno'}</p>
 
         <p>Si tienes alguna pregunta, no dudes en ponerte en contacto con nosotros.</p>
-        <p>¡Gracias por tu preferencia! Quimar Distribuidora</p>
+        <p>¡Gracias por tu preferencia!</p>
       </body>
     </html>
   `;
