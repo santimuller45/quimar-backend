@@ -62,8 +62,7 @@ const resend = new Resend(RESEND_API_KEY);
 
 const sendOrderEmail = async (userEmail, orderDetails) => {
   const emailContent = `
-      <h1>Detalles del Pedido</h1>
-      <p><strong>Lista de Productos:</strong></p>
+      <h1>Detalles del Pedido N°${orderDetails.id}</h1>
       <table>
         <thead>
           <tr>
@@ -85,8 +84,8 @@ const sendOrderEmail = async (userEmail, orderDetails) => {
             </tr>`).join('')}
         </tbody>
       </table>
-      <p><strong>Total a Pagar:</strong> $${orderDetails.totalAmount}</p>
-      <p><strong>Comentario:</strong> ${orderDetails.comentary}</p>
+      <h3><strong>Total a Pagar:</strong> $${orderDetails.totalAmount}</h3>
+      <h4><strong>Comentario:</strong> ${orderDetails.comentary}</h4>
   `;
 
   try {
