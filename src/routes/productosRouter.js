@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const multer = require('multer');
 const path = require('path');
-const { handlerGetProducts, handlerGetProductByID, handlerPostProduct, handlerPutProduct } = require('../handlers/productosHandlers.js');
+const { handlerGetProducts, handlerGetProductByID, handlerPostProduct, handlerPutProduct, handlerPutPriceProduct } = require('../handlers/productosHandlers.js');
 
 // Configuración de Multer para manejar la subida de archivos
 const storage = multer.diskStorage({
@@ -23,6 +23,7 @@ productRouter.get('/:productID', handlerGetProductByID);
 
 // PUT
 productRouter.put('/config-products', upload.single('imagen'), handlerPutProduct);
+productRouter.put('/config-products-price', handlerPutPriceProduct);
 
 // POST para crear un producto
 productRouter.post('/register-product', upload.single('imagen'), handlerPostProduct);

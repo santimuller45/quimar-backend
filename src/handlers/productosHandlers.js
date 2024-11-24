@@ -3,8 +3,9 @@ const {
     getProductByNameController, 
     getProductByIDController, 
     postProductController, 
+    getProductByCodeController, 
     updateProductController,
-    getProductByCodeController 
+    updatePricesProductsController,
   } = require('../controllers/productosController.js');
 
 const handlerGetProducts = async (req, res) => {
@@ -79,4 +80,16 @@ const handlerGetProductByID = async (req, res) => {
     }
   };
 
-  module.exports = { handlerGetProducts, handlerGetProductByID, handlerPostProduct, handlerPutProduct };
+  const handlerPutPriceProduct = async (req,res) => {
+    const { form } = req.body;
+    if (!form || typeof form !== "object") return res.status(400).json({ message: "Formulario inválido o faltante en la solicitud." });
+    if (form.valueType !== 'aumentar' && form.valueType !== 'disminuir') return res.status(400).json({ message: "Datos faltantes: valueType." });
+    try {
+      const updatePriceProducts = await updatePricesProductsController(form);
+      return res.status(201).json({ message: updatePriceProducts });
+    } catch (error) {
+      return res.status(error.status || 500).json({ message: error.message || "Error interno del servidor." });
+    }
+  };
+
+  module.exports = { handlerGetProducts, handlerGetProductByID, handlerPostProduct, handlerPutProduct, handlerPutPriceProduct };

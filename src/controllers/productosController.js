@@ -93,11 +93,45 @@ const updateProductController = async ( id, codigo, name, price, imagen, categor
   return productDB;
 };
 
+const updatePricesProductsController = async (form) => {
+  const { productsList, valueType, value } = form;
+  const modifier = valueType === "aumentar" ? 1 + value / 100 : 1 - value / 100;
+
+  if (!productsList || productsList.length === 0) throw new Error("No hay productos seleccionados para actualizar");
+
+  // Inicia una transacción
+  const transaction = await Productos.sequelize.transaction();
+
+  try {
+      await Promise.all(
+          productsList.map(async (product) => {
+              const findProduct = await Productos.findByPk(product.id, { transaction });
+              if (!findProduct) {
+                  console.warn(`Producto con ID ${product.id} no encontrado`);
+                  return;
+              }
+              const newPrice = Number((findProduct.price * modifier).toFixed(2));
+              await findProduct.update({ price: newPrice }, { transaction });
+          })
+      );
+
+      // Confirma la transacción
+      await transaction.commit();
+      return "Precios actualizados correctamente";
+  } catch (error) {
+      // Si ocurre un error, deshace la transacción
+      await transaction.rollback();
+      throw new Error("Error al actualizar precios: " + error.message);
+  }
+};
+
+
 module.exports = { 
   getAllProductsController, 
   getProductByNameController, 
   getProductByIDController,
   postProductController, 
+  getProductByCodeController,
   updateProductController,
-  getProductByCodeController 
+  updatePricesProductsController 
 };
