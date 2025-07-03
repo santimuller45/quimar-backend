@@ -42,9 +42,9 @@ const getProductByCodeController = async (code) => {
 };
 
 const postProductController = async (productData, uploadedImage) => {
+  const transaction = await Productos.sequelize.transaction();
   try {
     const { codigo, name, price, category, descripcion, status } = productData;
-    const transaction = await Productos.sequelize.transaction();
 
     if (!codigo) throw { status: 400, message: 'Porfavor agregue un código al producto' };
     if (!name) throw { status: 400, message: 'Porfavor agregue un nombre al producto' };
@@ -78,9 +78,9 @@ const postProductController = async (productData, uploadedImage) => {
 
 const updateProductController = async (productData, uploadedImage) => {
 
+  const transaction = await Productos.sequelize.transaction();
   try {
     const { id, codigo, name, price, category, descripcion, status } = productData;
-    const transaction = await Productos.sequelize.transaction();
 
     const productDB = await getProductByIDController(id);
     if (!productDB) throw { status: 404, message: 'Producto no encontrado' };
