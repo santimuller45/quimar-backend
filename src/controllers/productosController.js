@@ -1,7 +1,14 @@
 const { Productos } = require('../db.js');
 const { Op } = require('sequelize');
+
+// ---- AUX FUNCTIONS ----
 const { mayusLetter } = require('./extraController.js');
 const { mainUrl } = require('../assets/assets.js');
+// -----------------------
+
+// ---- IMAGEKIT ----
+const imagekit = require('../utils/imageKitConfig.js');
+// ------------------
 
 // -----------------------------------------------------
 
@@ -20,77 +27,97 @@ const getProductByIDController = async (productID) => {
 const getProductByNameController = async (name) => {
   const productName = mayusLetter(name);
   return await Productos.findAll({
-    where: { 
-      name: {[Op.substring]:`${productName}`}
-    }})
+    where: {
+      name: { [Op.substring]: `${productName}` }
+    }
+  })
 };
-  
+
 const getProductByCodeController = async (code) => {
   return await Productos.findAll({
-    where: { 
+    where: {
       codigo: code
     }
   });
 };
 
-const postProductController = async ( codigo, name, price, imagen, category, descripcion, status ) => {
+const postProductController = async (productData, uploadedImage) => {
+  try {
+    const { codigo, name, price, category, descripcion, status } = productData;
+    const transaction = await Productos.sequelize.transaction();
 
-  if (!codigo) throw { status: 400, message: 'Porfavor agregue un código al producto' };
-  if (!name) throw { status: 400, message: 'Porfavor agregue un nombre al producto' };
-  if (!price || isNaN(parseFloat(price))) throw { status: 400, message: 'Porfavor agregue un precio al producto' };
-  
-  // IMAGEN POR DEFECTO SI AL PRODUCTO NO SE LE PROPORCIONA UNO
-  if (!imagen) imagen = 'no-photo.png';
+    if (!codigo) throw { status: 400, message: 'Porfavor agregue un código al producto' };
+    if (!name) throw { status: 400, message: 'Porfavor agregue un nombre al producto' };
+    if (!price || isNaN(parseFloat(price))) throw { status: 400, message: 'Porfavor agregue un precio al producto' };
 
-  const isCodeAvailable = await getProductByCodeController(codigo);
-  if (isCodeAvailable.length > 0) throw { status: 409, message: 'El código de producto ingresado ya existe en la base de datos' };
+    // IMAGEN POR DEFECTO SI AL PRODUCTO NO SE LE PROPORCIONA UNO
+    const noImageURL = 'https://imagekit.io/public/share/xvms3cln5/b5819518ef0ad59c61abd0a820e8ce2ea9575bde9a1295307b9ebd82f929d0c566f6633e066d601f53fc191a3cf86ec2a6e39c266d1af3dbe1f9b184466cbc9211c2a60fa82c26a02387087a5b0a6364';
+    const imageURL = uploadedImage?.url || noImageURL;
 
-  return await Productos.create({ 
-    codigo, 
-    name, 
-    price, 
-    imagen: mainUrl(`/assets/img/${imagen}`), 
-    category, 
-    descripcion, 
-    status 
-  });
-};
-
-const updateProductController = async ( id, codigo, name, price, imagen, category, descripcion, status ) => {
-
-  const productDB = await getProductByIDController(id);
-  if (!productDB) throw { status: 404, message: 'Producto no encontrado' };
-
-  if (codigo && productDB.codigo !== codigo) {
     const isCodeAvailable = await getProductByCodeController(codigo);
     if (isCodeAvailable.length > 0) throw { status: 409, message: 'El código de producto ingresado ya existe en la base de datos' };
-  } else {
-    codigo = productDB.codigo;
+
+    const newProduct = await Productos.create({
+      codigo,
+      name,
+      price,
+      imagen: imageURL,
+      category,
+      descripcion,
+      status
+    }, { transaction });
+
+    await transaction.commit(); // Confirma transacción
+    return newProduct;
+
+  } catch (error) {
+    await transaction.rollback(); // Revertir cambios si hay error
+    throw { status: error.status || 400, message: error.message || 'Error al crear el producto' };
   }
+};
 
-  if (!name) name = productDB.name;
-  if (!price) price = productDB.price;
-  if (!imagen) {
-    imagen = productDB.imagen;
-  } else {
-    imagen = mainUrl(`/assets/img/${imagen}`);
+const updateProductController = async (productData, uploadedImage) => {
+
+  try {
+    const { id, codigo, name, price, category, descripcion, status } = productData;
+    const transaction = await Productos.sequelize.transaction();
+
+    const productDB = await getProductByIDController(id);
+    if (!productDB) throw { status: 404, message: 'Producto no encontrado' };
+
+    if (codigo && productDB.codigo !== codigo) {
+      const isCodeAvailable = await getProductByCodeController(codigo);
+      if (isCodeAvailable.length > 0) throw { status: 409, message: 'El código de producto ingresado ya existe en la base de datos' };
+    } else {
+      codigo = productDB.codigo;
+    }
+
+    if (!name) name = productDB.name;
+    if (!price) price = productDB.price;
+
+    const imageURL = uploadedImage?.url || productDB.imagen;
+
+    if (!category) category = productDB.category;
+    if (!descripcion) descripcion = productDB.descripcion;
+    if (!status) status = productDB.status;
+
+    await productDB.update({
+      codigo,
+      name,
+      price,
+      imagen: imageURL,
+      category,
+      descripcion,
+      status
+    }, { transaction });
+
+    await productDB.save();
+    await transaction.commit();
+    return productDB;
+  } catch (error) {
+    await transaction.rollback(); // Revertir cambios si hay error
+    throw { status: error.status || 400, message: error.message || 'Error al actualizar el producto' };
   }
-  if (!category) category = productDB.category;
-  if (!descripcion) descripcion = productDB.descripcion;
-  if (!status) status = productDB.status;
-
-  await productDB.update({
-    codigo,
-    name,
-    price,
-    imagen,
-    category,
-    descripcion,
-    status
-  });
-
-  await productDB.save();
-  return productDB;
 };
 
 const updatePricesProductsController = async (form) => {
@@ -103,35 +130,35 @@ const updatePricesProductsController = async (form) => {
   const transaction = await Productos.sequelize.transaction();
 
   try {
-      await Promise.all(
-          productsList.map(async (product) => {
-              const findProduct = await Productos.findByPk(product.id, { transaction });
-              if (!findProduct) {
-                  console.warn(`Producto con ID ${product.id} no encontrado`);
-                  return;
-              }
-              const newPrice = Number((findProduct.price * modifier).toFixed(2));
-              await findProduct.update({ price: newPrice }, { transaction });
-          })
-      );
+    await Promise.all(
+      productsList.map(async (product) => {
+        const findProduct = await Productos.findByPk(product.id, { transaction });
+        if (!findProduct) {
+          console.warn(`Producto con ID ${product.id} no encontrado`);
+          return;
+        }
+        const newPrice = Number((findProduct.price * modifier).toFixed(2));
+        await findProduct.update({ price: newPrice }, { transaction });
+      })
+    );
 
-      // Confirma la transacción
-      await transaction.commit();
-      return "Precios actualizados correctamente";
+    // Confirma la transacción
+    await transaction.commit();
+    return "Precios actualizados correctamente";
   } catch (error) {
-      // Si ocurre un error, deshace la transacción
-      await transaction.rollback();
-      throw new Error("Error al actualizar precios: " + error.message);
+    // Si ocurre un error, deshace la transacción
+    await transaction.rollback();
+    throw new Error("Error al actualizar precios: " + error.message);
   }
 };
 
 
-module.exports = { 
-  getAllProductsController, 
-  getProductByNameController, 
+module.exports = {
+  getAllProductsController,
+  getProductByNameController,
   getProductByIDController,
-  postProductController, 
+  postProductController,
   getProductByCodeController,
   updateProductController,
-  updatePricesProductsController 
+  updatePricesProductsController
 };
