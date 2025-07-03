@@ -88,32 +88,23 @@ const updateProductController = async (productData, uploadedImage) => {
     if (codigo && productDB.codigo !== codigo) {
       const isCodeAvailable = await getProductByCodeController(codigo);
       if (isCodeAvailable.length > 0) throw { status: 409, message: 'El código de producto ingresado ya existe en la base de datos' };
-    } else {
-      codigo = productDB.codigo;
     }
-
-    if (!name) name = productDB.name;
-    if (!price) price = productDB.price;
 
     const imageURL = uploadedImage?.url || productDB.imagen;
 
-    if (!category) category = productDB.category;
-    if (!descripcion) descripcion = productDB.descripcion;
-    if (!status) status = productDB.status;
-
-    await productDB.update({
-      codigo,
-      name,
-      price,
+    const updatedProduct = {
+      codigo: codigo !== undefined ? codigo : productDB.codigo,
+      name: name !== undefined ? name : productDB.name,
+      price: price !== undefined ? price : productDB.price,
       imagen: imageURL,
-      category,
-      descripcion,
-      status
-    }, { transaction });
+      category: category !== undefined ? category : productDB.category,
+      descripcion: descripcion !== undefined ? descripcion : productDB.descripcion,
+      status: status !== undefined ? status : productDB.status
+    }
 
-    await productDB.save();
+    await productDB.update(updatedProduct, { transaction });
     await transaction.commit();
-    return productDB;
+    return await getProductByIDController(productDB.id);
   } catch (error) {
     await transaction.rollback(); // Revertir cambios si hay error
     throw { status: error.status || 400, message: error.message || 'Error al actualizar el producto' };
