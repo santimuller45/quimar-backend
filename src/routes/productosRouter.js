@@ -3,8 +3,6 @@ const { Router } = require('express');
 // ---- UPLOAD IMAGES ----
 const upload = require('../utils/multerConfig.js');
 // -----------------------
-// const multer = require('multer');
-// const path = require('path');
 
 // ---- HANDLERS ----
 const {
@@ -15,18 +13,6 @@ const {
     handlerPutPriceProduct
 } = require('../handlers/productosHandlers.js');
 // ------------------
-
-// Configuración de Multer para manejar la subida de archivos
-// const storage = multer.diskStorage({
-//     destination: (req, file, cb) => {
-//         cb(null, path.join(__dirname, '../assets/img')); // Carpeta donde se guardarán las imágenes
-//     },
-//     filename: (req, file, cb) => {
-//         cb(null, Date.now() + path.extname(file.originalname)); // Añadir timestamp al nombre del archivo
-//     }
-// });
-
-// const upload = multer({ storage });
 
 const productRouter = Router();
 
