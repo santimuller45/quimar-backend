@@ -60,7 +60,7 @@ const handlerPostProduct = async (req, res) => {
     let image;
     if (file) {
       // OBTENEMOS EL NOMBRE DEL PRODUCTO PARA EL ARCHIVO
-      const product_name_file = productData?.name.toLowerCase().replace(/\s+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+      const product_name_file = productData?.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g, '');
       // OBTENEMOS LA EXTENSIÓN DEL ARCHIVO
       const extension_file = file.originalname.split('.').pop();
       // NOMBRE QUE QUEDARIA DEL ARCHIVO
@@ -90,6 +90,8 @@ const handlerPutProduct = async (req, res) => {
     const productData = req.body;
     const file = req.file;
 
+    console.log(file);
+
     if (!productData.id) {
       return res.status(400).json({ message: 'ID del producto es requerido' });
     }
@@ -98,7 +100,7 @@ const handlerPutProduct = async (req, res) => {
 
     if (file) {
       // OBTENEMOS EL NOMBRE DEL PRODUCTO PARA EL ARCHIVO
-      const product_name_file = productData?.name.toLowerCase().replace(/\s+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+      const product_name_file = productData?.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g, '');
       // OBTENEMOS LA EXTENSIÓN DEL ARCHIVO
       const extension_file = file.originalname.split('.').pop();
       // NOMBRE QUE QUEDARIA DEL ARCHIVO
