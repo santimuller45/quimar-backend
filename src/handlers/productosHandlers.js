@@ -116,6 +116,11 @@ const handlerPutProduct = async (req, res) => {
         url: uploadResult.url,
         id: uploadResult.fileId,
       };
+    } else if (productData.imagen && typeof productData.imagen === 'string') {
+      newImage = {
+        url: productData.imagen,
+        id: null,
+      }
     }
 
     const updatedProduct = await updateProductController(productData, newImage);

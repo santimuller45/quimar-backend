@@ -51,7 +51,7 @@ const postProductController = async (productData, uploadedImage) => {
     if (!price || isNaN(parseFloat(price))) throw { status: 400, message: 'Porfavor agregue un precio al producto' };
 
     // IMAGEN POR DEFECTO SI AL PRODUCTO NO SE LE PROPORCIONA UNO
-    const noImageURL = 'https://imagekit.io/public/share/xvms3cln5/b5819518ef0ad59c61abd0a820e8ce2ea9575bde9a1295307b9ebd82f929d0c566f6633e066d601f53fc191a3cf86ec2a6e39c266d1af3dbe1f9b184466cbc9211c2a60fa82c26a02387087a5b0a6364';
+    const noImageURL = 'https://imagekit.io/public/share/xvms3cln5/b5819518ef0ad59c61abd0a820e8ce2ea9575bde9a1295307b9ebd82f929d0c5c8f3104cb8316601726157d046b226c71af59dfabb2227b72d135d6f57e7bed6c09023152d16bb845e2094b552f06044';
     const imageURL = uploadedImage?.url || noImageURL;
 
     const isCodeAvailable = await getProductByCodeController(codigo);
